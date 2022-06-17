@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>每天进步一点点🤏</title>
+  <title>mysql-in | 每天进步一点点🤏</title>
   <meta name="author" content="Y Y" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,15 +13,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="mysql" />
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="每天进步一点点🤏">
-<meta property="og:url" content="https://tskfok.github.io/tags/index.html">
+  <meta name="description" content="mysql大量in优化">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql-in">
+<meta property="og:url" content="https://tskfok.github.io/2022/06/17/mysql-in/index.html">
 <meta property="og:site_name" content="每天进步一点点🤏">
+<meta property="og:description" content="mysql大量in优化">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tskfok.github.io/2022/06/17/mysql-in/mysql.jpg">
+<meta property="article:published_time" content="2022-06-17T10:59:38.000Z">
+<meta property="article:modified_time" content="2022-06-17T11:02:52.280Z">
 <meta property="article:author" content="Y Y">
+<meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tskfok.github.io/2022/06/17/mysql-in/mysql.jpg">
   
   <!-- 站点验证相关 -->
   
@@ -124,8 +131,6 @@
 <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
     <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
     
-        <div class="sticky-area">
-    
     
                 <aside id="krw-about" class="widget widget-kratos-about clearfix">
     <div class="photo-background"></div>
@@ -165,6 +170,8 @@
     </div>
 </aside>
             
+                    <div class="sticky-area">
+                
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
@@ -222,49 +229,69 @@
 
         
 
-            <style>
-  .arc-tags {
-    margin-bottom: 8rem;
-  }
-
-  .arc-tags a {
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
-    border: 1px solid #fff;
-    border-radius: 15px;
-    margin: 4px 8px 0 0;
-    font-weight: 500;
-    display: inline-block;
-    padding: 0 12px;
-    background: rgba(255, 255, 255, .5);
-    font-size: 16px;
-  }
-
-  .arc-tags a::before {
-    content: "# ";
-    color: #e8a6a6;
-  }
-</style>
-<article>
-  <div class="kratos-hentry kratos-post-inner clearfix">
-    <div class="kratos-post-content">
-      <h2 class="title-h2 text-center">
-        标签聚合
-      </h2>
-      <div style="margin-left: 2em;">
-        <h3 class="archive-page-counter">
-          当前共有 3 个标签 (゜-゜)つロ 干杯~
-        </h3>
-        <div class="tags">
-          
-            <div class="arc-tags">
-              <a class="tag-none-link" href="/tags/blog/" rel="tag">blog</a> <a class="tag-none-link" href="/tags/excel/" rel="tag">excel</a> <a class="tag-none-link" href="/tags/mysql/" rel="tag">mysql</a>
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2022/06/17/mysql-in/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">mysql-in</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2022-06-17T10:59:38.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-06-17</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">Y Y</span>
+                </li>
+                <li>
+                    <i class="fa fa-edit"></i> 
+                    
+                    
+                        151
+                    
+                    字
+                </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1655463772280"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
-          
+            
+            <hr />
+            <div itemprop="articleBody"><h3 id="mysql大量in优化"><a href="#mysql大量in优化" class="headerlink" title="mysql大量in优化"></a>mysql大量in优化</h3><span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from a where b in();</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">使用unionall代替in</span><br><span class="line">select * from a where b = &#x27;1&#x27;</span><br><span class="line">union all select * from a where b = &#x27;2&#x27;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
         </div>
-      </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/mysql/" rel="tag">mysql</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2022-06-17T11:02:52.280Z" itemprop="dateModified">最后编辑：2022-06-17</time>
+                </div>
+            </div>
+        </footer>
     </div>
-  </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" 搭建blog" href="/2022/06/14/blog-build/">&lt; 上一篇</a>
+            </div>
+            
+            
+        </nav>
+    
+    
 </article>
 
         
