@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>mysql in查询优化 | 每天进步一点点🤏</title>
+  <title>mysql-dns-bug | 每天进步一点点🤏</title>
   <meta name="author" content="Y Y" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -15,20 +15,20 @@
   
     <meta name="keywords" content="mysql" />
   
-  <meta name="description" content="mysql大量in优化">
+  <meta name="description" content="1mysql直接使用域名连接，在dns解析缓慢的情况下，会产生较大的延迟">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mysql in查询优化">
-<meta property="og:url" content="https://tskfok.github.io/2022/06/17/mysql-in/index.html">
+<meta property="og:title" content="mysql-dns-bug">
+<meta property="og:url" content="https://tskfok.github.io/2022/06/20/mysql-dns-bug/index.html">
 <meta property="og:site_name" content="每天进步一点点🤏">
-<meta property="og:description" content="mysql大量in优化">
+<meta property="og:description" content="1mysql直接使用域名连接，在dns解析缓慢的情况下，会产生较大的延迟">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tskfok.github.io/2022/06/17/mysql-in/mysql.jpg">
-<meta property="article:published_time" content="2022-06-17T10:59:38.000Z">
-<meta property="article:modified_time" content="2022-06-17T11:05:17.402Z">
+<meta property="og:image" content="https://tskfok.github.io/2022/06/20/mysql-dns-bug/mysql.jpg">
+<meta property="article:published_time" content="2022-06-20T06:30:32.000Z">
+<meta property="article:modified_time" content="2022-06-20T06:31:27.261Z">
 <meta property="article:author" content="Y Y">
 <meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tskfok.github.io/2022/06/17/mysql-in/mysql.jpg">
+<meta name="twitter:image" content="https://tskfok.github.io/2022/06/20/mysql-dns-bug/mysql.jpg">
   
   <!-- 站点验证相关 -->
   
@@ -243,15 +243,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2022/06/17/mysql-in/">
+    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2022/06/20/mysql-dns-bug/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">mysql in查询优化</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">mysql-dns-bug</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2022-06-17T10:59:38.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-06-17</time></li>
+                <li><time datetime="2022-06-20T06:30:32.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-06-20</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Y Y</span>
                 </li>
@@ -259,7 +259,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        151
+                        36
                     
                     字
                 </li>
@@ -269,15 +269,11 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1655463917402"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1655706687261"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
-            <div itemprop="articleBody"><h3 id="mysql大量in优化"><a href="#mysql大量in优化" class="headerlink" title="mysql大量in优化"></a>mysql大量in优化</h3><span id="more"></span>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from a where b in();</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">使用unionall代替in</span><br><span class="line">select * from a where b = &#x27;1&#x27;</span><br><span class="line">union all select * from a where b = &#x27;2&#x27;</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+            <div itemprop="articleBody"><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql直接使用域名连接，在dns解析缓慢的情况下，会产生较大的延迟</span><br></pre></td></tr></table></figure></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -288,7 +284,7 @@
                     <a class="tag-none-link" href="/tags/mysql/" rel="tag">mysql</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2022-06-17T11:05:17.402Z" itemprop="dateModified">最后编辑：2022-06-17</time>
+                    <time datetime="2022-06-20T06:31:27.261Z" itemprop="dateModified">最后编辑：2022-06-20</time>
                 </div>
             </div>
         </footer>
@@ -297,13 +293,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" 搭建blog" href="/2022/06/14/blog-build/">&lt; 上一篇</a>
+                <a title=" elasticsearch" href="/2022/06/20/elasticsearch/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" elasticsearch" href="/2022/06/20/elasticsearch/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
