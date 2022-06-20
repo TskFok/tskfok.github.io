@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>每天进步一点点🤏</title>
+  <title>composer内存不足解决方法 | 每天进步一点点🤏</title>
   <meta name="author" content="Y Y" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,15 +13,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="composer" />
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="每天进步一点点🤏">
-<meta property="og:url" content="https://tskfok.github.io/categories/php/log/index.html">
+  <meta name="description" content="composer内存不足报错">
+<meta property="og:type" content="article">
+<meta property="og:title" content="composer内存不足解决方法">
+<meta property="og:url" content="https://tskfok.github.io/2022/06/20/composer-memory/index.html">
 <meta property="og:site_name" content="每天进步一点点🤏">
+<meta property="og:description" content="composer内存不足报错">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tskfok.github.io/2022/06/20/composer-memory/composer.png">
+<meta property="article:published_time" content="2022-06-20T10:54:38.000Z">
+<meta property="article:modified_time" content="2022-06-20T10:57:32.955Z">
 <meta property="article:author" content="Y Y">
+<meta property="article:tag" content="composer">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tskfok.github.io/2022/06/20/composer-memory/composer.png">
   
   <!-- 站点验证相关 -->
   
@@ -124,8 +131,6 @@
 <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
     <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
     
-        <div class="sticky-area">
-    
     
                 <aside id="krw-about" class="widget widget-kratos-about clearfix">
     <div class="photo-background"></div>
@@ -165,6 +170,8 @@
     </div>
 </aside>
             
+                    <div class="sticky-area">
+                
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
@@ -242,92 +249,68 @@
 
         
 
-            <!-- Breadcrumb for tag & category page -->
-
-    <article class="kratos-hentry kratos-entry-border-new clearfix">
-        <div class="kratos-breadcrumb">
-            <a href="/">
-                <i class="fa fa-home"></i>
-            </a>
-            <i class="fa fa-angle-right"></i>
-            
-
-                <a href="/categories/">
-                    分类
-                </a>
-
-                
-                
-                    <i class="fa fa-angle-right"></i>
-                    <a href="/categories/php/">
-                        php
-                    </a>
-                
-                    <i class="fa fa-angle-right"></i>
-                    <a href="/categories/php/log/">
-                        log
-                    </a>
-                
-            
-            
-        </div>
-    </article>
-
-
-
-
+            <article itemscope itemtype="https://schema.org/Article">
     
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
+    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2022/06/20/composer-memory/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">composer内存不足解决方法</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2022-06-20T10:54:38.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-06-20</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">Y Y</span>
+                </li>
+                <li>
+                    <i class="fa fa-edit"></i> 
+                    
+                    
+                        146
+                    
+                    字
+                </li>
                 
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2022/06/20/php-fpm-log/">
-                        
-                            <img class="kratos-entry-thumb-new-img" src="/2022/06/20/php-fpm-log/php.png">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            <a class="label-link" href="/categories/php/">php</a> <a class="label-link" href="/categories/php/log/">log</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/06/20/php-fpm-log/" itemprop="mainEntityOfPage"><span itemprop="name headline">查看php-fpm日志</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                php-fpm日志查看
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2022-06-20T06:36:05.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2022-06-20</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/php/" rel="tag">php</a>, <a class="tag-none-link" href="/tags/php-fpm-log/" rel="tag">php-fpm-log</a>
-                            
-                        </a>
-                        
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2022/06/20/php-fpm-log/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1655722652955"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
-        </article>
+            
+            <hr />
+            <div itemprop="articleBody"><h3 id="composer内存不足报错"><a href="#composer内存不足报错" class="headerlink" title="composer内存不足报错"></a>composer内存不足报错</h3><span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">php -d memory_limit=-1 `which composer` update/install -vvv</span><br><span class="line"></span><br><span class="line">php -d memory_limit=-1 `which composer` require endroid/qr-code -vvv</span><br></pre></td></tr></table></figure></div>
+        </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/composer/" rel="tag">composer</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2022-06-20T10:57:32.955Z" itemprop="dateModified">最后编辑：2022-06-20</time>
+                </div>
+            </div>
+        </footer>
+    </div>
     
-
-
-
-
-
-
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" php-fpm重新载入" href="/2022/06/20/php-fpm-restart/">&lt; 上一篇</a>
+            </div>
+            
+            
+        </nav>
+    
+    
+</article>
 
         
 
