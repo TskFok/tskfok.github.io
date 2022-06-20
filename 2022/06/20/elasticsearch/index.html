@@ -13,17 +13,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="elasticsearch" />
   
-  <meta property="og:type" content="article">
+  <meta name="description" content="elasticsearch的查询命令行">
+<meta property="og:type" content="article">
 <meta property="og:title" content="elasticsearch">
 <meta property="og:url" content="https://tskfok.github.io/2022/06/20/elasticsearch/index.html">
 <meta property="og:site_name" content="每天进步一点点🤏">
+<meta property="og:description" content="elasticsearch的查询命令行">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tskfok.github.io/2022/06/20/elasticsearch/elasticsearch.png">
 <meta property="article:published_time" content="2022-06-20T05:56:35.000Z">
-<meta property="article:modified_time" content="2022-06-20T05:56:35.473Z">
+<meta property="article:modified_time" content="2022-06-20T06:03:30.323Z">
 <meta property="article:author" content="Y Y">
+<meta property="article:tag" content="elasticsearch">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tskfok.github.io/2022/06/20/elasticsearch/elasticsearch.png">
   
   <!-- 站点验证相关 -->
   
@@ -151,7 +156,7 @@
                 分类
             </span>
             <span class="count">
-                3
+                4
             </span>
         </a>
         <a class="meta-item" href="/tags/">
@@ -159,7 +164,7 @@
                 标签
             </span>
             <span class="count">
-                3
+                4
             </span>
         </a>
     </div>
@@ -170,7 +175,7 @@
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/build/">build</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/">tool</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/build/">build</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/elasticsearch/">elasticsearch</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/">tool</a><span class="category-list-count">1</span></li></ul>
   </aside>
 
 
@@ -179,7 +184,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/blog/" style="font-size: 0.6em;">blog</a> <a href="/tags/excel/" style="font-size: 0.6em;">excel</a> <a href="/tags/mysql/" style="font-size: 0.6em;">mysql</a>
+        <a href="/tags/blog/" style="font-size: 0.6em;">blog</a> <a href="/tags/elasticsearch/" style="font-size: 0.6em;">elasticsearch</a> <a href="/tags/excel/" style="font-size: 0.6em;">excel</a> <a href="/tags/mysql/" style="font-size: 0.6em;">mysql</a>
       </div>
   </aside>
 
@@ -248,7 +253,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        0
+                        1227
                     
                     字
                 </li>
@@ -258,11 +263,27 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1655704595473"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1655705010323"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
-            <div itemprop="articleBody"></div>
+            <div itemprop="articleBody"><h3 id="elasticsearch的查询命令行"><a href="#elasticsearch的查询命令行" class="headerlink" title="elasticsearch的查询命令行"></a>elasticsearch的查询命令行</h3><span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">查看所有索引</span><br><span class="line">curl -X GET &quot;http://host:port/_cat/indices/?v&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">查看某个索引</span><br><span class="line">curl -X GET &quot;http://host:port/_cat/indices/index*?v&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">查看index下的10条记录</span><br><span class="line">curl -X GET &quot;http://host:port/index/_search&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">查看index的数量</span><br><span class="line">curl -X GET &quot;http://host:port/index/_count&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">查看index的订单123123123123123</span><br><span class="line">curl -X GET &quot;http://host:port/index/_doc/123123123123123?pretty&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">查看index的订单 根据order_no查看123123123123123</span><br><span class="line">curl -X GET &quot;http://host:port/index/_search?q=order_no:123123123123123&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">查看index的订单 search_key=data</span><br><span class="line">curl -X GET &quot;http://host:port/index/_search&quot; -H &quot;Content-Type: application/json&quot; -d &#x27;</span><br><span class="line">&#123;</span><br><span class="line">&quot;query&quot;: &#123;</span><br><span class="line">&quot;match&quot;: &#123;</span><br><span class="line">&quot;search_key&quot;: &quot;data&quot;</span><br><span class="line">&#125;</span><br><span class="line">&#125;,</span><br><span class="line">&quot;size&quot;: 5</span><br><span class="line">&#125;&#x27;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">查看index的订单 search_key1=123123123123123 or search_key2=123123123123123</span><br><span class="line">curl -X GET &quot;http://host:port/index/_search&quot; -H &quot;Content-Type: application/json&quot; -d &#x27;</span><br><span class="line">&#123;</span><br><span class="line">&quot;query&quot;: &#123;</span><br><span class="line">&quot;multi_match&quot;: &#123;</span><br><span class="line">&quot;query&quot;:&quot;123123123123123&quot;,</span><br><span class="line">&quot;fields&quot;: [&quot;search_key1&quot;, &quot;search_key2&quot;]</span><br><span class="line">&#125;</span><br><span class="line">&#125;,</span><br><span class="line">&quot;size&quot;: 5</span><br><span class="line">&#125;&#x27;</span><br></pre></td></tr></table></figure></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -270,10 +291,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    
+                    <a class="tag-none-link" href="/tags/elasticsearch/" rel="tag">elasticsearch</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2022-06-20T05:56:35.473Z" itemprop="dateModified">最后编辑：2022-06-20</time>
+                    <time datetime="2022-06-20T06:03:30.323Z" itemprop="dateModified">最后编辑：2022-06-20</time>
                 </div>
             </div>
         </footer>
