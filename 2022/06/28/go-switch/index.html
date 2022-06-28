@@ -24,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tskfok.github.io/2022/06/28/go-switch/go.png">
 <meta property="article:published_time" content="2022-06-28T07:06:05.000Z">
-<meta property="article:modified_time" content="2022-06-28T07:16:49.575Z">
+<meta property="article:modified_time" content="2022-06-28T07:17:57.174Z">
 <meta property="article:author" content="Y Y">
 <meta property="article:tag" content="go">
 <meta name="twitter:card" content="summary">
@@ -275,7 +275,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        715
+                        727
                     
                     字
                 </li>
@@ -285,12 +285,12 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1656400609575"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1656400677174"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
             <div itemprop="articleBody"><h3 id="GO语言控制结构"><a href="#GO语言控制结构" class="headerlink" title="GO语言控制结构"></a>GO语言控制结构</h3><span id="more"></span>
-<figure class="highlight plaintext"><figcaption><span>switch</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">i := 1</span><br><span class="line">switch i &#123;</span><br><span class="line">case 1:</span><br><span class="line">println(i)</span><br><span class="line">fallthrough//进入下一个case</span><br><span class="line">case 2:</span><br><span class="line">println(i)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><figcaption><span>switch</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">i := 1</span><br><span class="line">switch i &#123;</span><br><span class="line">case 1:</span><br><span class="line">    println(i)</span><br><span class="line">    fallthrough//进入下一个case</span><br><span class="line">case 2:</span><br><span class="line">    println(i)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><figcaption><span>switch动态条件使用</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">for i := 0; i &lt; 100; i++ &#123;</span><br><span class="line">    switch &#123;</span><br><span class="line">    case i%15 == 0:</span><br><span class="line">        println(&quot;a&quot;)</span><br><span class="line">    case i%3 == 0:</span><br><span class="line">        println(&quot;b&quot;)</span><br><span class="line">    case i%5 == 0:</span><br><span class="line">        println(&quot;c&quot;)</span><br><span class="line">    default:</span><br><span class="line">        println(i)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -309,7 +309,7 @@
                     <a class="tag-none-link" href="/tags/go/" rel="tag">go</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2022-06-28T07:16:49.575Z" itemprop="dateModified">最后编辑：2022-06-28</time>
+                    <time datetime="2022-06-28T07:17:57.174Z" itemprop="dateModified">最后编辑：2022-06-28</time>
                 </div>
             </div>
         </footer>
