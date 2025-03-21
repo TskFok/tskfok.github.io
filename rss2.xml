@@ -15,13 +15,13 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 21 Mar 2025 09:01:50 GMT</pubDate>
+    <pubDate>Fri, 21 Mar 2025 09:06:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>go学习记录2025-03-21</title>
-      <link>https://tskfok.github.io/2025/03/21/go-study/</link>
-      <guid>https://tskfok.github.io/2025/03/21/go-study/</guid>
+      <link>https://tskfok.github.io/2025/03/21/go-study-float/</link>
+      <guid>https://tskfok.github.io/2025/03/21/go-study-float/</guid>
       <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
       
       <description>&lt;h3 id=&quot;go学习记录&quot;&gt;&lt;a href=&quot;#go学习记录&quot; class=&quot;headerlink&quot; title=&quot;go学习记录&quot;&gt;&lt;/a&gt;go学习记录&lt;/h3&gt;</description>
@@ -31,11 +31,95 @@
       
       <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
       
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%B5%AE%E7%82%B9%E6%95%B0%E8%AE%A1%E7%AE%97/">浮点数计算</category>
       
-      <category domain="https://tskfok.github.io/tags/rune%E7%B1%BB%E5%9E%8B-%E8%BF%9B%E5%88%B6-%E6%B5%AE%E7%82%B9%E6%95%B0%E8%AE%A1%E7%AE%97-%E4%B8%8B%E5%88%92%E7%BA%BF-%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D/">rune类型,进制,浮点数计算,下划线,按位取反</category>
       
       
-      <comments>https://tskfok.github.io/2025/03/21/go-study/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/03/21/go-study-float/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>go学习记录2025-03-21</title>
+      <link>https://tskfok.github.io/2025/03/21/go-study-reverse/</link>
+      <guid>https://tskfok.github.io/2025/03/21/go-study-reverse/</guid>
+      <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;go学习记录&quot;&gt;&lt;a href=&quot;#go学习记录&quot; class=&quot;headerlink&quot; title=&quot;go学习记录&quot;&gt;&lt;/a&gt;go学习记录&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D/">按位取反</category>
+      
+      
+      
+      <comments>https://tskfok.github.io/2025/03/21/go-study-reverse/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>go学习记录2025-03-21</title>
+      <link>https://tskfok.github.io/2025/03/21/go-study-radix/</link>
+      <guid>https://tskfok.github.io/2025/03/21/go-study-radix/</guid>
+      <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;go学习记录&quot;&gt;&lt;a href=&quot;#go学习记录&quot; class=&quot;headerlink&quot; title=&quot;go学习记录&quot;&gt;&lt;/a&gt;go学习记录&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/">进制</category>
+      
+      
+      
+      <comments>https://tskfok.github.io/2025/03/21/go-study-radix/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>go学习记录2025-03-21</title>
+      <link>https://tskfok.github.io/2025/03/21/go-study-rune/</link>
+      <guid>https://tskfok.github.io/2025/03/21/go-study-rune/</guid>
+      <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;go学习记录&quot;&gt;&lt;a href=&quot;#go学习记录&quot; class=&quot;headerlink&quot; title=&quot;go学习记录&quot;&gt;&lt;/a&gt;go学习记录&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/rune%E7%B1%BB%E5%9E%8B/">rune类型</category>
+      
+      
+      
+      <comments>https://tskfok.github.io/2025/03/21/go-study-rune/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>go学习记录2025-03-21</title>
+      <link>https://tskfok.github.io/2025/03/21/go-study-underline/</link>
+      <guid>https://tskfok.github.io/2025/03/21/go-study-underline/</guid>
+      <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;go学习记录&quot;&gt;&lt;a href=&quot;#go学习记录&quot; class=&quot;headerlink&quot; title=&quot;go学习记录&quot;&gt;&lt;/a&gt;go学习记录&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E4%B8%8B%E5%88%92%E7%BA%BF/">下划线</category>
+      
+      
+      
+      <comments>https://tskfok.github.io/2025/03/21/go-study-underline/#disqus_thread</comments>
       
     </item>
     
@@ -325,94 +409,6 @@
       
       
       <comments>https://tskfok.github.io/2023/12/14/frp/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>calibre小说阅读器</title>
-      <link>https://tskfok.github.io/2023/11/06/calibre/</link>
-      <guid>https://tskfok.github.io/2023/11/06/calibre/</guid>
-      <pubDate>Mon, 06 Nov 2023 09:57:23 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;calibre小说阅读器&quot;&gt;&lt;a href=&quot;#calibre小说阅读器&quot; class=&quot;headerlink&quot; title=&quot;calibre小说阅读器&quot;&gt;&lt;/a&gt;calibre小说阅读器&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/%E5%B0%8F%E8%AF%B4%E9%98%85%E8%AF%BB%E5%99%A8/">小说阅读器</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/calibre/">calibre</category>
-      
-      
-      <comments>https://tskfok.github.io/2023/11/06/calibre/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>go-slice</title>
-      <link>https://tskfok.github.io/2023/10/10/go-slice/</link>
-      <guid>https://tskfok.github.io/2023/10/10/go-slice/</guid>
-      <pubDate>Tue, 10 Oct 2023 09:33:36 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;go-slice使用&quot;&gt;&lt;a href=&quot;#go-slice使用&quot; class=&quot;headerlink&quot; title=&quot;go slice使用&quot;&gt;&lt;/a&gt;go slice使用&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/go/">go</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/go/">go</category>
-      
-      
-      <comments>https://tskfok.github.io/2023/10/10/go-slice/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>unraid使用xunlei</title>
-      <link>https://tskfok.github.io/2023/07/28/unraid-xunlei/</link>
-      <guid>https://tskfok.github.io/2023/07/28/unraid-xunlei/</guid>
-      <pubDate>Fri, 28 Jul 2023 07:42:03 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;unraid使用xunlei&quot;&gt;&lt;a href=&quot;#unraid使用xunlei&quot; class=&quot;headerlink&quot; title=&quot;unraid使用xunlei&quot;&gt;&lt;/a&gt;unraid使用xunlei&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/nas/">nas</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/unraid/">unraid</category>
-      
-      <category domain="https://tskfok.github.io/tags/xunlei/">xunlei</category>
-      
-      
-      <comments>https://tskfok.github.io/2023/07/28/unraid-xunlei/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>unraid使用jellyfin电影海报墙</title>
-      <link>https://tskfok.github.io/2023/07/28/unraid-jellyfin/</link>
-      <guid>https://tskfok.github.io/2023/07/28/unraid-jellyfin/</guid>
-      <pubDate>Fri, 28 Jul 2023 07:33:22 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;unraid使用jellyfin电影海报墙&quot;&gt;&lt;a href=&quot;#unraid使用jellyfin电影海报墙&quot; class=&quot;headerlink&quot; title=&quot;unraid使用jellyfin电影海报墙&quot;&gt;&lt;/a&gt;unraid使用jellyfin电影海报墙&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/nas/">nas</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/unraid/">unraid</category>
-      
-      <category domain="https://tskfok.github.io/tags/jellyfin/">jellyfin</category>
-      
-      
-      <comments>https://tskfok.github.io/2023/07/28/unraid-jellyfin/#disqus_thread</comments>
       
     </item>
     
