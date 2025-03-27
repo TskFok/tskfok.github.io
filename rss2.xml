@@ -15,8 +15,29 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 24 Mar 2025 10:52:23 GMT</pubDate>
+    <pubDate>Thu, 27 Mar 2025 02:44:56 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>go学习记录</title>
+      <link>https://tskfok.github.io/2025/03/27/go-study-algorithm/</link>
+      <guid>https://tskfok.github.io/2025/03/27/go-study-algorithm/</guid>
+      <pubDate>Thu, 27 Mar 2025 08:57:49 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;算法&quot;&gt;&lt;a href=&quot;#算法&quot; class=&quot;headerlink&quot; title=&quot;算法&quot;&gt;&lt;/a&gt;算法&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      
+      <comments>https://tskfok.github.io/2025/03/27/go-study-algorithm/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>go学习记录</title>
@@ -83,6 +104,27 @@
     
     <item>
       <title>go学习记录2025-03-21</title>
+      <link>https://tskfok.github.io/2025/03/21/go-study-float/</link>
+      <guid>https://tskfok.github.io/2025/03/21/go-study-float/</guid>
+      <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;浮点数计算&quot;&gt;&lt;a href=&quot;#浮点数计算&quot; class=&quot;headerlink&quot; title=&quot;浮点数计算&quot;&gt;&lt;/a&gt;浮点数计算&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%B5%AE%E7%82%B9%E6%95%B0%E8%AE%A1%E7%AE%97/">浮点数计算</category>
+      
+      
+      
+      <comments>https://tskfok.github.io/2025/03/21/go-study-float/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>go学习记录2025-03-21</title>
       <link>https://tskfok.github.io/2025/03/21/go-study-reverse/</link>
       <guid>https://tskfok.github.io/2025/03/21/go-study-reverse/</guid>
       <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
@@ -125,27 +167,6 @@
     
     <item>
       <title>go学习记录2025-03-21</title>
-      <link>https://tskfok.github.io/2025/03/21/go-study-underline/</link>
-      <guid>https://tskfok.github.io/2025/03/21/go-study-underline/</guid>
-      <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;下划线&quot;&gt;&lt;a href=&quot;#下划线&quot; class=&quot;headerlink&quot; title=&quot;下划线&quot;&gt;&lt;/a&gt;下划线&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
-      
-      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E4%B8%8B%E5%88%92%E7%BA%BF/">下划线</category>
-      
-      
-      
-      <comments>https://tskfok.github.io/2025/03/21/go-study-underline/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>go学习记录2025-03-21</title>
       <link>https://tskfok.github.io/2025/03/21/go-study-wy/</link>
       <guid>https://tskfok.github.io/2025/03/21/go-study-wy/</guid>
       <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
@@ -167,22 +188,22 @@
     
     <item>
       <title>go学习记录2025-03-21</title>
-      <link>https://tskfok.github.io/2025/03/21/go-study-float/</link>
-      <guid>https://tskfok.github.io/2025/03/21/go-study-float/</guid>
+      <link>https://tskfok.github.io/2025/03/21/go-study-underline/</link>
+      <guid>https://tskfok.github.io/2025/03/21/go-study-underline/</guid>
       <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;浮点数计算&quot;&gt;&lt;a href=&quot;#浮点数计算&quot; class=&quot;headerlink&quot; title=&quot;浮点数计算&quot;&gt;&lt;/a&gt;浮点数计算&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;下划线&quot;&gt;&lt;a href=&quot;#下划线&quot; class=&quot;headerlink&quot; title=&quot;下划线&quot;&gt;&lt;/a&gt;下划线&lt;/h3&gt;</description>
       
       
       
       
       <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
       
-      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%B5%AE%E7%82%B9%E6%95%B0%E8%AE%A1%E7%AE%97/">浮点数计算</category>
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E4%B8%8B%E5%88%92%E7%BA%BF/">下划线</category>
       
       
       
-      <comments>https://tskfok.github.io/2025/03/21/go-study-float/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/03/21/go-study-underline/#disqus_thread</comments>
       
     </item>
     
@@ -394,27 +415,6 @@
       
       
       <comments>https://tskfok.github.io/2024/02/18/ollama/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>docker pull使用代理</title>
-      <link>https://tskfok.github.io/2024/01/25/docker-proxy/</link>
-      <guid>https://tskfok.github.io/2024/01/25/docker-proxy/</guid>
-      <pubDate>Thu, 25 Jan 2024 04:04:36 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;docker-pull使用代理&quot;&gt;&lt;a href=&quot;#docker-pull使用代理&quot; class=&quot;headerlink&quot; title=&quot;docker pull使用代理&quot;&gt;&lt;/a&gt;docker pull使用代理&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/docker/">docker</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/docker/">docker</category>
-      
-      
-      <comments>https://tskfok.github.io/2024/01/25/docker-proxy/#disqus_thread</comments>
       
     </item>
     
