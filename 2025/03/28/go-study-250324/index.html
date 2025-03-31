@@ -24,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tskfok.github.io/2025/03/28/go-study-250324/https:/img.adiosat.com/go-slice/go.png">
 <meta property="article:published_time" content="2025-03-28T07:19:42.000Z">
-<meta property="article:modified_time" content="2025-03-28T07:29:20.119Z">
+<meta property="article:modified_time" content="2025-03-31T02:58:31.310Z">
 <meta property="article:author" content="Y Y">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://tskfok.github.io/2025/03/28/go-study-250324/https:/img.adiosat.com/go-slice/go.png">
@@ -217,7 +217,7 @@
         
           
           
-            <a class="list-group-item" href="/2025/03/21/go-study-reverse/"><i class="fa  fa-book"></i> go学习记录2025-03-21</a>
+            <a class="list-group-item" href="/2025/03/21/go-study-float/"><i class="fa  fa-book"></i> go学习记录2025-03-21</a>
             
           
         
@@ -410,7 +410,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~3.13K
+                        ~3.56K
                     
                     字
                 </li>
@@ -420,11 +420,15 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1743146960119"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1743389911310"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
             <div itemprop="articleBody"><h3 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h3><span id="more"></span>
+
+<h3>循环</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">循环中直接修改value不会影响到映射的数据</span><br><span class="line">a := map[string]int&#123;&quot;1&quot;: 1, &quot;2&quot;: 2, &quot;3&quot;: 3&#125;</span><br><span class="line">for key, value := range a &#123;</span><br><span class="line">    value++</span><br><span class="line">    fmt.Println(value, a[key]) // value!=a[key]</span><br><span class="line">    a[key] = value</span><br><span class="line">    fmt.Println(value, a[key])</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">两种循环调用,方法B优于方法A,减少开销</span><br><span class="line"></span><br><span class="line">方法A:</span><br><span class="line">for _, buf := range buffers &#123;</span><br><span class="line">//循环中换创建buf的副本,如果buf过大会影响开销</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">方法B:</span><br><span class="line">for i := range buffers &#123;</span><br><span class="line">//buffers[i] 相当于直接访问切片</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3>不可寻址</h3>
 
@@ -463,7 +467,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2025-03-28T07:29:20.119Z" itemprop="dateModified">最后编辑：2025-03-28</time>
+                    <time datetime="2025-03-31T02:58:31.310Z" itemprop="dateModified">最后编辑：2025-03-31</time>
                 </div>
             </div>
         </footer>

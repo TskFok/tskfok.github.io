@@ -24,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tskfok.github.io/2025/03/21/go-study/https:/img.adiosat.com/go-slice/go.png">
 <meta property="article:published_time" content="2025-03-21T07:07:50.000Z">
-<meta property="article:modified_time" content="2025-03-26T07:48:44.558Z">
+<meta property="article:modified_time" content="2025-03-31T02:58:31.308Z">
 <meta property="article:author" content="Y Y">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://tskfok.github.io/2025/03/21/go-study/https:/img.adiosat.com/go-slice/go.png">
@@ -217,7 +217,7 @@
         
           
           
-            <a class="list-group-item" href="/2025/03/21/go-study-reverse/"><i class="fa  fa-book"></i> go学习记录2025-03-21</a>
+            <a class="list-group-item" href="/2025/03/21/go-study-float/"><i class="fa  fa-book"></i> go学习记录2025-03-21</a>
             
           
         
@@ -410,7 +410,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~2.49K
+                        ~3.29K
                     
                     字
                 </li>
@@ -420,11 +420,19 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1742975324558"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1743389911308"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
             <div itemprop="articleBody"><h3 id="实用技巧"><a href="#实用技巧" class="headerlink" title="实用技巧"></a>实用技巧</h3><span id="more"></span>
+
+<h1>切片转数组</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a := []int&#123;1, 2, 3, 4&#125;</span><br><span class="line">d := [3]int(a[1:]) //d是新的数组,与a不共享内存数据,新数组大小不能大于切片大小</span><br></pre></td></tr></table></figure>
+
+<h1>子切片</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">a:=[]int&#123;1,2,3,4,5,6&#125;</span><br><span class="line">a[l1:l2]//技巧,从0开始从前往后数,留头去尾</span><br><span class="line">cap计算 = 长度 6 - l1 = 3</span><br><span class="line">len计算 = l2 - l1</span><br><span class="line"></span><br><span class="line">//例子</span><br><span class="line">a := [...]int&#123;0, 1, 2, 3, 4, 5, 6&#125;</span><br><span class="line">s0 := a[:]           // 7,7 | 0, 1, 2, 3, 4, 5, 6</span><br><span class="line">s1 := s0[:]          // 7,7 | 0, 1, 2, 3, 4, 5, 6</span><br><span class="line">s2 := s1[1:3]        // 2,6 | 1, 2</span><br><span class="line">s3 := s1[3:]         // 4,4 | 3, 4, 5, 6</span><br><span class="line">s4 := s0[3:5]        // 2,4 | 3, 4</span><br><span class="line">s5 := s4[:2:2]       // 2,2 | 3, 4</span><br><span class="line">s6 := append(s4, 77) //3,4 | 3,4,77 同时s6容量充足,依然使用s0作为底层,append s6会影响到 s0 s0 = 0,1,2,3,4,77,6</span><br><span class="line">s7 := append(s5, 88) //3,4 | 3,4,88 cap=4是因为s5的容量达到上线,append扩容,原容量&lt;1024,容量*2,扩容之后分配新的数组,所以不会对s0产生影响</span><br><span class="line">s8 := append(s7, 66) // 4,4 | 3,4,88,66</span><br><span class="line">s3[1] = 99           // 4,4 | 3,99,77,6, s0 = 0,1,2,3,99,77,6</span><br></pre></td></tr></table></figure>
 
 <h1>goto</h1>
 
@@ -483,7 +491,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2025-03-26T07:48:44.558Z" itemprop="dateModified">最后编辑：2025-03-26</time>
+                    <time datetime="2025-03-31T02:58:31.308Z" itemprop="dateModified">最后编辑：2025-03-31</time>
                 </div>
             </div>
         </footer>
@@ -492,7 +500,7 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" go学习记录2025-03-21" href="/2025/03/21/go-study-reverse/">&lt; 上一篇</a>
+                <a title=" go学习记录2025-03-21" href="/2025/03/21/go-study-float/">&lt; 上一篇</a>
             </div>
             
             
