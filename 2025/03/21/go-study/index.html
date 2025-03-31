@@ -24,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tskfok.github.io/2025/03/21/go-study/https:/img.adiosat.com/go-slice/go.png">
 <meta property="article:published_time" content="2025-03-21T07:07:50.000Z">
-<meta property="article:modified_time" content="2025-03-31T02:58:31.308Z">
+<meta property="article:modified_time" content="2025-03-31T07:40:37.999Z">
 <meta property="article:author" content="Y Y">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://tskfok.github.io/2025/03/21/go-study/https:/img.adiosat.com/go-slice/go.png">
@@ -410,7 +410,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~3.29K
+                        ~4.51K
                     
                     字
                 </li>
@@ -420,11 +420,27 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1743389911308"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1743406837999"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
             <div itemprop="articleBody"><h3 id="实用技巧"><a href="#实用技巧" class="headerlink" title="实用技巧"></a>实用技巧</h3><span id="more"></span>
+
+<h1>删除切片中的一段</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">小切片可用</span><br><span class="line">append(s[:from], s[to:]...)</span><br><span class="line"></span><br><span class="line">大切片,避免使用append可能产生内存分配</span><br><span class="line">var s = []int&#123;1, 2, 3, 4, 5, 6&#125;</span><br><span class="line">to := 3</span><br><span class="line">from := 1</span><br><span class="line">copy(s[from:], s[to:])</span><br><span class="line">s[:len(s)-(to-from)]</span><br><span class="line"></span><br><span class="line">优化大切片</span><br><span class="line">var s = []int&#123;1, 2, 3, 4, 5, 6&#125;</span><br><span class="line">to := 3</span><br><span class="line">from := 1</span><br><span class="line"></span><br><span class="line">if n := to - from; len(s)-to &gt; n &#123;</span><br><span class="line">    //如果切片尾部的数据足够填充from到to之间的数据,就用切片尾部的数据填充</span><br><span class="line">    copy(s[from:to], s[len(s)-n:])</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    //如果切片数据不足,直接copy</span><br><span class="line">    copy(s[from:to], s[to:])</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">s = s[:len(s)-(to-from)]</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1>修改切片长度容量</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var a = make([]int, 1, 4)</span><br><span class="line"></span><br><span class="line">elem := reflect.ValueOf(&amp;a).Elem()</span><br><span class="line">elem.SetLen(2) //修改长度,长度只能修改为小于等于容量的值</span><br><span class="line">elem.SetCap(2) //修改容量,容量只能修改为小于等于原始容量的值</span><br></pre></td></tr></table></figure>
+
+<h1>clear函数</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">清空map,或者把切片中的字段转成0,不能对数组使用</span><br></pre></td></tr></table></figure>
+
+<h1>查看内存消耗</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var memStats runtime.MemStats</span><br><span class="line">runtime.ReadMemStats(&amp;memStats)</span><br><span class="line">fmt.Printf(&quot;Alloc = %v MiB\n&quot;, memStats.Alloc/1024/1024)</span><br><span class="line">fmt.Printf(&quot;TotalAlloc = %v MiB\n&quot;, memStats.TotalAlloc/1024/1024)</span><br><span class="line">fmt.Printf(&quot;Sys = %v MiB\n&quot;, memStats.Sys/1024/1024)</span><br><span class="line">fmt.Printf(&quot;NumGC = %v\n&quot;, memStats.NumGC)</span><br><span class="line">	</span><br><span class="line">或者</span><br><span class="line">var stat syscall.Rusage</span><br><span class="line">syscall.Getrusage(syscall.RUSAGE_SELF, &amp;stat)</span><br><span class="line">fmt.Printf(&quot;Max RSS (KB): %v\n&quot;, stat.Maxrss)</span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line">GODEBUG=gctrace=1 go run main.go</span><br><span class="line">GODEBUG=gctrace=1 ./main</span><br></pre></td></tr></table></figure>
 
 <h1>切片转数组</h1>
 
@@ -491,7 +507,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2025-03-31T02:58:31.308Z" itemprop="dateModified">最后编辑：2025-03-31</time>
+                    <time datetime="2025-03-31T07:40:37.999Z" itemprop="dateModified">最后编辑：2025-03-31</time>
                 </div>
             </div>
         </footer>
