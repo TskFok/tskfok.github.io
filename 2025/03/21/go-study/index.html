@@ -24,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tskfok.github.io/2025/03/21/go-study/https:/img.adiosat.com/go-slice/go.png">
 <meta property="article:published_time" content="2025-03-21T07:07:50.000Z">
-<meta property="article:modified_time" content="2025-03-31T07:43:24.428Z">
+<meta property="article:modified_time" content="2025-03-31T11:01:49.737Z">
 <meta property="article:author" content="Y Y">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://tskfok.github.io/2025/03/21/go-study/https:/img.adiosat.com/go-slice/go.png">
@@ -410,7 +410,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~4.52K
+                        ~5.30K
                     
                     字
                 </li>
@@ -420,15 +420,27 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1743407004428"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1743418909737"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
             <div itemprop="articleBody"><h3 id="实用技巧"><a href="#实用技巧" class="headerlink" title="实用技巧"></a>实用技巧</h3><span id="more"></span>
 
+<h1>拼接字符串</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a := &quot;aslfnl林肯afn&quot;</span><br><span class="line">b := &quot;aaaa&quot;</span><br><span class="line"></span><br><span class="line">string(append([]byte(a), b...)) //语法糖,允许将字符串作为byte切片使用</span><br></pre></td></tr></table></figure>
+
+<h1>byte,rune转换</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[]byte(string(c)) rune-&gt;byte</span><br><span class="line">[]rune(string(c)) byte-&gt;rune</span><br></pre></td></tr></table></figure>
+
+<h1>获取首个中文字符索引</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">s := &quot;AL兰SKFfAF阿是富兰克林快疯了&quot;</span><br><span class="line">// 一个中文占3个字节,使用字符索引,不能使用下标,需要先转成rune切片</span><br><span class="line">b := []rune(s)</span><br><span class="line"></span><br><span class="line">for i, v := range b &#123;</span><br><span class="line">    // 判断是否为中文</span><br><span class="line">    if unicode.Is(unicode.Han, v) &#123;</span><br><span class="line">        fmt.Println(i, string(v))</span><br><span class="line">        break</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 如果要使用字节索引,获取的字节是字符开始的下标,直接使用会是乱码</span><br><span class="line">for i, v := range s &#123;</span><br><span class="line">    // 判断是否为中文</span><br><span class="line">    if unicode.Is(unicode.Han, v) &#123;</span><br><span class="line">        fmt.Println(i, string(v))</span><br><span class="line">        break</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//使用s[2:5]显示完整的中文</span><br></pre></td></tr></table></figure>
+
 <h1>删除切片中的一段</h1>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">小切片可用</span><br><span class="line">append(s[:from], s[to:]...)</span><br><span class="line"></span><br><span class="line">大切片,避免使用append可能产生内存分配</span><br><span class="line">var s = []int&#123;1, 2, 3, 4, 5, 6&#125;</span><br><span class="line">to := 3</span><br><span class="line">from := 1</span><br><span class="line">copy(s[from:], s[to:])</span><br><span class="line">s[:len(s)-(to-from)]</span><br><span class="line"></span><br><span class="line">优化大切片</span><br><span class="line">var s = []int&#123;1, 2, 3, 4, 5, 6&#125;</span><br><span class="line">to := 3</span><br><span class="line">from := 1</span><br><span class="line"></span><br><span class="line">if n := to - from; len(s)-to &gt; n &#123;</span><br><span class="line">    //如果切片尾部的数据足够填充from到to之间的数据,就把切片尾部的数据移动到填充的地方</span><br><span class="line">    copy(s[from:to], s[len(s)-n:])</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    //如果切片数据不足,直接copy</span><br><span class="line">    copy(s[from:to], s[to:])</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">s = s[:len(s)-(to-from)]</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">小切片可用</span><br><span class="line">append(s[:from], s[to:]...)</span><br><span class="line"></span><br><span class="line">大切片,避免使用append可能产生内存分配</span><br><span class="line">var s = []int&#123;1, 2, 3, 4, 5, 6&#125;</span><br><span class="line">to := 3</span><br><span class="line">from := 1</span><br><span class="line">copy(s[from:], s[to:])</span><br><span class="line">s[:len(s)-(to-from)]</span><br><span class="line"></span><br><span class="line">优化大切片</span><br><span class="line">var s = []int&#123;1, 2, 3, 4, 5, 6&#125;</span><br><span class="line">to := 3</span><br><span class="line">from := 1</span><br><span class="line"></span><br><span class="line">if n := to - from; len(s)-to &gt; n &#123;</span><br><span class="line">    //如果切片尾部的数据足够填充from到to之间的数据,就把切片尾部的数据移动到填充的地方</span><br><span class="line">    copy(s[from:to], s[len(s)-n:])</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    //如果切片数据不足,直接copy</span><br><span class="line">    copy(s[from:to], s[to:])</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 清理尾部已删除的槽位，避免内存泄露</span><br><span class="line">for i := len(s) - (to-from); i &lt; len(s); i++ &#123;</span><br><span class="line">    s[i] = 0 // 零值赋值，释放原来的引用</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">s = s[:len(s)-(to-from)]</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h1>修改切片长度容量</h1>
 
@@ -507,7 +519,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2025-03-31T07:43:24.428Z" itemprop="dateModified">最后编辑：2025-03-31</time>
+                    <time datetime="2025-03-31T11:01:49.737Z" itemprop="dateModified">最后编辑：2025-03-31</time>
                 </div>
             </div>
         </footer>
