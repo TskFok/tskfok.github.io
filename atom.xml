@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-03-31T10:24:25.141Z</updated>
+  <updated>2025-04-02T07:59:44.384Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -18,10 +18,29 @@
   
   <entry>
     <title>go学习记录</title>
+    <link href="https://tskfok.github.io/2025/04/02/go-study/"/>
+    <id>https://tskfok.github.io/2025/04/02/go-study/</id>
+    <published>2025-04-02T07:07:50.000Z</published>
+    <updated>2025-04-02T07:59:44.384Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;实用技巧&quot;&gt;&lt;a href=&quot;#实用技巧&quot; class=&quot;headerlink&quot; title=&quot;实用技巧&quot;&gt;&lt;/a&gt;实用技巧&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="实用技巧" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>go学习记录</title>
     <link href="https://tskfok.github.io/2025/03/28/go-study-250324/"/>
     <id>https://tskfok.github.io/2025/03/28/go-study-250324/</id>
     <published>2025-03-28T07:19:42.000Z</published>
-    <updated>2025-03-31T10:24:25.141Z</updated>
+    <updated>2025-04-01T06:30:23.710Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;疑问&quot;&gt;&lt;a href=&quot;#疑问&quot; class=&quot;headerlink&quot; title=&quot;疑问&quot;&gt;&lt;/a&gt;疑问&lt;/h3&gt;</summary>
@@ -50,25 +69,6 @@
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     <category term="算法" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%AE%97%E6%B3%95/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>go学习记录</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study/</id>
-    <published>2025-03-21T07:07:50.000Z</published>
-    <updated>2025-03-31T11:01:49.737Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;实用技巧&quot;&gt;&lt;a href=&quot;#实用技巧&quot; class=&quot;headerlink&quot; title=&quot;实用技巧&quot;&gt;&lt;/a&gt;实用技巧&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="实用技巧" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
     
     
   </entry>
@@ -132,19 +132,19 @@
   
   <entry>
     <title>go学习记录2025-03-21</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study-rune/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study-rune/</id>
+    <link href="https://tskfok.github.io/2025/03/21/go-study-wy/"/>
+    <id>https://tskfok.github.io/2025/03/21/go-study-wy/</id>
     <published>2025-03-21T06:07:50.000Z</published>
-    <updated>2025-03-21T09:20:14.187Z</updated>
+    <updated>2025-03-25T02:56:01.405Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;rune类型&quot;&gt;&lt;a href=&quot;#rune类型&quot; class=&quot;headerlink&quot; title=&quot;rune类型&quot;&gt;&lt;/a&gt;rune类型&lt;/h3&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;移位&quot;&gt;&lt;a href=&quot;#移位&quot; class=&quot;headerlink&quot; title=&quot;移位&quot;&gt;&lt;/a&gt;移位&lt;/h3&gt;</summary>
     
     
     
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="rune类型" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/rune%E7%B1%BB%E5%9E%8B/"/>
+    <category term="移位(1&lt;&lt;64)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%A7%BB%E4%BD%8D-1-64/"/>
     
     
   </entry>
@@ -170,19 +170,19 @@
   
   <entry>
     <title>go学习记录2025-03-21</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study-wy/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study-wy/</id>
+    <link href="https://tskfok.github.io/2025/03/21/go-study-rune/"/>
+    <id>https://tskfok.github.io/2025/03/21/go-study-rune/</id>
     <published>2025-03-21T06:07:50.000Z</published>
-    <updated>2025-03-25T02:56:01.405Z</updated>
+    <updated>2025-03-21T09:20:14.187Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;移位&quot;&gt;&lt;a href=&quot;#移位&quot; class=&quot;headerlink&quot; title=&quot;移位&quot;&gt;&lt;/a&gt;移位&lt;/h3&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;rune类型&quot;&gt;&lt;a href=&quot;#rune类型&quot; class=&quot;headerlink&quot; title=&quot;rune类型&quot;&gt;&lt;/a&gt;rune类型&lt;/h3&gt;</summary>
     
     
     
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="移位(1&lt;&lt;64)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%A7%BB%E4%BD%8D-1-64/"/>
+    <category term="rune类型" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/rune%E7%B1%BB%E5%9E%8B/"/>
     
     
   </entry>

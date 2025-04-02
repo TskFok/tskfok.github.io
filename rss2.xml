@@ -15,8 +15,29 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 31 Mar 2025 10:24:25 GMT</pubDate>
+    <pubDate>Wed, 02 Apr 2025 07:59:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>go学习记录</title>
+      <link>https://tskfok.github.io/2025/04/02/go-study/</link>
+      <guid>https://tskfok.github.io/2025/04/02/go-study/</guid>
+      <pubDate>Wed, 02 Apr 2025 07:07:50 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;实用技巧&quot;&gt;&lt;a href=&quot;#实用技巧&quot; class=&quot;headerlink&quot; title=&quot;实用技巧&quot;&gt;&lt;/a&gt;实用技巧&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/">实用技巧</category>
+      
+      
+      
+      <comments>https://tskfok.github.io/2025/04/02/go-study/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>go学习记录</title>
@@ -57,27 +78,6 @@
       
       
       <comments>https://tskfok.github.io/2025/03/27/go-study-algorithm/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>go学习记录</title>
-      <link>https://tskfok.github.io/2025/03/21/go-study/</link>
-      <guid>https://tskfok.github.io/2025/03/21/go-study/</guid>
-      <pubDate>Fri, 21 Mar 2025 07:07:50 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;实用技巧&quot;&gt;&lt;a href=&quot;#实用技巧&quot; class=&quot;headerlink&quot; title=&quot;实用技巧&quot;&gt;&lt;/a&gt;实用技巧&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
-      
-      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/">实用技巧</category>
-      
-      
-      
-      <comments>https://tskfok.github.io/2025/03/21/go-study/#disqus_thread</comments>
       
     </item>
     
@@ -146,22 +146,22 @@
     
     <item>
       <title>go学习记录2025-03-21</title>
-      <link>https://tskfok.github.io/2025/03/21/go-study-rune/</link>
-      <guid>https://tskfok.github.io/2025/03/21/go-study-rune/</guid>
+      <link>https://tskfok.github.io/2025/03/21/go-study-wy/</link>
+      <guid>https://tskfok.github.io/2025/03/21/go-study-wy/</guid>
       <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;rune类型&quot;&gt;&lt;a href=&quot;#rune类型&quot; class=&quot;headerlink&quot; title=&quot;rune类型&quot;&gt;&lt;/a&gt;rune类型&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;移位&quot;&gt;&lt;a href=&quot;#移位&quot; class=&quot;headerlink&quot; title=&quot;移位&quot;&gt;&lt;/a&gt;移位&lt;/h3&gt;</description>
       
       
       
       
       <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
       
-      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/rune%E7%B1%BB%E5%9E%8B/">rune类型</category>
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%A7%BB%E4%BD%8D-1-64/">移位(1&lt;&lt;64)</category>
       
       
       
-      <comments>https://tskfok.github.io/2025/03/21/go-study-rune/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/03/21/go-study-wy/#disqus_thread</comments>
       
     </item>
     
@@ -188,22 +188,22 @@
     
     <item>
       <title>go学习记录2025-03-21</title>
-      <link>https://tskfok.github.io/2025/03/21/go-study-wy/</link>
-      <guid>https://tskfok.github.io/2025/03/21/go-study-wy/</guid>
+      <link>https://tskfok.github.io/2025/03/21/go-study-rune/</link>
+      <guid>https://tskfok.github.io/2025/03/21/go-study-rune/</guid>
       <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;移位&quot;&gt;&lt;a href=&quot;#移位&quot; class=&quot;headerlink&quot; title=&quot;移位&quot;&gt;&lt;/a&gt;移位&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;rune类型&quot;&gt;&lt;a href=&quot;#rune类型&quot; class=&quot;headerlink&quot; title=&quot;rune类型&quot;&gt;&lt;/a&gt;rune类型&lt;/h3&gt;</description>
       
       
       
       
       <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
       
-      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%A7%BB%E4%BD%8D-1-64/">移位(1&lt;&lt;64)</category>
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/rune%E7%B1%BB%E5%9E%8B/">rune类型</category>
       
       
       
-      <comments>https://tskfok.github.io/2025/03/21/go-study-wy/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/03/21/go-study-rune/#disqus_thread</comments>
       
     </item>
     
