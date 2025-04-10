@@ -24,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tskfok.github.io/2025/04/02/go-study/https:/img.adiosat.com/go-slice/go.png">
 <meta property="article:published_time" content="2025-04-02T07:07:50.000Z">
-<meta property="article:modified_time" content="2025-04-02T07:59:44.384Z">
+<meta property="article:modified_time" content="2025-04-10T06:47:24.092Z">
 <meta property="article:author" content="Y Y">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://tskfok.github.io/2025/04/02/go-study/https:/img.adiosat.com/go-slice/go.png">
@@ -199,13 +199,13 @@
         
           
           
-            <a class="list-group-item" href="/2025/04/02/go-study/"><i class="fa  fa-book"></i> go学习记录</a>
+            <a class="list-group-item" href="/2025/04/09/go-study-250324/"><i class="fa  fa-book"></i> go学习记录</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2025/03/28/go-study-250324/"><i class="fa  fa-book"></i> go学习记录</a>
+            <a class="list-group-item" href="/2025/04/02/go-study/"><i class="fa  fa-book"></i> go学习记录</a>
             
           
         
@@ -223,7 +223,7 @@
         
           
           
-            <a class="list-group-item" href="/2025/03/21/go-study-radix/"><i class="fa  fa-book"></i> go学习记录2025-03-21</a>
+            <a class="list-group-item" href="/2025/03/21/go-study-reverse/"><i class="fa  fa-book"></i> go学习记录2025-03-21</a>
             
           
         
@@ -410,7 +410,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~6.38K
+                        ~7.98K
                     
                     字
                 </li>
@@ -420,11 +420,23 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1743580784384"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1744267644092"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
             <div itemprop="articleBody"><h3 id="实用技巧"><a href="#实用技巧" class="headerlink" title="实用技巧"></a>实用技巧</h3><span id="more"></span>
+
+<h1>容量为1的通道可以当作互斥锁</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">mutex := make(chan struct&#123;&#125;, 1) // 作为互斥锁,容量必须为1,当通道里有一个值就阻塞,如果大于1,可能会因为并发产生结果小于预期值</span><br><span class="line">done := make(chan struct&#123;&#125;)</span><br><span class="line">counter := 0</span><br><span class="line"></span><br><span class="line">num := 1000</span><br><span class="line"></span><br><span class="line">for range num &#123;</span><br><span class="line">    go func() &#123;</span><br><span class="line">        for range 100 &#123;</span><br><span class="line">            mutex &lt;- struct&#123;&#125;&#123;&#125; // 加锁</span><br><span class="line">            counter++</span><br><span class="line">            &lt;-mutex // 解锁</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        done &lt;- struct&#123;&#125;&#123;&#125;</span><br><span class="line">    &#125;()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">for range num &#123;</span><br><span class="line">    &lt;-done</span><br><span class="line">&#125;</span><br><span class="line">fmt.Println(counter) // 100000</span><br></pre></td></tr></table></figure>
+
+<h1>查看时间差</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">startTime := time.Now()</span><br><span class="line">fmt.Println(time.Since(startTime))</span><br></pre></td></tr></table></figure>
+
+<h1>switch case</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">s := []interface&#123;&#125;&#123;&quot;a&quot;, 1, 2, []interface&#123;&#125;&#123;&#125;, []int&#123;1, 2, 3&#125;, nil, map[string]int&#123;&#125;, [...]string&#123;&quot;1&quot;, &quot;a&quot;, &quot;cc&quot;&#125;&#125;</span><br><span class="line"></span><br><span class="line">for _, v := range s &#123;</span><br><span class="line">    switch d := v.(type) &#123;</span><br><span class="line">    case int, int32:</span><br><span class="line">        fmt.Println(&quot;int&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    case string:</span><br><span class="line">        fmt.Println(&quot;string&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    case []int:</span><br><span class="line">        fmt.Println(&quot;[]int&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    case []interface&#123;&#125;:</span><br><span class="line">        fmt.Println(&quot;[]intreface&#123;&#125;&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    case []string:</span><br><span class="line">        fmt.Println(&quot;[]string&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    case map[string]int:</span><br><span class="line">        fmt.Println(&quot;map&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    case nil:</span><br><span class="line">        fmt.Println(&quot;nil&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    default:</span><br><span class="line">        fmt.Println(&quot;default&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h1>方法隐式声明</h1>
 
@@ -535,7 +547,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2025-04-02T07:59:44.384Z" itemprop="dateModified">最后编辑：2025-04-02</time>
+                    <time datetime="2025-04-10T06:47:24.092Z" itemprop="dateModified">最后编辑：2025-04-10</time>
                 </div>
             </div>
         </footer>
@@ -544,9 +556,13 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" go学习记录" href="/2025/03/28/go-study-250324/">&lt; 上一篇</a>
+                <a title=" go学习记录" href="/2025/03/27/go-study-algorithm/">&lt; 上一篇</a>
             </div>
             
+            
+            <div class="nav-next clearfix">
+                <a title=" go学习记录" href="/2025/04/09/go-study-250324/">下一篇 &gt;</a>
+            </div>
             
         </nav>
     
