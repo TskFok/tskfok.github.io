@@ -24,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tskfok.github.io/2025/04/09/go-study-250324/https:/img.adiosat.com/go-slice/go.png">
 <meta property="article:published_time" content="2025-04-09T07:19:42.000Z">
-<meta property="article:modified_time" content="2025-04-09T09:56:21.375Z">
+<meta property="article:modified_time" content="2025-04-11T06:45:15.993Z">
 <meta property="article:author" content="Y Y">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://tskfok.github.io/2025/04/09/go-study-250324/https:/img.adiosat.com/go-slice/go.png">
@@ -410,7 +410,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~10.31K
+                        ~12.11K
                     
                     字
                 </li>
@@ -420,11 +420,19 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1744192581375"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1744353915993"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
             <div itemprop="articleBody"><h3 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h3><span id="more"></span>
+
+<h1>sync.Cond协程之间的通知</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">cond := sync.NewCond(&amp;sync.Mutex&#123;&#125;)</span><br><span class="line">queue := []int&#123;&#125;</span><br><span class="line"></span><br><span class="line">go func() &#123;</span><br><span class="line">    for &#123;</span><br><span class="line">        cond.L.Lock() // 加锁</span><br><span class="line">        for len(queue) == 0 &#123; // 直到queue的长度为0时,等待,不适用if是为了防止叫醒之后queue是被清空的状态,引起panic</span><br><span class="line">            cond.Wait() // 暂停等待唤醒</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        fmt.Println(queue[0])</span><br><span class="line">        queue = queue[1:]</span><br><span class="line"></span><br><span class="line">        cond.Signal() // 唤醒其他协程</span><br><span class="line">        cond.L.Unlock() // 解锁</span><br><span class="line">    &#125;</span><br><span class="line">&#125;()</span><br><span class="line"></span><br><span class="line">for i := 0; ; i++ &#123;</span><br><span class="line">    cond.L.Lock()</span><br><span class="line">    queue = append(queue, i)</span><br><span class="line"></span><br><span class="line">    for len(queue) == 2 &#123; // queue长度到达2就会进入等待,等待协程消化完成后queue&lt;2,进入下一个循环</span><br><span class="line">        cond.Wait()</span><br><span class="line">    &#125;</span><br><span class="line">    cond.Signal()</span><br><span class="line">    cond.L.Unlock()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1>读写锁的顺序</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">读锁可以在其他读锁获取的时候同时获取,存在其他读锁则会阻塞</span><br><span class="line">写锁不能在存在读锁或者写锁的时候获取,会阻塞</span><br><span class="line">读锁可已在写锁阻塞的时候,优先获取读锁,哪怕已经有一个写锁阻塞,写锁会继续阻塞</span><br><span class="line">读锁可已在读锁阻塞的时候,如果已经有写锁阻塞,写锁获取锁</span><br><span class="line"></span><br><span class="line">var m sync.RWMutex // 这段代码的结果可能为 a b d e c或者a b e d c,其中c因为阻塞被d和e优先获取了写锁</span><br><span class="line">go func() &#123;</span><br><span class="line">    m.RLock()</span><br><span class="line">    fmt.Println(&quot;a&quot;, time.Now())</span><br><span class="line">    time.Sleep(time.Second)</span><br><span class="line">    m.RUnlock()</span><br><span class="line">&#125;() // 0 秒获取锁a 睡1秒 1秒的时候释放锁</span><br><span class="line">go func() &#123;</span><br><span class="line">    time.Sleep(time.Second * 1 / 4)</span><br><span class="line">    m.Lock()</span><br><span class="line">    fmt.Println(&quot;b&quot;, time.Now())</span><br><span class="line">    time.Sleep(time.Second)</span><br><span class="line">    m.Unlock()</span><br><span class="line">&#125;() // 0.25 秒想要获锁b 阻塞 1 秒获取到锁b, 2秒释放锁</span><br><span class="line">go func() &#123;</span><br><span class="line">    time.Sleep(time.Second * 2 / 4)</span><br><span class="line">    m.Lock()</span><br><span class="line">    fmt.Println(&quot;c&quot;, time.Now())</span><br><span class="line">    m.Unlock()</span><br><span class="line">&#125;() // 0.5秒 想要获取锁c 阻塞,在读锁解锁完成后才获取到写锁</span><br><span class="line">go func() &#123;</span><br><span class="line">    time.Sleep(time.Second * 3 / 4)</span><br><span class="line">    m.RLock()</span><br><span class="line">    fmt.Println(&quot;d&quot;, time.Now())</span><br><span class="line">    m.RUnlock()</span><br><span class="line">&#125;() // 0.75秒想要获得读锁d 读锁优先级比写锁高,2秒的时候获取到读锁</span><br><span class="line">go func() &#123;</span><br><span class="line">    time.Sleep(time.Second)</span><br><span class="line">    m.RLock()</span><br><span class="line">    fmt.Println(&quot;e&quot;, time.Now())</span><br><span class="line">    m.RUnlock()</span><br><span class="line">&#125;() // 1秒想要获得读锁d 读锁优先级比写锁高,2秒的时候获取到读锁</span><br><span class="line">time.Sleep(time.Second * 3)</span><br></pre></td></tr></table></figure>
 
 <h1>恐慌恢复</h1>
 
@@ -507,7 +515,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2025-04-09T09:56:21.375Z" itemprop="dateModified">最后编辑：2025-04-09</time>
+                    <time datetime="2025-04-11T06:45:15.993Z" itemprop="dateModified">最后编辑：2025-04-11</time>
                 </div>
             </div>
         </footer>
