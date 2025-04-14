@@ -15,8 +15,29 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 11 Apr 2025 06:45:15 GMT</pubDate>
+    <pubDate>Mon, 14 Apr 2025 08:08:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>doctrine如何关闭entity后重新创建</title>
+      <link>https://tskfok.github.io/2025/04/14/new-entity/</link>
+      <guid>https://tskfok.github.io/2025/04/14/new-entity/</guid>
+      <pubDate>Mon, 14 Apr 2025 08:04:15 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;doctrine如何关闭entity后重新创建&quot;&gt;&lt;a href=&quot;#doctrine如何关闭entity后重新创建&quot; class=&quot;headerlink&quot; title=&quot;doctrine如何关闭entity后重新创建&quot;&gt;&lt;/a&gt;doctrine如何关闭entity后重新创建&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/doctrine/">doctrine</category>
+      
+      
+      
+      <comments>https://tskfok.github.io/2025/04/14/new-entity/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>go学习记录</title>
@@ -125,27 +146,6 @@
     
     <item>
       <title>go学习记录2025-03-21</title>
-      <link>https://tskfok.github.io/2025/03/21/go-study-radix/</link>
-      <guid>https://tskfok.github.io/2025/03/21/go-study-radix/</guid>
-      <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;进制&quot;&gt;&lt;a href=&quot;#进制&quot; class=&quot;headerlink&quot; title=&quot;进制&quot;&gt;&lt;/a&gt;进制&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
-      
-      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/">进制</category>
-      
-      
-      
-      <comments>https://tskfok.github.io/2025/03/21/go-study-radix/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>go学习记录2025-03-21</title>
       <link>https://tskfok.github.io/2025/03/21/go-study-rune/</link>
       <guid>https://tskfok.github.io/2025/03/21/go-study-rune/</guid>
       <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
@@ -183,6 +183,27 @@
       
       
       <comments>https://tskfok.github.io/2025/03/21/go-study-underline/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>go学习记录2025-03-21</title>
+      <link>https://tskfok.github.io/2025/03/21/go-study-radix/</link>
+      <guid>https://tskfok.github.io/2025/03/21/go-study-radix/</guid>
+      <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;进制&quot;&gt;&lt;a href=&quot;#进制&quot; class=&quot;headerlink&quot; title=&quot;进制&quot;&gt;&lt;/a&gt;进制&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/">进制</category>
+      
+      
+      
+      <comments>https://tskfok.github.io/2025/03/21/go-study-radix/#disqus_thread</comments>
       
     </item>
     
@@ -396,25 +417,6 @@
       
       
       <comments>https://tskfok.github.io/2024/02/20/rss-worker/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>ollama本机大语言模型</title>
-      <link>https://tskfok.github.io/2024/02/18/ollama/</link>
-      <guid>https://tskfok.github.io/2024/02/18/ollama/</guid>
-      <pubDate>Sun, 18 Feb 2024 03:56:42 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;ollama本机大语言模型&quot;&gt;&lt;a href=&quot;#ollama本机大语言模型&quot; class=&quot;headerlink&quot; title=&quot;ollama本机大语言模型&quot;&gt;&lt;/a&gt;ollama本机大语言模型&lt;/h3&gt;</description>
-      
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/tags/ollama/">ollama</category>
-      
-      
-      <comments>https://tskfok.github.io/2024/02/18/ollama/#disqus_thread</comments>
       
     </item>
     
