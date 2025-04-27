@@ -24,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tskfok.github.io/2025/04/09/go-study-250324/https:/img.adiosat.com/go-slice/go.png">
 <meta property="article:published_time" content="2025-04-09T07:19:42.000Z">
-<meta property="article:modified_time" content="2025-04-14T08:08:06.453Z">
+<meta property="article:modified_time" content="2025-04-14T09:37:02.248Z">
 <meta property="article:author" content="Y Y">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://tskfok.github.io/2025/04/09/go-study-250324/https:/img.adiosat.com/go-slice/go.png">
@@ -412,7 +412,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~13.44K
+                        ~13.80K
                     
                     字
                 </li>
@@ -422,11 +422,15 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1744618086453"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1744623422248"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
             <div itemprop="articleBody"><h3 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h3><span id="more"></span>
+
+<h1>sync.Mutex避免复制</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">避免结构体中存在sync.Mutex,使用值方法</span><br><span class="line"></span><br><span class="line">type Counter struct &#123;</span><br><span class="line">	sync.Mutex</span><br><span class="line">	n int64</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 此方法实现是没问题的。</span><br><span class="line">func (c *Counter) Increase(d int64) (r int64) &#123;</span><br><span class="line">	c.Lock()</span><br><span class="line">	c.n += d</span><br><span class="line">	r = c.n</span><br><span class="line">	c.Unlock()</span><br><span class="line">	return</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// Counter值将被复制,不会起到保护的作用,没有意义</span><br><span class="line">func (c Counter) Value() (r int64) &#123;</span><br><span class="line">	c.Lock()</span><br><span class="line">	r = c.n</span><br><span class="line">	c.Unlock()</span><br><span class="line">	return c.n</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h1>数据竞争</h1>
 
@@ -525,7 +529,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2025-04-14T08:08:06.453Z" itemprop="dateModified">最后编辑：2025-04-14</time>
+                    <time datetime="2025-04-14T09:37:02.248Z" itemprop="dateModified">最后编辑：2025-04-14</time>
                 </div>
             </div>
         </footer>

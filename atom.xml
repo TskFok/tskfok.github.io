@@ -40,7 +40,7 @@
     <link href="https://tskfok.github.io/2025/04/09/go-study-250324/"/>
     <id>https://tskfok.github.io/2025/04/09/go-study-250324/</id>
     <published>2025-04-09T07:19:42.000Z</published>
-    <updated>2025-04-14T08:08:06.453Z</updated>
+    <updated>2025-04-14T09:37:02.248Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;疑问&quot;&gt;&lt;a href=&quot;#疑问&quot; class=&quot;headerlink&quot; title=&quot;疑问&quot;&gt;&lt;/a&gt;疑问&lt;/h3&gt;</summary>
@@ -59,7 +59,7 @@
     <link href="https://tskfok.github.io/2025/04/02/go-study/"/>
     <id>https://tskfok.github.io/2025/04/02/go-study/</id>
     <published>2025-04-02T07:07:50.000Z</published>
-    <updated>2025-04-10T09:11:51.945Z</updated>
+    <updated>2025-04-14T10:55:22.234Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;实用技巧&quot;&gt;&lt;a href=&quot;#实用技巧&quot; class=&quot;headerlink&quot; title=&quot;实用技巧&quot;&gt;&lt;/a&gt;实用技巧&lt;/h3&gt;</summary>
@@ -113,19 +113,19 @@
   
   <entry>
     <title>go学习记录2025-03-21</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study-reverse/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study-reverse/</id>
+    <link href="https://tskfok.github.io/2025/03/21/go-study-radix/"/>
+    <id>https://tskfok.github.io/2025/03/21/go-study-radix/</id>
     <published>2025-03-21T06:07:50.000Z</published>
-    <updated>2025-03-25T03:46:36.865Z</updated>
+    <updated>2025-03-21T09:20:14.189Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;按位取反&quot;&gt;&lt;a href=&quot;#按位取反&quot; class=&quot;headerlink&quot; title=&quot;按位取反&quot;&gt;&lt;/a&gt;按位取反&lt;/h3&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;进制&quot;&gt;&lt;a href=&quot;#进制&quot; class=&quot;headerlink&quot; title=&quot;进制&quot;&gt;&lt;/a&gt;进制&lt;/h3&gt;</summary>
     
     
     
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="按位取反(^0)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D-0/"/>
+    <category term="进制" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/"/>
     
     
   </entry>
@@ -170,25 +170,6 @@
   
   <entry>
     <title>go学习记录2025-03-21</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study-radix/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study-radix/</id>
-    <published>2025-03-21T06:07:50.000Z</published>
-    <updated>2025-03-21T09:20:14.189Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;进制&quot;&gt;&lt;a href=&quot;#进制&quot; class=&quot;headerlink&quot; title=&quot;进制&quot;&gt;&lt;/a&gt;进制&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="进制" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>go学习记录2025-03-21</title>
     <link href="https://tskfok.github.io/2025/03/21/go-study-wy/"/>
     <id>https://tskfok.github.io/2025/03/21/go-study-wy/</id>
     <published>2025-03-21T06:07:50.000Z</published>
@@ -202,6 +183,25 @@
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     <category term="移位(1&lt;&lt;64)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%A7%BB%E4%BD%8D-1-64/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>go学习记录2025-03-21</title>
+    <link href="https://tskfok.github.io/2025/03/21/go-study-reverse/"/>
+    <id>https://tskfok.github.io/2025/03/21/go-study-reverse/</id>
+    <published>2025-03-21T06:07:50.000Z</published>
+    <updated>2025-03-25T03:46:36.865Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;按位取反&quot;&gt;&lt;a href=&quot;#按位取反&quot; class=&quot;headerlink&quot; title=&quot;按位取反&quot;&gt;&lt;/a&gt;按位取反&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="按位取反(^0)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D-0/"/>
     
     
   </entry>
