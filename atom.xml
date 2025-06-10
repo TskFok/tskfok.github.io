@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-04-14T08:08:06.457Z</updated>
+  <updated>2025-06-10T03:13:06.909Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>openvpn+frp访问内网</title>
+    <link href="https://tskfok.github.io/2025/06/10/openvpn/"/>
+    <id>https://tskfok.github.io/2025/06/10/openvpn/</id>
+    <published>2025-06-10T02:43:37.000Z</published>
+    <updated>2025-06-10T03:13:06.909Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;原理&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    <category term="openvpn" scheme="https://tskfok.github.io/categories/openvpn/"/>
+    
+    <category term="frp" scheme="https://tskfok.github.io/categories/openvpn/frp/"/>
+    
+    
+    <category term="openvpn" scheme="https://tskfok.github.io/tags/openvpn/"/>
+    
+  </entry>
   
   <entry>
     <title>doctrine如何关闭entity后重新创建</title>
@@ -358,23 +387,6 @@
     
     
     <category term="cloudflare" scheme="https://tskfok.github.io/tags/cloudflare/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用RSSWorker生成rss订阅连接</title>
-    <link href="https://tskfok.github.io/2024/02/20/rss-worker/"/>
-    <id>https://tskfok.github.io/2024/02/20/rss-worker/</id>
-    <published>2024-02-20T07:05:40.000Z</published>
-    <updated>2024-02-20T07:22:27.104Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;使用RSSWorker生成rss订阅连接&quot;&gt;&lt;a href=&quot;#使用RSSWorker生成rss订阅连接&quot; class=&quot;headerlink&quot; title=&quot;使用RSSWorker生成rss订阅连接&quot;&gt;&lt;/a&gt;使用RSSWorker生成rss订阅连接&lt;/h3&gt;</summary>
-    
-    
-    
-    
-    <category term="rss" scheme="https://tskfok.github.io/tags/rss/"/>
     
   </entry>
   

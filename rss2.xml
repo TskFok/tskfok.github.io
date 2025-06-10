@@ -15,8 +15,39 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 14 Apr 2025 08:08:06 GMT</pubDate>
+    <pubDate>Tue, 10 Jun 2025 03:13:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>openvpn+frp访问内网</title>
+      <link>https://tskfok.github.io/2025/06/10/openvpn/</link>
+      <guid>https://tskfok.github.io/2025/06/10/openvpn/</guid>
+      <pubDate>Tue, 10 Jun 2025 02:43:37 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1&gt;原理&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/openvpn/">openvpn</category>
+      
+      <category domain="https://tskfok.github.io/categories/openvpn/frp/">frp</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/openvpn/">openvpn</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/06/10/openvpn/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>doctrine如何关闭entity后重新创建</title>
@@ -398,25 +429,6 @@
       
       
       <comments>https://tskfok.github.io/2024/03/06/cloudflare-application/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>使用RSSWorker生成rss订阅连接</title>
-      <link>https://tskfok.github.io/2024/02/20/rss-worker/</link>
-      <guid>https://tskfok.github.io/2024/02/20/rss-worker/</guid>
-      <pubDate>Tue, 20 Feb 2024 07:05:40 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;使用RSSWorker生成rss订阅连接&quot;&gt;&lt;a href=&quot;#使用RSSWorker生成rss订阅连接&quot; class=&quot;headerlink&quot; title=&quot;使用RSSWorker生成rss订阅连接&quot;&gt;&lt;/a&gt;使用RSSWorker生成rss订阅连接&lt;/h3&gt;</description>
-      
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/tags/rss/">rss</category>
-      
-      
-      <comments>https://tskfok.github.io/2024/02/20/rss-worker/#disqus_thread</comments>
       
     </item>
     
