@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-04-14T08:08:06.457Z</updated>
+  <updated>2025-06-10T03:30:33.036Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>openvpn+frp访问内网</title>
+    <link href="https://tskfok.github.io/2025/06/10/openvpn/"/>
+    <id>https://tskfok.github.io/2025/06/10/openvpn/</id>
+    <published>2025-06-10T02:43:37.000Z</published>
+    <updated>2025-06-10T03:30:33.036Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;openvpn-frp访问内网&quot;&gt;&lt;a href=&quot;#openvpn-frp访问内网&quot; class=&quot;headerlink&quot; title=&quot;openvpn+frp访问内网&quot;&gt;&lt;/a&gt;openvpn+frp访问内网&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="openvpn" scheme="https://tskfok.github.io/categories/openvpn/"/>
+    
+    <category term="frp" scheme="https://tskfok.github.io/categories/openvpn/frp/"/>
+    
+    
+    <category term="openvpn" scheme="https://tskfok.github.io/tags/openvpn/"/>
+    
+  </entry>
   
   <entry>
     <title>doctrine如何关闭entity后重新创建</title>
@@ -94,25 +115,6 @@
   
   <entry>
     <title>go学习记录2025-03-21</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study-float/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study-float/</id>
-    <published>2025-03-21T06:07:50.000Z</published>
-    <updated>2025-03-21T09:20:14.190Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;浮点数计算&quot;&gt;&lt;a href=&quot;#浮点数计算&quot; class=&quot;headerlink&quot; title=&quot;浮点数计算&quot;&gt;&lt;/a&gt;浮点数计算&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="浮点数计算" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%B5%AE%E7%82%B9%E6%95%B0%E8%AE%A1%E7%AE%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>go学习记录2025-03-21</title>
     <link href="https://tskfok.github.io/2025/03/21/go-study-radix/"/>
     <id>https://tskfok.github.io/2025/03/21/go-study-radix/</id>
     <published>2025-03-21T06:07:50.000Z</published>
@@ -132,6 +134,25 @@
   
   <entry>
     <title>go学习记录2025-03-21</title>
+    <link href="https://tskfok.github.io/2025/03/21/go-study-float/"/>
+    <id>https://tskfok.github.io/2025/03/21/go-study-float/</id>
+    <published>2025-03-21T06:07:50.000Z</published>
+    <updated>2025-03-21T09:20:14.190Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;浮点数计算&quot;&gt;&lt;a href=&quot;#浮点数计算&quot; class=&quot;headerlink&quot; title=&quot;浮点数计算&quot;&gt;&lt;/a&gt;浮点数计算&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="浮点数计算" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%B5%AE%E7%82%B9%E6%95%B0%E8%AE%A1%E7%AE%97/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>go学习记录2025-03-21</title>
     <link href="https://tskfok.github.io/2025/03/21/go-study-reverse/"/>
     <id>https://tskfok.github.io/2025/03/21/go-study-reverse/</id>
     <published>2025-03-21T06:07:50.000Z</published>
@@ -145,25 +166,6 @@
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     <category term="按位取反(^0)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D-0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>go学习记录2025-03-21</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study-rune/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study-rune/</id>
-    <published>2025-03-21T06:07:50.000Z</published>
-    <updated>2025-03-21T09:20:14.187Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;rune类型&quot;&gt;&lt;a href=&quot;#rune类型&quot; class=&quot;headerlink&quot; title=&quot;rune类型&quot;&gt;&lt;/a&gt;rune类型&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="rune类型" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/rune%E7%B1%BB%E5%9E%8B/"/>
     
     
   </entry>
@@ -202,6 +204,25 @@
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     <category term="移位(1&lt;&lt;64)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%A7%BB%E4%BD%8D-1-64/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>go学习记录2025-03-21</title>
+    <link href="https://tskfok.github.io/2025/03/21/go-study-rune/"/>
+    <id>https://tskfok.github.io/2025/03/21/go-study-rune/</id>
+    <published>2025-03-21T06:07:50.000Z</published>
+    <updated>2025-03-21T09:20:14.187Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;rune类型&quot;&gt;&lt;a href=&quot;#rune类型&quot; class=&quot;headerlink&quot; title=&quot;rune类型&quot;&gt;&lt;/a&gt;rune类型&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="rune类型" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/rune%E7%B1%BB%E5%9E%8B/"/>
     
     
   </entry>
@@ -358,23 +379,6 @@
     
     
     <category term="cloudflare" scheme="https://tskfok.github.io/tags/cloudflare/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用RSSWorker生成rss订阅连接</title>
-    <link href="https://tskfok.github.io/2024/02/20/rss-worker/"/>
-    <id>https://tskfok.github.io/2024/02/20/rss-worker/</id>
-    <published>2024-02-20T07:05:40.000Z</published>
-    <updated>2024-02-20T07:22:27.104Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;使用RSSWorker生成rss订阅连接&quot;&gt;&lt;a href=&quot;#使用RSSWorker生成rss订阅连接&quot; class=&quot;headerlink&quot; title=&quot;使用RSSWorker生成rss订阅连接&quot;&gt;&lt;/a&gt;使用RSSWorker生成rss订阅连接&lt;/h3&gt;</summary>
-    
-    
-    
-    
-    <category term="rss" scheme="https://tskfok.github.io/tags/rss/"/>
     
   </entry>
   
