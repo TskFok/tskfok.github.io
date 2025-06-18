@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>生成https证书 | 每天进步一点点🤏</title>
+  <title>如何查询php-fpm配置的位置 | 每天进步一点点🤏</title>
   <meta name="author" content="Y Y" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,22 +13,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="https" />
+    <meta name="keywords" content="php" />
   
-  <meta name="description" content="通过certbot生成https证书">
+  <meta name="description" content="如何查询php-fpm配置的位置">
 <meta property="og:type" content="article">
-<meta property="og:title" content="生成https证书">
-<meta property="og:url" content="https://tskfok.github.io/2023/03/29/cert/index.html">
+<meta property="og:title" content="如何查询php-fpm配置的位置">
+<meta property="og:url" content="https://tskfok.github.io/2025/06/18/command/index.html">
 <meta property="og:site_name" content="每天进步一点点🤏">
-<meta property="og:description" content="通过certbot生成https证书">
+<meta property="og:description" content="如何查询php-fpm配置的位置">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tskfok.github.io/2023/03/29/cert/https:/img.adiosat.com/cert/certbot.png">
-<meta property="article:published_time" content="2023-03-29T08:00:28.000Z">
-<meta property="article:modified_time" content="2023-12-14T09:42:43.319Z">
+<meta property="article:published_time" content="2025-06-18T03:03:37.000Z">
+<meta property="article:modified_time" content="2025-06-18T03:10:03.119Z">
 <meta property="article:author" content="Y Y">
-<meta property="article:tag" content="https">
+<meta property="article:tag" content="php">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tskfok.github.io/2023/03/29/cert/https:/img.adiosat.com/cert/certbot.png">
   
   <!-- 站点验证相关 -->
   
@@ -401,15 +399,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2023/03/29/cert/">
+    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2025/06/18/command/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">生成https证书</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">如何查询php-fpm配置的位置</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2023-03-29T08:00:28.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-03-29</time></li>
+                <li><time datetime="2025-06-18T03:03:37.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-06-18</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Y Y</span>
                 </li>
@@ -417,7 +415,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        539
+                        194
                     
                     字
                 </li>
@@ -427,13 +425,13 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1702546963319"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1750216203119"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
-            <div itemprop="articleBody"><h3 id="通过certbot生成https证书"><a href="#通过certbot生成https证书" class="headerlink" title="通过certbot生成https证书"></a>通过certbot生成https证书</h3><span id="more"></span>
+            <div itemprop="articleBody"><h3 id="如何查询php-fpm配置的位置"><a href="#如何查询php-fpm配置的位置" class="headerlink" title="如何查询php-fpm配置的位置"></a>如何查询php-fpm配置的位置</h3><span id="more"></span>
 
-<figure class="highlight plaintext"><figcaption><span>&nbsp</span><a target="_blank" rel="noopener" href="https://certbot.eff.org/instructions?ws=other&os=debianbuster">certbot</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1. 进入certbot网站 选择环境 选择other debian10</span><br><span class="line">2. 安装snapd: sudo apt update; sudo apt install snapd</span><br><span class="line">3. 安装core: sudo snap install core; sudo snap refresh core</span><br><span class="line">4. 卸载系统自带的certbot: sudo apt-get remove certbot</span><br><span class="line">5. 重新安装certbot: sudo snap install --classic certbot</span><br><span class="line">6. 建立软链接: sudo ln -s /snap/bin/certbot /usr/bin/certbot</span><br><span class="line">7. 生成证书: sudo certbot certonly --standalone(没有80端口占用的情况下) sudo certbot certonly --webroot(80端口占用的情况下)</span><br><span class="line">8. 刷新证书: sudo certbot renew --dry-run</span><br><span class="line">9. 强制刷新证书: certbot renew --force-renewal</span><br><span class="line">10. 将刷新证书的命令加到crontab中</span><br></pre></td></tr></table></figure></div>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">readlink -f $(which php) //根据使用的php版本不同,可能是php7.0,php7.1类推</span><br><span class="line">获取结果/***/***/php/bin/php</span><br><span class="line">配置文件的位置在/***/***/php/etc里,</span><br><span class="line">cat php-fpm.conf | grep &quot;listen&quot;,查看监听的接口是否与nginx配置里的相同</span><br></pre></td></tr></table></figure></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -441,10 +439,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/https/" rel="tag">https</a>
+                    <a class="tag-none-link" href="/tags/php/" rel="tag">php</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2023-12-14T09:42:43.319Z" itemprop="dateModified">最后编辑：2023-12-14</time>
+                    <time datetime="2025-06-18T03:10:03.119Z" itemprop="dateModified">最后编辑：2025-06-18</time>
                 </div>
             </div>
         </footer>
@@ -453,13 +451,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" go加密excel文件" href="/2022/12/21/go-excel/">&lt; 上一篇</a>
+                <a title=" openvpn+frp访问内网" href="/2025/06/10/openvpn/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" GO语言进程守护" href="/2023/03/29/go-process/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
