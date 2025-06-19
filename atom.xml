@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-06-19T06:59:03.751Z</updated>
+  <updated>2025-06-19T07:07:23.037Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://tskfok.github.io/2025/06/19/unraid-remote/"/>
     <id>https://tskfok.github.io/2025/06/19/unraid-remote/</id>
     <published>2025-06-19T06:46:40.000Z</published>
-    <updated>2025-06-19T06:59:03.751Z</updated>
+    <updated>2025-06-19T07:07:23.037Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;unraid内网访问&quot;&gt;&lt;a href=&quot;#unraid内网访问&quot; class=&quot;headerlink&quot; title=&quot;unraid内网访问&quot;&gt;&lt;/a&gt;unraid内网访问&lt;/h3&gt;</summary>
@@ -46,7 +46,7 @@
     <link href="https://tskfok.github.io/2025/06/18/command/"/>
     <id>https://tskfok.github.io/2025/06/18/command/</id>
     <published>2025-06-18T03:03:37.000Z</published>
-    <updated>2025-06-18T03:16:27.036Z</updated>
+    <updated>2025-06-19T07:07:23.035Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;如何查询php-fpm配置的位置&quot;&gt;&lt;a href=&quot;#如何查询php-fpm配置的位置&quot; class=&quot;headerlink&quot; title=&quot;如何查询php-fpm配置的位置&quot;&gt;&lt;/a&gt;如何查询php-fpm配置的位置&lt;/h3&gt;</summary>
@@ -65,7 +65,7 @@
     <link href="https://tskfok.github.io/2025/06/10/openvpn/"/>
     <id>https://tskfok.github.io/2025/06/10/openvpn/</id>
     <published>2025-06-10T02:43:37.000Z</published>
-    <updated>2025-06-10T03:32:52.082Z</updated>
+    <updated>2025-06-19T07:10:26.714Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;openvpn-frp访问内网&quot;&gt;&lt;a href=&quot;#openvpn-frp访问内网&quot; class=&quot;headerlink&quot; title=&quot;openvpn+frp访问内网&quot;&gt;&lt;/a&gt;openvpn+frp访问内网&lt;/h3&gt;</summary>
@@ -86,7 +86,7 @@
     <link href="https://tskfok.github.io/2025/04/14/new-entity/"/>
     <id>https://tskfok.github.io/2025/04/14/new-entity/</id>
     <published>2025-04-14T08:04:15.000Z</published>
-    <updated>2025-04-14T08:08:06.457Z</updated>
+    <updated>2025-06-19T07:11:51.491Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;doctrine如何关闭entity后重新创建&quot;&gt;&lt;a href=&quot;#doctrine如何关闭entity后重新创建&quot; class=&quot;headerlink&quot; title=&quot;doctrine如何关闭entity后重新创建&quot;&gt;&lt;/a&gt;doctrine如何关闭entity后重新创建&lt;/h3&gt;</summary>
@@ -97,6 +97,8 @@
     
     <category term="doctrine" scheme="https://tskfok.github.io/categories/php/doctrine/"/>
     
+    
+    <category term="php" scheme="https://tskfok.github.io/tags/php/"/>
     
   </entry>
   
@@ -178,25 +180,6 @@
   
   <entry>
     <title>go学习记录2025-03-21</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study-reverse/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study-reverse/</id>
-    <published>2025-03-21T06:07:50.000Z</published>
-    <updated>2025-03-25T03:46:36.865Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;按位取反&quot;&gt;&lt;a href=&quot;#按位取反&quot; class=&quot;headerlink&quot; title=&quot;按位取反&quot;&gt;&lt;/a&gt;按位取反&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="按位取反(^0)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D-0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>go学习记录2025-03-21</title>
     <link href="https://tskfok.github.io/2025/03/21/go-study-rune/"/>
     <id>https://tskfok.github.io/2025/03/21/go-study-rune/</id>
     <published>2025-03-21T06:07:50.000Z</published>
@@ -210,6 +193,44 @@
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     <category term="rune类型" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/rune%E7%B1%BB%E5%9E%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>go学习记录2025-03-21</title>
+    <link href="https://tskfok.github.io/2025/03/21/go-study-radix/"/>
+    <id>https://tskfok.github.io/2025/03/21/go-study-radix/</id>
+    <published>2025-03-21T06:07:50.000Z</published>
+    <updated>2025-03-21T09:20:14.189Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;进制&quot;&gt;&lt;a href=&quot;#进制&quot; class=&quot;headerlink&quot; title=&quot;进制&quot;&gt;&lt;/a&gt;进制&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="进制" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>go学习记录2025-03-21</title>
+    <link href="https://tskfok.github.io/2025/03/21/go-study-reverse/"/>
+    <id>https://tskfok.github.io/2025/03/21/go-study-reverse/</id>
+    <published>2025-03-21T06:07:50.000Z</published>
+    <updated>2025-03-25T03:46:36.865Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;按位取反&quot;&gt;&lt;a href=&quot;#按位取反&quot; class=&quot;headerlink&quot; title=&quot;按位取反&quot;&gt;&lt;/a&gt;按位取反&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="按位取反(^0)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D-0/"/>
     
     
   </entry>
@@ -248,25 +269,6 @@
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     <category term="移位(1&lt;&lt;64)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%A7%BB%E4%BD%8D-1-64/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>go学习记录2025-03-21</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study-radix/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study-radix/</id>
-    <published>2025-03-21T06:07:50.000Z</published>
-    <updated>2025-03-21T09:20:14.189Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;进制&quot;&gt;&lt;a href=&quot;#进制&quot; class=&quot;headerlink&quot; title=&quot;进制&quot;&gt;&lt;/a&gt;进制&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="进制" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/"/>
     
     
   </entry>
