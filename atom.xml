@@ -38,7 +38,7 @@
     <link href="https://tskfok.github.io/2025/06/23/tx-kafka/"/>
     <id>https://tskfok.github.io/2025/06/23/tx-kafka/</id>
     <published>2025-06-23T09:47:08.000Z</published>
-    <updated>2025-06-24T07:18:54.136Z</updated>
+    <updated>2025-06-24T07:23:58.696Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;go语言如何使用腾讯云的kafka&quot;&gt;&lt;a href=&quot;#go语言如何使用腾讯云的kafka&quot; class=&quot;headerlink&quot; title=&quot;go语言如何使用腾讯云的kafka&quot;&gt;&lt;/a&gt;go语言如何使用腾讯云的kafka&lt;/h3&gt;</summary>
@@ -239,6 +239,25 @@
   
   <entry>
     <title>go学习记录2025-03-21</title>
+    <link href="https://tskfok.github.io/2025/03/21/go-study-reverse/"/>
+    <id>https://tskfok.github.io/2025/03/21/go-study-reverse/</id>
+    <published>2025-03-21T06:07:50.000Z</published>
+    <updated>2025-03-25T03:46:36.865Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;按位取反&quot;&gt;&lt;a href=&quot;#按位取反&quot; class=&quot;headerlink&quot; title=&quot;按位取反&quot;&gt;&lt;/a&gt;按位取反&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="按位取反(^0)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D-0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>go学习记录2025-03-21</title>
     <link href="https://tskfok.github.io/2025/03/21/go-study-rune/"/>
     <id>https://tskfok.github.io/2025/03/21/go-study-rune/</id>
     <published>2025-03-21T06:07:50.000Z</published>
@@ -252,25 +271,6 @@
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     <category term="rune类型" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/rune%E7%B1%BB%E5%9E%8B/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>go学习记录2025-03-21</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study-wy/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study-wy/</id>
-    <published>2025-03-21T06:07:50.000Z</published>
-    <updated>2025-03-25T02:56:01.405Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;移位&quot;&gt;&lt;a href=&quot;#移位&quot; class=&quot;headerlink&quot; title=&quot;移位&quot;&gt;&lt;/a&gt;移位&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="移位(1&lt;&lt;64)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%A7%BB%E4%BD%8D-1-64/"/>
     
     
   </entry>
@@ -296,19 +296,19 @@
   
   <entry>
     <title>go学习记录2025-03-21</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study-reverse/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study-reverse/</id>
+    <link href="https://tskfok.github.io/2025/03/21/go-study-wy/"/>
+    <id>https://tskfok.github.io/2025/03/21/go-study-wy/</id>
     <published>2025-03-21T06:07:50.000Z</published>
-    <updated>2025-03-25T03:46:36.865Z</updated>
+    <updated>2025-03-25T02:56:01.405Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;按位取反&quot;&gt;&lt;a href=&quot;#按位取反&quot; class=&quot;headerlink&quot; title=&quot;按位取反&quot;&gt;&lt;/a&gt;按位取反&lt;/h3&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;移位&quot;&gt;&lt;a href=&quot;#移位&quot; class=&quot;headerlink&quot; title=&quot;移位&quot;&gt;&lt;/a&gt;移位&lt;/h3&gt;</summary>
     
     
     
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
-    <category term="按位取反(^0)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D-0/"/>
+    <category term="移位(1&lt;&lt;64)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%A7%BB%E4%BD%8D-1-64/"/>
     
     
   </entry>
