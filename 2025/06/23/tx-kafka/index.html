@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>go语言如何使用腾讯云的kafka | 每天进步一点点🤏</title>
+  <title>go语言如何使用腾讯云的Ckafka | 每天进步一点点🤏</title>
   <meta name="author" content="Y Y" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -17,14 +17,14 @@
   
   <meta name="description" content="go语言如何使用腾讯云的kafka">
 <meta property="og:type" content="article">
-<meta property="og:title" content="go语言如何使用腾讯云的kafka">
+<meta property="og:title" content="go语言如何使用腾讯云的Ckafka">
 <meta property="og:url" content="https://tskfok.github.io/2025/06/23/tx-kafka/index.html">
 <meta property="og:site_name" content="每天进步一点点🤏">
 <meta property="og:description" content="go语言如何使用腾讯云的kafka">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tskfok.github.io/2025/06/23/tx-kafka/https:/img.adiosat.com/kafka/kafka.png">
 <meta property="article:published_time" content="2025-06-23T09:47:08.000Z">
-<meta property="article:modified_time" content="2025-06-23T10:51:16.123Z">
+<meta property="article:modified_time" content="2025-06-24T07:16:02.153Z">
 <meta property="article:author" content="Y Y">
 <meta property="article:tag" content="kafka">
 <meta name="twitter:card" content="summary">
@@ -200,7 +200,7 @@
         
           
           
-            <a class="list-group-item" href="/2025/06/23/tx-kafka/"><i class="fa  fa-book"></i> go语言如何使用腾讯云的kafka</a>
+            <a class="list-group-item" href="/2025/06/23/tx-kafka/"><i class="fa  fa-book"></i> go语言如何使用腾讯云的Ckafka</a>
             
           
         
@@ -409,7 +409,7 @@
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">go语言如何使用腾讯云的kafka</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">go语言如何使用腾讯云的Ckafka</h1>
             
             
             <ul class="kratos-post-meta text-center">
@@ -421,7 +421,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        1048
+                        ~1.74K
                     
                     字
                 </li>
@@ -431,7 +431,7 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1750675876123"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1750749362153"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
@@ -462,7 +462,13 @@
 <h1>查看消费组</h1>
 
 <p><img src="https://img.adiosat.com/kafka/consumer.png" alt="消息查询"> </p>
-</div>
+<h1>交叉编译</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">编译到linux amd64架构,使用docker</span><br><span class="line">创建导出的目录 mkdir -p out</span><br><span class="line">修改导出目录权限 chmod -R 777 out</span><br><span class="line">交叉编译 docker buildx build --platform=linux/amd64 -o type=local,dest=./out .</span><br></pre></td></tr></table></figure>
+
+<h1>Dockerfile</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">FROM --platform=linux/amd64 golang:1.24 AS builder</span><br><span class="line"></span><br><span class="line"># 安装你需要的librdkafka依赖</span><br><span class="line">RUN apt-get update &amp;&amp; apt-get install -y librdkafka-dev</span><br><span class="line"></span><br><span class="line">WORKDIR /app</span><br><span class="line"></span><br><span class="line"># 设置代理</span><br><span class="line">ENV GO111MODULE=on</span><br><span class="line">ENV GOPROXY=https://goproxy.cn,direct</span><br><span class="line"></span><br><span class="line">COPY go.mod ./</span><br><span class="line">COPY go.sum ./</span><br><span class="line">RUN go mod download</span><br><span class="line"></span><br><span class="line"># 复制源码</span><br><span class="line">COPY . .</span><br><span class="line"></span><br><span class="line"># 设置环境变量,启用CGO,目标为linux/amd64</span><br><span class="line">ENV CGO_ENABLED=1</span><br><span class="line">ENV GOOS=linux</span><br><span class="line">ENV GOARCH=amd64</span><br><span class="line"></span><br><span class="line"># 编译,根据实际文件位置修改</span><br><span class="line">RUN go build -o myapp consumer/main.go</span><br><span class="line"></span><br><span class="line"># 只导出最终的可执行文件</span><br><span class="line">FROM scratch AS export-stage</span><br><span class="line">COPY --from=builder /app/myapp /myapp</span><br></pre></td></tr></table></figure></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -473,7 +479,7 @@
                     <a class="tag-none-link" href="/tags/kafka/" rel="tag">kafka</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2025-06-23T10:51:16.123Z" itemprop="dateModified">最后编辑：2025-06-23</time>
+                    <time datetime="2025-06-24T07:16:02.153Z" itemprop="dateModified">最后编辑：2025-06-24</time>
                 </div>
             </div>
         </footer>
