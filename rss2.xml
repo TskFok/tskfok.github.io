@@ -15,8 +15,27 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 24 Jun 2025 07:20:35 GMT</pubDate>
+    <pubDate>Tue, 15 Jul 2025 03:49:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>mysql查询问题</title>
+      <link>https://tskfok.github.io/2025/07/15/question/</link>
+      <guid>https://tskfok.github.io/2025/07/15/question/</guid>
+      <pubDate>Tue, 15 Jul 2025 03:47:09 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;mysql查询问题&quot;&gt;&lt;a href=&quot;#mysql查询问题&quot; class=&quot;headerlink&quot; title=&quot;mysql查询问题&quot;&gt;&lt;/a&gt;mysql查询问题&lt;/h3&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/tags/mysql/">mysql</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/07/15/question/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>apt删除程序</title>
@@ -418,25 +437,6 @@
       
       
       <comments>https://tskfok.github.io/2024/07/03/cve/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>doctrine使用注意</title>
-      <link>https://tskfok.github.io/2024/06/26/doctrine/</link>
-      <guid>https://tskfok.github.io/2024/06/26/doctrine/</guid>
-      <pubDate>Wed, 26 Jun 2024 06:52:49 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;使用doctrine时候需要注意的点&quot;&gt;&lt;a href=&quot;#使用doctrine时候需要注意的点&quot; class=&quot;headerlink&quot; title=&quot;使用doctrine时候需要注意的点&quot;&gt;&lt;/a&gt;使用doctrine时候需要注意的点&lt;/h3&gt;</description>
-      
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/tags/doctrine/">doctrine</category>
-      
-      
-      <comments>https://tskfok.github.io/2024/06/26/doctrine/#disqus_thread</comments>
       
     </item>
     

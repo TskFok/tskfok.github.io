@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-06-24T07:20:35.385Z</updated>
+  <updated>2025-07-15T03:49:48.490Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mysql查询问题</title>
+    <link href="https://tskfok.github.io/2025/07/15/question/"/>
+    <id>https://tskfok.github.io/2025/07/15/question/</id>
+    <published>2025-07-15T03:47:09.000Z</published>
+    <updated>2025-07-15T03:49:48.490Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;mysql查询问题&quot;&gt;&lt;a href=&quot;#mysql查询问题&quot; class=&quot;headerlink&quot; title=&quot;mysql查询问题&quot;&gt;&lt;/a&gt;mysql查询问题&lt;/h3&gt;</summary>
+    
+    
+    
+    
+    <category term="mysql" scheme="https://tskfok.github.io/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>apt删除程序</title>
@@ -378,23 +395,6 @@
     
     
     <category term="漏洞" scheme="https://tskfok.github.io/tags/%E6%BC%8F%E6%B4%9E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>doctrine使用注意</title>
-    <link href="https://tskfok.github.io/2024/06/26/doctrine/"/>
-    <id>https://tskfok.github.io/2024/06/26/doctrine/</id>
-    <published>2024-06-26T06:52:49.000Z</published>
-    <updated>2024-06-26T06:55:35.626Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;使用doctrine时候需要注意的点&quot;&gt;&lt;a href=&quot;#使用doctrine时候需要注意的点&quot; class=&quot;headerlink&quot; title=&quot;使用doctrine时候需要注意的点&quot;&gt;&lt;/a&gt;使用doctrine时候需要注意的点&lt;/h3&gt;</summary>
-    
-    
-    
-    
-    <category term="doctrine" scheme="https://tskfok.github.io/tags/doctrine/"/>
     
   </entry>
   
