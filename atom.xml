@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-07-15T03:49:48.490Z</updated>
+  <updated>2025-07-23T06:58:13.918Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>有效的括号</title>
+    <link href="https://tskfok.github.io/2025/07/23/algorithm2025072314/"/>
+    <id>https://tskfok.github.io/2025/07/23/algorithm2025072314/</id>
+    <published>2025-07-23T06:34:23.000Z</published>
+    <updated>2025-07-23T06:58:13.918Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;有效的括号&quot;&gt;&lt;a href=&quot;#有效的括号&quot; class=&quot;headerlink&quot; title=&quot;有效的括号&quot;&gt;&lt;/a&gt;有效的括号&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>mysql查询问题</title>
@@ -237,25 +258,6 @@
   
   <entry>
     <title>go学习记录2025-03-21</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study-radix/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study-radix/</id>
-    <published>2025-03-21T06:07:50.000Z</published>
-    <updated>2025-03-21T09:20:14.189Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;进制&quot;&gt;&lt;a href=&quot;#进制&quot; class=&quot;headerlink&quot; title=&quot;进制&quot;&gt;&lt;/a&gt;进制&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="进制" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>go学习记录2025-03-21</title>
     <link href="https://tskfok.github.io/2025/03/21/go-study-reverse/"/>
     <id>https://tskfok.github.io/2025/03/21/go-study-reverse/</id>
     <published>2025-03-21T06:07:50.000Z</published>
@@ -269,6 +271,25 @@
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     <category term="按位取反(^0)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D-0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>go学习记录2025-03-21</title>
+    <link href="https://tskfok.github.io/2025/03/21/go-study-radix/"/>
+    <id>https://tskfok.github.io/2025/03/21/go-study-radix/</id>
+    <published>2025-03-21T06:07:50.000Z</published>
+    <updated>2025-03-21T09:20:14.189Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;进制&quot;&gt;&lt;a href=&quot;#进制&quot; class=&quot;headerlink&quot; title=&quot;进制&quot;&gt;&lt;/a&gt;进制&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="进制" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/"/>
     
     
   </entry>
@@ -294,25 +315,6 @@
   
   <entry>
     <title>go学习记录2025-03-21</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study-underline/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study-underline/</id>
-    <published>2025-03-21T06:07:50.000Z</published>
-    <updated>2025-03-21T09:20:14.185Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;下划线&quot;&gt;&lt;a href=&quot;#下划线&quot; class=&quot;headerlink&quot; title=&quot;下划线&quot;&gt;&lt;/a&gt;下划线&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="下划线" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E4%B8%8B%E5%88%92%E7%BA%BF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>go学习记录2025-03-21</title>
     <link href="https://tskfok.github.io/2025/03/21/go-study-wy/"/>
     <id>https://tskfok.github.io/2025/03/21/go-study-wy/</id>
     <published>2025-03-21T06:07:50.000Z</published>
@@ -326,6 +328,25 @@
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     <category term="移位(1&lt;&lt;64)" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%A7%BB%E4%BD%8D-1-64/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>go学习记录2025-03-21</title>
+    <link href="https://tskfok.github.io/2025/03/21/go-study-underline/"/>
+    <id>https://tskfok.github.io/2025/03/21/go-study-underline/</id>
+    <published>2025-03-21T06:07:50.000Z</published>
+    <updated>2025-03-21T09:20:14.185Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;下划线&quot;&gt;&lt;a href=&quot;#下划线&quot; class=&quot;headerlink&quot; title=&quot;下划线&quot;&gt;&lt;/a&gt;下划线&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="下划线" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E4%B8%8B%E5%88%92%E7%BA%BF/"/>
     
     
   </entry>
@@ -378,23 +399,6 @@
     
     
     <category term="报错排查" scheme="https://tskfok.github.io/tags/%E6%8A%A5%E9%94%99%E6%8E%92%E6%9F%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>cve</title>
-    <link href="https://tskfok.github.io/2024/07/03/cve/"/>
-    <id>https://tskfok.github.io/2024/07/03/cve/</id>
-    <published>2024-07-03T03:20:14.000Z</published>
-    <updated>2024-07-03T03:37:14.699Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;漏洞&quot;&gt;&lt;a href=&quot;#漏洞&quot; class=&quot;headerlink&quot; title=&quot;漏洞&quot;&gt;&lt;/a&gt;漏洞&lt;/h3&gt;</summary>
-    
-    
-    
-    
-    <category term="漏洞" scheme="https://tskfok.github.io/tags/%E6%BC%8F%E6%B4%9E/"/>
     
   </entry>
   
