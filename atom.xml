@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-07-23T06:58:13.918Z</updated>
+  <updated>2025-07-23T07:42:25.448Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -17,11 +17,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>algorithm2025072315</title>
+    <link href="https://tskfok.github.io/2025/07/23/algorithm/"/>
+    <id>https://tskfok.github.io/2025/07/23/algorithm/</id>
+    <published>2025-07-23T07:41:19.000Z</published>
+    <updated>2025-07-23T07:42:25.448Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;有效的括号&quot;&gt;&lt;a href=&quot;#有效的括号&quot; class=&quot;headerlink&quot; title=&quot;有效的括号&quot;&gt;&lt;/a&gt;有效的括号&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>合并两个有序链表</title>
+    <link href="https://tskfok.github.io/2025/07/23/algorithm2025072315/"/>
+    <id>https://tskfok.github.io/2025/07/23/algorithm2025072315/</id>
+    <published>2025-07-23T07:41:19.000Z</published>
+    <updated>2025-07-23T07:46:33.304Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;合并两个有序链表&quot;&gt;&lt;a href=&quot;#合并两个有序链表&quot; class=&quot;headerlink&quot; title=&quot;合并两个有序链表&quot;&gt;&lt;/a&gt;合并两个有序链表&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>有效的括号</title>
     <link href="https://tskfok.github.io/2025/07/23/algorithm2025072314/"/>
     <id>https://tskfok.github.io/2025/07/23/algorithm2025072314/</id>
     <published>2025-07-23T06:34:23.000Z</published>
-    <updated>2025-07-23T06:58:13.918Z</updated>
+    <updated>2025-07-23T07:43:27.145Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;有效的括号&quot;&gt;&lt;a href=&quot;#有效的括号&quot; class=&quot;headerlink&quot; title=&quot;有效的括号&quot;&gt;&lt;/a&gt;有效的括号&lt;/h3&gt;</summary>
@@ -277,25 +319,6 @@
   
   <entry>
     <title>go学习记录2025-03-21</title>
-    <link href="https://tskfok.github.io/2025/03/21/go-study-radix/"/>
-    <id>https://tskfok.github.io/2025/03/21/go-study-radix/</id>
-    <published>2025-03-21T06:07:50.000Z</published>
-    <updated>2025-03-21T09:20:14.189Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;进制&quot;&gt;&lt;a href=&quot;#进制&quot; class=&quot;headerlink&quot; title=&quot;进制&quot;&gt;&lt;/a&gt;进制&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="进制" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>go学习记录2025-03-21</title>
     <link href="https://tskfok.github.io/2025/03/21/go-study-rune/"/>
     <id>https://tskfok.github.io/2025/03/21/go-study-rune/</id>
     <published>2025-03-21T06:07:50.000Z</published>
@@ -309,6 +332,25 @@
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     <category term="rune类型" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/rune%E7%B1%BB%E5%9E%8B/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>go学习记录2025-03-21</title>
+    <link href="https://tskfok.github.io/2025/03/21/go-study-radix/"/>
+    <id>https://tskfok.github.io/2025/03/21/go-study-radix/</id>
+    <published>2025-03-21T06:07:50.000Z</published>
+    <updated>2025-03-21T09:20:14.189Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;进制&quot;&gt;&lt;a href=&quot;#进制&quot; class=&quot;headerlink&quot; title=&quot;进制&quot;&gt;&lt;/a&gt;进制&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="进制" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/"/>
     
     
   </entry>
@@ -365,40 +407,6 @@
     
     
     <category term="macos" scheme="https://tskfok.github.io/tags/macos/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux开启smb</title>
-    <link href="https://tskfok.github.io/2024/08/13/smb/"/>
-    <id>https://tskfok.github.io/2024/08/13/smb/</id>
-    <published>2024-08-13T09:30:56.000Z</published>
-    <updated>2024-08-13T09:48:26.214Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;linux开启smb-unraid中挂载linux&quot;&gt;&lt;a href=&quot;#linux开启smb-unraid中挂载linux&quot; class=&quot;headerlink&quot; title=&quot;linux开启smb,unraid中挂载linux&quot;&gt;&lt;/a&gt;linux开启smb,unraid中挂载linux&lt;/h3&gt;</summary>
-    
-    
-    
-    
-    <category term="smb" scheme="https://tskfok.github.io/tags/smb/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>服务器报错</title>
-    <link href="https://tskfok.github.io/2024/07/09/server-error/"/>
-    <id>https://tskfok.github.io/2024/07/09/server-error/</id>
-    <published>2024-07-09T11:10:11.000Z</published>
-    <updated>2024-07-10T03:47:44.866Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;报错排查&quot;&gt;&lt;a href=&quot;#报错排查&quot; class=&quot;headerlink&quot; title=&quot;报错排查&quot;&gt;&lt;/a&gt;报错排查&lt;/h3&gt;</summary>
-    
-    
-    
-    
-    <category term="报错排查" scheme="https://tskfok.github.io/tags/%E6%8A%A5%E9%94%99%E6%8E%92%E6%9F%A5/"/>
     
   </entry>
   
