@@ -15,7 +15,7 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 23 Jul 2025 07:42:25 GMT</pubDate>
+    <pubDate>Wed, 30 Jul 2025 03:05:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -61,6 +61,29 @@
       
       
       <comments>https://tskfok.github.io/2025/07/23/algorithm2025072315/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>括号生成</title>
+      <link>https://tskfok.github.io/2025/07/23/algorithm2025073011/</link>
+      <guid>https://tskfok.github.io/2025/07/23/algorithm2025073011/</guid>
+      <pubDate>Wed, 23 Jul 2025 07:41:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;括号生成&quot;&gt;&lt;a href=&quot;#括号生成&quot; class=&quot;headerlink&quot; title=&quot;括号生成&quot;&gt;&lt;/a&gt;括号生成&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/07/23/algorithm2025073011/#disqus_thread</comments>
       
     </item>
     
@@ -309,6 +332,27 @@
     
     <item>
       <title>go学习记录2025-03-21</title>
+      <link>https://tskfok.github.io/2025/03/21/go-study-radix/</link>
+      <guid>https://tskfok.github.io/2025/03/21/go-study-radix/</guid>
+      <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;进制&quot;&gt;&lt;a href=&quot;#进制&quot; class=&quot;headerlink&quot; title=&quot;进制&quot;&gt;&lt;/a&gt;进制&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
+      
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/">进制</category>
+      
+      
+      
+      <comments>https://tskfok.github.io/2025/03/21/go-study-radix/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>go学习记录2025-03-21</title>
       <link>https://tskfok.github.io/2025/03/21/go-study-float/</link>
       <guid>https://tskfok.github.io/2025/03/21/go-study-float/</guid>
       <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
@@ -325,27 +369,6 @@
       
       
       <comments>https://tskfok.github.io/2025/03/21/go-study-float/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>go学习记录2025-03-21</title>
-      <link>https://tskfok.github.io/2025/03/21/go-study-reverse/</link>
-      <guid>https://tskfok.github.io/2025/03/21/go-study-reverse/</guid>
-      <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;按位取反&quot;&gt;&lt;a href=&quot;#按位取反&quot; class=&quot;headerlink&quot; title=&quot;按位取反&quot;&gt;&lt;/a&gt;按位取反&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
-      
-      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D-0/">按位取反(^0)</category>
-      
-      
-      
-      <comments>https://tskfok.github.io/2025/03/21/go-study-reverse/#disqus_thread</comments>
       
     </item>
     
@@ -372,22 +395,22 @@
     
     <item>
       <title>go学习记录2025-03-21</title>
-      <link>https://tskfok.github.io/2025/03/21/go-study-radix/</link>
-      <guid>https://tskfok.github.io/2025/03/21/go-study-radix/</guid>
+      <link>https://tskfok.github.io/2025/03/21/go-study-reverse/</link>
+      <guid>https://tskfok.github.io/2025/03/21/go-study-reverse/</guid>
       <pubDate>Fri, 21 Mar 2025 06:07:50 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;进制&quot;&gt;&lt;a href=&quot;#进制&quot; class=&quot;headerlink&quot; title=&quot;进制&quot;&gt;&lt;/a&gt;进制&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;按位取反&quot;&gt;&lt;a href=&quot;#按位取反&quot; class=&quot;headerlink&quot; title=&quot;按位取反&quot;&gt;&lt;/a&gt;按位取反&lt;/h3&gt;</description>
       
       
       
       
       <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</category>
       
-      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/">进制</category>
+      <category domain="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D-0/">按位取反(^0)</category>
       
       
       
-      <comments>https://tskfok.github.io/2025/03/21/go-study-radix/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/03/21/go-study-reverse/#disqus_thread</comments>
       
     </item>
     
@@ -430,25 +453,6 @@
       
       
       <comments>https://tskfok.github.io/2025/03/21/go-study-underline/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>macos-php</title>
-      <link>https://tskfok.github.io/2024/08/22/macos-php/</link>
-      <guid>https://tskfok.github.io/2024/08/22/macos-php/</guid>
-      <pubDate>Thu, 22 Aug 2024 06:12:38 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;在macos中安装php7-1&quot;&gt;&lt;a href=&quot;#在macos中安装php7-1&quot; class=&quot;headerlink&quot; title=&quot;在macos中安装php7.1&quot;&gt;&lt;/a&gt;在macos中安装php7.1&lt;/h3&gt;</description>
-      
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/tags/macos/">macos</category>
-      
-      
-      <comments>https://tskfok.github.io/2024/08/22/macos-php/#disqus_thread</comments>
       
     </item>
     
