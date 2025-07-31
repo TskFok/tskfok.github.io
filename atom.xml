@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-07-31T08:34:43.651Z</updated>
+  <updated>2025-07-31T10:10:49.627Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>将有序数组转换为二叉搜索树</title>
+    <link href="https://tskfok.github.io/2025/07/31/algorithm2025073118/"/>
+    <id>https://tskfok.github.io/2025/07/31/algorithm2025073118/</id>
+    <published>2025-07-31T10:41:19.000Z</published>
+    <updated>2025-07-31T10:10:49.627Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;将有序数组转换为二叉搜索树&quot;&gt;&lt;a href=&quot;#将有序数组转换为二叉搜索树&quot; class=&quot;headerlink&quot; title=&quot;将有序数组转换为二叉搜索树&quot;&gt;&lt;/a&gt;将有序数组转换为二叉搜索树&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>二叉树的最大深度</title>
     <link href="https://tskfok.github.io/2025/07/31/algorithm2025073116/"/>
     <id>https://tskfok.github.io/2025/07/31/algorithm2025073116/</id>
     <published>2025-07-31T08:41:19.000Z</published>
-    <updated>2025-07-31T08:34:43.651Z</updated>
+    <updated>2025-07-31T10:06:33.693Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;二叉树的最大深度&quot;&gt;&lt;a href=&quot;#二叉树的最大深度&quot; class=&quot;headerlink&quot; title=&quot;二叉树的最大深度&quot;&gt;&lt;/a&gt;二叉树的最大深度&lt;/h3&gt;</summary>
@@ -42,7 +63,7 @@
     <link href="https://tskfok.github.io/2025/07/31/algorithm2025073115/"/>
     <id>https://tskfok.github.io/2025/07/31/algorithm2025073115/</id>
     <published>2025-07-31T07:41:19.000Z</published>
-    <updated>2025-07-31T07:48:39.493Z</updated>
+    <updated>2025-07-31T10:06:33.691Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;对称二叉树&quot;&gt;&lt;a href=&quot;#对称二叉树&quot; class=&quot;headerlink&quot; title=&quot;对称二叉树&quot;&gt;&lt;/a&gt;对称二叉树&lt;/h3&gt;</summary>
@@ -63,7 +84,7 @@
     <link href="https://tskfok.github.io/2025/07/31/algorithm2025073114/"/>
     <id>https://tskfok.github.io/2025/07/31/algorithm2025073114/</id>
     <published>2025-07-31T06:41:19.000Z</published>
-    <updated>2025-07-31T07:25:10.710Z</updated>
+    <updated>2025-07-31T10:06:33.688Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;相同的树&quot;&gt;&lt;a href=&quot;#相同的树&quot; class=&quot;headerlink&quot; title=&quot;相同的树&quot;&gt;&lt;/a&gt;相同的树&lt;/h3&gt;</summary>
@@ -403,25 +424,6 @@
     <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
     <category term="实用技巧" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>go学习记录</title>
-    <link href="https://tskfok.github.io/2025/03/27/go-study-algorithm/"/>
-    <id>https://tskfok.github.io/2025/03/27/go-study-algorithm/</id>
-    <published>2025-03-27T08:57:49.000Z</published>
-    <updated>2025-03-27T02:44:56.492Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;算法&quot;&gt;&lt;a href=&quot;#算法&quot; class=&quot;headerlink&quot; title=&quot;算法&quot;&gt;&lt;/a&gt;算法&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="go学习记录" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="算法" scheme="https://tskfok.github.io/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%AE%97%E6%B3%95/"/>
     
     
   </entry>
