@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>平衡二叉树 | 每天进步一点点🤏</title>
+  <title>每天进步一点点🤏</title>
   <meta name="author" content="Y Y" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,19 +13,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="算法" />
+    <meta name="keywords" content="" />
   
-  <meta name="description" content="平衡二叉树">
-<meta property="og:type" content="article">
-<meta property="og:title" content="平衡二叉树">
-<meta property="og:url" content="https://tskfok.github.io/2025/07/23/algorithm2025080116/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="每天进步一点点🤏">
+<meta property="og:url" content="https://tskfok.github.io/archives/2025/08/index.html">
 <meta property="og:site_name" content="每天进步一点点🤏">
-<meta property="og:description" content="平衡二叉树">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-07-23T07:41:19.000Z">
-<meta property="article:modified_time" content="2025-08-01T08:19:37.336Z">
 <meta property="article:author" content="Y Y">
-<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
   
   <!-- 站点验证相关 -->
@@ -131,6 +126,8 @@
 <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
     <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
     
+        <div class="sticky-area">
+    
     
                 <aside id="krw-about" class="widget widget-kratos-about clearfix">
     <div class="photo-background"></div>
@@ -170,8 +167,6 @@
     </div>
 </aside>
             
-                    <div class="sticky-area">
-                
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
@@ -198,6 +193,12 @@
         
           
           
+            <a class="list-group-item" href="/2025/08/01/algorithm2025080116/"><i class="fa  fa-book"></i> 平衡二叉树</a>
+            
+          
+        
+          
+          
             <a class="list-group-item" href="/2025/07/31/algorithm2025073118/"><i class="fa  fa-book"></i> 将有序数组转换为二叉搜索树</a>
             
           
@@ -217,12 +218,6 @@
           
           
             <a class="list-group-item" href="/2025/07/31/algorithm2025073114/"><i class="fa  fa-book"></i> 相同的树</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2025/07/31/algorithm2025073113/"><i class="fa  fa-book"></i> 二叉树的中序遍历</a>
             
           
         
@@ -429,78 +424,77 @@
 
         
 
-            <article itemscope itemtype="https://schema.org/Article">
-    
-    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2025/07/23/algorithm2025080116/">
-    <div class="kratos-hentry kratos-post-inner clearfix">
-        <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">平衡二叉树</h1>
-            
-            
-            <ul class="kratos-post-meta text-center">
-                <li><time datetime="2025-07-23T07:41:19.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-07-23</time></li>
-                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
-                    <i class="fa fa-user"></i> 作者 <span itemprop="name">Y Y</span>
-                </li>
-                <li>
-                    <i class="fa fa-edit"></i> 
+<style>
+  .post-meta time{color:#00a7e0}
+  @media (max-width:767px){.posts-collapse{margin:0 20px}
+  .posts-collapse .post-meta,
+  .posts-collapse .post-title{display:block;width:auto;text-align:left}}
+  .posts-collapse{position:relative}
+  .posts-collapse::after{content:" ";position:absolute;top:20px;left:0;margin-left:-2px;width:4px;height:calc(100% - 35px);background:#f5f5f5;z-index:-1}
+  @media (max-width:991px){.posts-collapse{margin:0 20px}}
+  .posts-collapse .collection-title{position:relative}
+  .posts-collapse .collection-title h1,
+  .posts-collapse .collection-title h2{margin-left:20px}
+  .posts-collapse .collection-title small{color:#bbb;margin-left:5px}
+  .posts-collapse .collection-title::before{content:" ";position:absolute;left:0;top:50%;margin-left:-4px;margin-top:-4px;width:8px;height:8px;background:#bbb;border-radius:50%}
+  .posts-collapse .post-header{position:relative;transition-duration:.2s;transition-timing-function:ease-in-out;transition-delay:0s;transition-property:border}
+  .posts-collapse .post-header::before{content:" ";position:absolute;left:0;top:12px;width:6px;height:6px;margin-left:-4px;background:#bbb;border-radius:50%;border:1px solid #fff;transition: all .3s ease-in-out}
+  .posts-collapse .post-header:hover{border-bottom-color:#666}
+  .posts-collapse .post-header:hover::before{background:#222}
+  .posts-collapse .post-meta{position:absolute;font-size:12px;left:20px;top:5px}
+  .posts-collapse .post-comments-count{display:none}
+  .posts-collapse .post-title{margin-left:70px;font-size:16px;font-weight:400;line-height:inherit}
+  .posts-collapse .post-title::after{margin-left:3px;opacity:.6}
+  .posts-collapse .post-title a{color:#666;border-bottom:none}
+</style>
+
+  <article>
+      <div class="kratos-hentry kratos-post-inner clearfix">
+          <div class="kratos-post-content">
+            <h2 class="title-h2 text-center">文章归档</h2>
+            <div id="archives">
+              <div class="post-block archive post" style="margin-left: 2em;">
+                <h3 class="archive-page-counter">当前共有 1 篇文章 (゜-゜)つロ 干杯~</h3>
+                <div class="posts-collapse">
+                  
+                  
                     
                     
-                        789
+                      <!-- 没遇到Title的会被自动忽略年份，即使并不一致 -->
+                      
+                      <div class="collection-title">
+                        <a href="/archives/2025/"><h2 class="archive-year">2025</h2></a>
+                      </div>
                     
-                    字
-                </li>
-                
-            </ul>
-        </header>
-        <div class="kratos-post-content">
-            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1754036377336"></time> 前，其中的内容可能需要更新。</p></div>
+                    
+                      <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <header class="post-header">
+                          <h3 class="post-title">
+                            
+                                <a class="post-title-link" href="/2025/08/01/algorithm2025080116/" itemprop="mainEntityOfPage">
+                                  <span itemprop="name headline">平衡二叉树</span>
+                                </a>
+                            
+                          </h3>
+                          <div class="post-meta">
+                            <time class="post-time" itemprop="datePublished"
+                                  datetime="2025-08-01T08:20:19.000Z">
+                              08-01
+                            </time>
+                          </div>
+                        </header>
+                      </article>
+                    
+                  
+                </div>
+              </div>
             </div>
-            
-            <hr />
-            <div itemprop="articleBody"><h3 id="平衡二叉树"><a href="#平衡二叉树" class="headerlink" title="平衡二叉树"></a>平衡二叉树</h3><span id="more"></span>
-
-<h1>题目</h1>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">给定一个二叉树,判断它是否是平衡二叉树,平衡二叉树,指的是一颗树的左右子树深度不能大于1</span><br><span class="line"></span><br><span class="line">示例 1：</span><br><span class="line">输入：root = [3,9,20,null,null,15,7]</span><br><span class="line">输出：true</span><br><span class="line"></span><br><span class="line">示例 2：</span><br><span class="line">输入：root = [1,2,2,3,3,null,null,4,4]</span><br><span class="line">输出：false</span><br><span class="line"></span><br><span class="line">示例 3：</span><br><span class="line">输入：root = []</span><br><span class="line">输出：true</span><br></pre></td></tr></table></figure>
-
-<h1>解法1</h1>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">思路:</span><br><span class="line">获取二叉树的左右子树深度,出现深度&gt;1,则不为平衡二叉树</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line">private $bo = true;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * @param TreeNode $root</span><br><span class="line"> *</span><br><span class="line"> * @return Boolean</span><br><span class="line"> */</span><br><span class="line">function isBalanced($root)</span><br><span class="line">&#123;</span><br><span class="line">    $this-&gt;maxDepth($root);</span><br><span class="line"></span><br><span class="line">    return $this-&gt;bo;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">private function maxDepth($node)</span><br><span class="line">&#123;</span><br><span class="line">    if (!$node) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 递归获取左右子树的深度</span><br><span class="line">    $l = $this-&gt;maxDepth($node-&gt;left);</span><br><span class="line">    $r = $this-&gt;maxDepth($node-&gt;right);</span><br><span class="line"></span><br><span class="line">    if (abs($l - $r) &gt; 1) &#123;</span><br><span class="line">        // 标记为非平衡二叉树</span><br><span class="line">        $this-&gt;bo = false;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 深度加1</span><br><span class="line">    return max($l, $r) + 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
         </div>
-        
-        <footer class="kratos-entry-footer clearfix">
-            
-            <div class="footer-tag clearfix">
-                <div class="pull-left">
-                <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a>
-                </div>
-                <div class="pull-date">
-                    <time datetime="2025-08-01T08:19:37.336Z" itemprop="dateModified">最后编辑：2025-08-01</time>
-                </div>
-            </div>
-        </footer>
-    </div>
-    
-        <nav class="navigation post-navigation clearfix" role="navigation">
-            
-            <div class="nav-previous clearfix">
-                <a title=" 有效的括号" href="/2025/07/23/algorithm2025072314/">&lt; 上一篇</a>
-            </div>
-            
-            
-            <div class="nav-next clearfix">
-                <a title=" 合并两个有序链表" href="/2025/07/23/algorithm2025072315/">下一篇 &gt;</a>
-            </div>
-            
-        </nav>
-    
-    
-</article>
+      </div>
+      
+  </article>
+
 
         
 
