@@ -42,12 +42,35 @@
     </item>
     
     <item>
+      <title>环形链表</title>
+      <link>https://tskfok.github.io/2025/08/04/algorithm2025080415/</link>
+      <guid>https://tskfok.github.io/2025/08/04/algorithm2025080415/</guid>
+      <pubDate>Mon, 04 Aug 2025 07:41:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;环形链表&quot;&gt;&lt;a href=&quot;#环形链表&quot; class=&quot;headerlink&quot; title=&quot;环形链表&quot;&gt;&lt;/a&gt;环形链表&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/04/algorithm2025080415/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>只出现一次的数字</title>
       <link>https://tskfok.github.io/2025/08/04/algorithm2025080414/</link>
       <guid>https://tskfok.github.io/2025/08/04/algorithm2025080414/</guid>
       <pubDate>Mon, 04 Aug 2025 06:50:19 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;有效的括号&quot;&gt;&lt;a href=&quot;#有效的括号&quot; class=&quot;headerlink&quot; title=&quot;有效的括号&quot;&gt;&lt;/a&gt;有效的括号&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;只出现一次的数字&quot;&gt;&lt;a href=&quot;#只出现一次的数字&quot; class=&quot;headerlink&quot; title=&quot;只出现一次的数字&quot;&gt;&lt;/a&gt;只出现一次的数字&lt;/h3&gt;</description>
       
       
       
@@ -318,12 +341,12 @@
     </item>
     
     <item>
-      <title>x 的平方根</title>
-      <link>https://tskfok.github.io/2025/07/23/algorithm2025073015/</link>
-      <guid>https://tskfok.github.io/2025/07/23/algorithm2025073015/</guid>
+      <title>合并两个有序链表</title>
+      <link>https://tskfok.github.io/2025/07/23/algorithm2025072315/</link>
+      <guid>https://tskfok.github.io/2025/07/23/algorithm2025072315/</guid>
       <pubDate>Wed, 23 Jul 2025 07:41:19 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;x-的平方根&quot;&gt;&lt;a href=&quot;#x-的平方根&quot; class=&quot;headerlink&quot; title=&quot;x 的平方根&quot;&gt;&lt;/a&gt;x 的平方根&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;合并两个有序链表&quot;&gt;&lt;a href=&quot;#合并两个有序链表&quot; class=&quot;headerlink&quot; title=&quot;合并两个有序链表&quot;&gt;&lt;/a&gt;合并两个有序链表&lt;/h3&gt;</description>
       
       
       
@@ -336,7 +359,7 @@
       <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
       
       
-      <comments>https://tskfok.github.io/2025/07/23/algorithm2025073015/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/07/23/algorithm2025072315/#disqus_thread</comments>
       
     </item>
     
@@ -364,12 +387,12 @@
     </item>
     
     <item>
-      <title>合并两个有序链表</title>
-      <link>https://tskfok.github.io/2025/07/23/algorithm2025072315/</link>
-      <guid>https://tskfok.github.io/2025/07/23/algorithm2025072315/</guid>
+      <title>x 的平方根</title>
+      <link>https://tskfok.github.io/2025/07/23/algorithm2025073015/</link>
+      <guid>https://tskfok.github.io/2025/07/23/algorithm2025073015/</guid>
       <pubDate>Wed, 23 Jul 2025 07:41:19 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;合并两个有序链表&quot;&gt;&lt;a href=&quot;#合并两个有序链表&quot; class=&quot;headerlink&quot; title=&quot;合并两个有序链表&quot;&gt;&lt;/a&gt;合并两个有序链表&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;x-的平方根&quot;&gt;&lt;a href=&quot;#x-的平方根&quot; class=&quot;headerlink&quot; title=&quot;x 的平方根&quot;&gt;&lt;/a&gt;x 的平方根&lt;/h3&gt;</description>
       
       
       
@@ -382,7 +405,7 @@
       <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
       
       
-      <comments>https://tskfok.github.io/2025/07/23/algorithm2025072315/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/07/23/algorithm2025073015/#disqus_thread</comments>
       
     </item>
     
@@ -444,31 +467,6 @@
       
       
       <comments>https://tskfok.github.io/2025/06/24/apt-remove/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>go语言如何使用腾讯云的Ckafka</title>
-      <link>https://tskfok.github.io/2025/06/23/tx-kafka/</link>
-      <guid>https://tskfok.github.io/2025/06/23/tx-kafka/</guid>
-      <pubDate>Mon, 23 Jun 2025 09:47:08 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;go语言如何使用腾讯云的kafka&quot;&gt;&lt;a href=&quot;#go语言如何使用腾讯云的kafka&quot; class=&quot;headerlink&quot; title=&quot;go语言如何使用腾讯云的kafka&quot;&gt;&lt;/a&gt;go语言如何使用腾讯云的kafka&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/kafka/">kafka</category>
-      
-      <category domain="https://tskfok.github.io/categories/kafka/%E8%85%BE%E8%AE%AF%E4%BA%91/">腾讯云</category>
-      
-      <category domain="https://tskfok.github.io/categories/kafka/%E8%85%BE%E8%AE%AF%E4%BA%91/go/">go</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/kafka/">kafka</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/06/23/tx-kafka/#disqus_thread</comments>
       
     </item>
     
