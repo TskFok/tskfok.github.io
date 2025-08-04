@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>go学习记录2025-03-21 | 每天进步一点点🤏</title>
+  <title>相交链表 | 每天进步一点点🤏</title>
   <meta name="author" content="Y Y" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,21 +13,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="算法" />
   
-  <meta name="description" content="浮点数计算">
+  <meta name="description" content="相交链表">
 <meta property="og:type" content="article">
-<meta property="og:title" content="go学习记录2025-03-21">
-<meta property="og:url" content="https://tskfok.github.io/2025/03/21/go-study-float/index.html">
+<meta property="og:title" content="相交链表">
+<meta property="og:url" content="https://tskfok.github.io/2025/08/04/algorithm2025080416/index.html">
 <meta property="og:site_name" content="每天进步一点点🤏">
-<meta property="og:description" content="浮点数计算">
+<meta property="og:description" content="相交链表">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tskfok.github.io/2025/03/21/go-study-float/https:/img.adiosat.com/go-slice/go.png">
-<meta property="article:published_time" content="2025-03-21T06:07:50.000Z">
-<meta property="article:modified_time" content="2025-03-21T09:20:14.190Z">
+<meta property="article:published_time" content="2025-08-04T07:41:19.000Z">
+<meta property="article:modified_time" content="2025-08-04T08:31:34.006Z">
 <meta property="article:author" content="Y Y">
+<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tskfok.github.io/2025/03/21/go-study-float/https:/img.adiosat.com/go-slice/go.png">
   
   <!-- 站点验证相关 -->
   
@@ -446,15 +445,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2025/03/21/go-study-float/">
+    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2025/08/04/algorithm2025080416/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">go学习记录2025-03-21</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">相交链表</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2025-03-21T06:07:50.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-03-21</time></li>
+                <li><time datetime="2025-08-04T07:41:19.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-08-04</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Y Y</span>
                 </li>
@@ -462,7 +461,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        745
+                        961
                     
                     字
                 </li>
@@ -472,14 +471,19 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1742548814190"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1754296294006"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
-            <div itemprop="articleBody"><h3 id="浮点数计算"><a href="#浮点数计算" class="headerlink" title="浮点数计算"></a>浮点数计算</h3><span id="more"></span>
+            <div itemprop="articleBody"><h3 id="相交链表"><a href="#相交链表" class="headerlink" title="相交链表"></a>相交链表</h3><span id="more"></span>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">go浮点数的表现形势</span><br><span class="line">123.E+20 = 123*10^20</span><br><span class="line">123E20 = 123*10^20</span><br><span class="line">123E-20 = 123*10^-20</span><br><span class="line"></span><br><span class="line">大数计算</span><br><span class="line">123E20打印出来的值有偏差,使用big确保没有误差</span><br><span class="line">如果是整数运算</span><br><span class="line">10^20 res:= new(big.Int).Exp(big.NewInt(10), big.NewInt(20), nil)</span><br><span class="line">123*10^20 = new(big.Int).Mul(big.NewInt(123), res)</span><br><span class="line"></span><br><span class="line">如果是浮点数计算</span><br><span class="line">10^-20 = new(big.Float).SetPrec(100).SetFloat64(1e-20)</span><br><span class="line">或者</span><br><span class="line">new(big.Float).Quo(big.NewFloat(1), big.NewFloat(1e20))</span><br><span class="line">相当于1/10^20</span><br><span class="line"></span><br><span class="line">十六进制的浮点数</span><br><span class="line">0x1.Fp0 = 1*16^0+15*16^-1 0x代表了十六进制,1.F,1是整数位,F是小数,F=15*16^-1=15/16,F在十六进制中代表了15,加上前面的整数位1*16^0,p后面的0代表着2^0 = 1,对结果没有影响</span><br><span class="line">0X.8p1 = (8*16^-1+0*16^0)*2^1 0X也是代表十六进制,.8是0.8的简写,0是整数,8是小时,8*16^-1 = 8/16,p后面的部分是2^1=2,结果就是(8/16+0)*2</span><br><span class="line">0X1FFFP-16 = 1*16^3+F*16^2+F*16^1+F*16^0*2^-16,F=15 所以结果=16^3+15*16^2+15*16+15/2^16,2^16 = 65535,所以=8191/65535 0.124986648</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-</div>
+<h1>题目</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">给你两个单链表的头节点 headA 和 headB ,请你找出并返回两个单链表相交的起始节点.如果两个链表不存在相交节点,返回 null</span><br><span class="line">题目数据 保证 整个链式结构中不存在环</span><br><span class="line">注意,函数返回结果后,链表必须保持其原始结构</span><br></pre></td></tr></table></figure>
+
+<h1>解法</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">思路:</span><br><span class="line">链表必须保持其原始结构,所以不存在靠修改val达成查看是否遍历过节点的方法</span><br><span class="line">解法是将两个链表的长度配平,遍历其中一个链表,遍历完成后继续遍历另一个,总共最大需要遍历的长度是两个链表的长度总和,遍历直到出现相同的节点</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line">class ListNode</span><br><span class="line">&#123;</span><br><span class="line">    public $val = 0;</span><br><span class="line">    /**</span><br><span class="line">     * @var ListNode|null</span><br><span class="line">     */</span><br><span class="line">    public $next = null;</span><br><span class="line"></span><br><span class="line">    function __construct($val = 0, $next = null)</span><br><span class="line">    &#123;</span><br><span class="line">        $this-&gt;val  = $val;</span><br><span class="line">        $this-&gt;next = $next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * @param ListNode $headA</span><br><span class="line"> * @param ListNode $headB</span><br><span class="line"> *</span><br><span class="line"> * @return ListNode</span><br><span class="line"> */</span><br><span class="line">function getIntersectionNode($headA, $headB)</span><br><span class="line">&#123;</span><br><span class="line">    $pA = $headA;</span><br><span class="line">    $pB = $headB;</span><br><span class="line"></span><br><span class="line">    while($pA !== $pB) &#123;</span><br><span class="line">        //遍历A链表,遍历完成了继续遍历B链表,相当于把A链表接到B链表前面,B链表接到A链表后面</span><br><span class="line">        //让两个链表的长度相同,遍历直到两个链表中出现相同的节点</span><br><span class="line">        $pA = $pA == null ? $headB : $pA-&gt;next;</span><br><span class="line">        $pB = $pB == null ? $headA : $pB-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return $pA;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -487,10 +491,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    
+                    <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2025-03-21T09:20:14.190Z" itemprop="dateModified">最后编辑：2025-03-21</time>
+                    <time datetime="2025-08-04T08:31:34.006Z" itemprop="dateModified">最后编辑：2025-08-04</time>
                 </div>
             </div>
         </footer>
@@ -499,12 +503,12 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" go学习记录2025-03-21" href="/2025/03/21/go-study-underline/">&lt; 上一篇</a>
+                <a title=" 只出现一次的数字" href="/2025/08/04/algorithm2025080414/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" go学习记录2025-03-21" href="/2025/03/21/go-study-reverse/">下一篇 &gt;</a>
+                <a title=" 环形链表" href="/2025/08/04/algorithm2025080415/">下一篇 &gt;</a>
             </div>
             
         </nav>

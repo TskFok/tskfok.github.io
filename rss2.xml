@@ -65,6 +65,29 @@
     </item>
     
     <item>
+      <title>相交链表</title>
+      <link>https://tskfok.github.io/2025/08/04/algorithm2025080416/</link>
+      <guid>https://tskfok.github.io/2025/08/04/algorithm2025080416/</guid>
+      <pubDate>Mon, 04 Aug 2025 07:41:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;相交链表&quot;&gt;&lt;a href=&quot;#相交链表&quot; class=&quot;headerlink&quot; title=&quot;相交链表&quot;&gt;&lt;/a&gt;相交链表&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/04/algorithm2025080416/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>只出现一次的数字</title>
       <link>https://tskfok.github.io/2025/08/04/algorithm2025080414/</link>
       <guid>https://tskfok.github.io/2025/08/04/algorithm2025080414/</guid>
@@ -341,12 +364,12 @@
     </item>
     
     <item>
-      <title>合并两个有序链表</title>
-      <link>https://tskfok.github.io/2025/07/23/algorithm2025072315/</link>
-      <guid>https://tskfok.github.io/2025/07/23/algorithm2025072315/</guid>
+      <title>x 的平方根</title>
+      <link>https://tskfok.github.io/2025/07/23/algorithm2025073015/</link>
+      <guid>https://tskfok.github.io/2025/07/23/algorithm2025073015/</guid>
       <pubDate>Wed, 23 Jul 2025 07:41:19 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;合并两个有序链表&quot;&gt;&lt;a href=&quot;#合并两个有序链表&quot; class=&quot;headerlink&quot; title=&quot;合并两个有序链表&quot;&gt;&lt;/a&gt;合并两个有序链表&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;x-的平方根&quot;&gt;&lt;a href=&quot;#x-的平方根&quot; class=&quot;headerlink&quot; title=&quot;x 的平方根&quot;&gt;&lt;/a&gt;x 的平方根&lt;/h3&gt;</description>
       
       
       
@@ -359,7 +382,7 @@
       <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
       
       
-      <comments>https://tskfok.github.io/2025/07/23/algorithm2025072315/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/07/23/algorithm2025073015/#disqus_thread</comments>
       
     </item>
     
@@ -387,12 +410,12 @@
     </item>
     
     <item>
-      <title>x 的平方根</title>
-      <link>https://tskfok.github.io/2025/07/23/algorithm2025073015/</link>
-      <guid>https://tskfok.github.io/2025/07/23/algorithm2025073015/</guid>
+      <title>合并两个有序链表</title>
+      <link>https://tskfok.github.io/2025/07/23/algorithm2025072315/</link>
+      <guid>https://tskfok.github.io/2025/07/23/algorithm2025072315/</guid>
       <pubDate>Wed, 23 Jul 2025 07:41:19 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;x-的平方根&quot;&gt;&lt;a href=&quot;#x-的平方根&quot; class=&quot;headerlink&quot; title=&quot;x 的平方根&quot;&gt;&lt;/a&gt;x 的平方根&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;合并两个有序链表&quot;&gt;&lt;a href=&quot;#合并两个有序链表&quot; class=&quot;headerlink&quot; title=&quot;合并两个有序链表&quot;&gt;&lt;/a&gt;合并两个有序链表&lt;/h3&gt;</description>
       
       
       
@@ -405,7 +428,7 @@
       <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
       
       
-      <comments>https://tskfok.github.io/2025/07/23/algorithm2025073015/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/07/23/algorithm2025072315/#disqus_thread</comments>
       
     </item>
     
@@ -448,25 +471,6 @@
       
       
       <comments>https://tskfok.github.io/2025/07/15/question/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>apt删除程序</title>
-      <link>https://tskfok.github.io/2025/06/24/apt-remove/</link>
-      <guid>https://tskfok.github.io/2025/06/24/apt-remove/</guid>
-      <pubDate>Tue, 24 Jun 2025 07:18:21 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;apt删除程序&quot;&gt;&lt;a href=&quot;#apt删除程序&quot; class=&quot;headerlink&quot; title=&quot;apt删除程序&quot;&gt;&lt;/a&gt;apt删除程序&lt;/h3&gt;</description>
-      
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/tags/apt/">apt</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/06/24/apt-remove/#disqus_thread</comments>
       
     </item>
     
