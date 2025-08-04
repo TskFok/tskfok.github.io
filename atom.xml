@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-08-01T09:19:24.916Z</updated>
+  <updated>2025-08-04T02:42:13.724Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -17,11 +17,74 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>algorithm2025072315</title>
+    <link href="https://tskfok.github.io/2025/08/04/algorithm/"/>
+    <id>https://tskfok.github.io/2025/08/04/algorithm/</id>
+    <published>2025-08-04T07:41:19.000Z</published>
+    <updated>2025-08-04T02:42:13.724Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;有效的括号&quot;&gt;&lt;a href=&quot;#有效的括号&quot; class=&quot;headerlink&quot; title=&quot;有效的括号&quot;&gt;&lt;/a&gt;有效的括号&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>买卖股票的最佳时机</title>
+    <link href="https://tskfok.github.io/2025/08/04/algorithm2025080413/"/>
+    <id>https://tskfok.github.io/2025/08/04/algorithm2025080413/</id>
+    <published>2025-08-04T05:52:19.000Z</published>
+    <updated>2025-08-04T06:19:42.948Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;买卖股票的最佳时机&quot;&gt;&lt;a href=&quot;#买卖股票的最佳时机&quot; class=&quot;headerlink&quot; title=&quot;买卖股票的最佳时机&quot;&gt;&lt;/a&gt;买卖股票的最佳时机&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>杨辉三角</title>
+    <link href="https://tskfok.github.io/2025/08/04/algorithm2025080410/"/>
+    <id>https://tskfok.github.io/2025/08/04/algorithm2025080410/</id>
+    <published>2025-08-04T02:41:19.000Z</published>
+    <updated>2025-08-04T03:05:37.626Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;杨辉三角&quot;&gt;&lt;a href=&quot;#杨辉三角&quot; class=&quot;headerlink&quot; title=&quot;杨辉三角&quot;&gt;&lt;/a&gt;杨辉三角&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>路径总和</title>
     <link href="https://tskfok.github.io/2025/08/01/algorithm2025080118/"/>
     <id>https://tskfok.github.io/2025/08/01/algorithm2025080118/</id>
     <published>2025-08-01T09:44:19.000Z</published>
-    <updated>2025-08-01T09:19:24.916Z</updated>
+    <updated>2025-08-04T02:37:19.491Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;路径总和&quot;&gt;&lt;a href=&quot;#路径总和&quot; class=&quot;headerlink&quot; title=&quot;路径总和&quot;&gt;&lt;/a&gt;路径总和&lt;/h3&gt;</summary>
@@ -206,27 +269,6 @@
   </entry>
   
   <entry>
-    <title>algorithm2025072315</title>
-    <link href="https://tskfok.github.io/2025/07/23/algorithm/"/>
-    <id>https://tskfok.github.io/2025/07/23/algorithm/</id>
-    <published>2025-07-23T07:41:19.000Z</published>
-    <updated>2025-07-30T03:05:23.179Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;有效的括号&quot;&gt;&lt;a href=&quot;#有效的括号&quot; class=&quot;headerlink&quot; title=&quot;有效的括号&quot;&gt;&lt;/a&gt;有效的括号&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
-    
-    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>合并两个有序链表</title>
     <link href="https://tskfok.github.io/2025/07/23/algorithm2025072315/"/>
     <id>https://tskfok.github.io/2025/07/23/algorithm2025072315/</id>
@@ -387,46 +429,6 @@
     <category term="unraid" scheme="https://tskfok.github.io/tags/unraid/"/>
     
     <category term="frp" scheme="https://tskfok.github.io/tags/frp/"/>
-    
-    <category term="openvpn" scheme="https://tskfok.github.io/tags/openvpn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何查询php-fpm配置的位置</title>
-    <link href="https://tskfok.github.io/2025/06/18/command/"/>
-    <id>https://tskfok.github.io/2025/06/18/command/</id>
-    <published>2025-06-18T03:03:37.000Z</published>
-    <updated>2025-06-19T07:07:23.035Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;如何查询php-fpm配置的位置&quot;&gt;&lt;a href=&quot;#如何查询php-fpm配置的位置&quot; class=&quot;headerlink&quot; title=&quot;如何查询php-fpm配置的位置&quot;&gt;&lt;/a&gt;如何查询php-fpm配置的位置&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
-    
-    
-    <category term="php" scheme="https://tskfok.github.io/tags/php/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>openvpn+frp访问内网</title>
-    <link href="https://tskfok.github.io/2025/06/10/openvpn/"/>
-    <id>https://tskfok.github.io/2025/06/10/openvpn/</id>
-    <published>2025-06-10T02:43:37.000Z</published>
-    <updated>2025-06-23T06:42:57.701Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;openvpn-frp访问内网&quot;&gt;&lt;a href=&quot;#openvpn-frp访问内网&quot; class=&quot;headerlink&quot; title=&quot;openvpn+frp访问内网&quot;&gt;&lt;/a&gt;openvpn+frp访问内网&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="openvpn" scheme="https://tskfok.github.io/categories/openvpn/"/>
-    
-    <category term="frp" scheme="https://tskfok.github.io/categories/openvpn/frp/"/>
-    
     
     <category term="openvpn" scheme="https://tskfok.github.io/tags/openvpn/"/>
     
