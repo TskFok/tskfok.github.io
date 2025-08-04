@@ -42,6 +42,29 @@
     </item>
     
     <item>
+      <title>只出现一次的数字</title>
+      <link>https://tskfok.github.io/2025/08/04/algorithm2025080414/</link>
+      <guid>https://tskfok.github.io/2025/08/04/algorithm2025080414/</guid>
+      <pubDate>Mon, 04 Aug 2025 06:50:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;有效的括号&quot;&gt;&lt;a href=&quot;#有效的括号&quot; class=&quot;headerlink&quot; title=&quot;有效的括号&quot;&gt;&lt;/a&gt;有效的括号&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/04/algorithm2025080414/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>买卖股票的最佳时机</title>
       <link>https://tskfok.github.io/2025/08/04/algorithm2025080413/</link>
       <guid>https://tskfok.github.io/2025/08/04/algorithm2025080413/</guid>
@@ -295,12 +318,12 @@
     </item>
     
     <item>
-      <title>合并两个有序链表</title>
-      <link>https://tskfok.github.io/2025/07/23/algorithm2025072315/</link>
-      <guid>https://tskfok.github.io/2025/07/23/algorithm2025072315/</guid>
+      <title>x 的平方根</title>
+      <link>https://tskfok.github.io/2025/07/23/algorithm2025073015/</link>
+      <guid>https://tskfok.github.io/2025/07/23/algorithm2025073015/</guid>
       <pubDate>Wed, 23 Jul 2025 07:41:19 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;合并两个有序链表&quot;&gt;&lt;a href=&quot;#合并两个有序链表&quot; class=&quot;headerlink&quot; title=&quot;合并两个有序链表&quot;&gt;&lt;/a&gt;合并两个有序链表&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;x-的平方根&quot;&gt;&lt;a href=&quot;#x-的平方根&quot; class=&quot;headerlink&quot; title=&quot;x 的平方根&quot;&gt;&lt;/a&gt;x 的平方根&lt;/h3&gt;</description>
       
       
       
@@ -313,7 +336,7 @@
       <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
       
       
-      <comments>https://tskfok.github.io/2025/07/23/algorithm2025072315/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/07/23/algorithm2025073015/#disqus_thread</comments>
       
     </item>
     
@@ -341,12 +364,12 @@
     </item>
     
     <item>
-      <title>x 的平方根</title>
-      <link>https://tskfok.github.io/2025/07/23/algorithm2025073015/</link>
-      <guid>https://tskfok.github.io/2025/07/23/algorithm2025073015/</guid>
+      <title>合并两个有序链表</title>
+      <link>https://tskfok.github.io/2025/07/23/algorithm2025072315/</link>
+      <guid>https://tskfok.github.io/2025/07/23/algorithm2025072315/</guid>
       <pubDate>Wed, 23 Jul 2025 07:41:19 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;x-的平方根&quot;&gt;&lt;a href=&quot;#x-的平方根&quot; class=&quot;headerlink&quot; title=&quot;x 的平方根&quot;&gt;&lt;/a&gt;x 的平方根&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;合并两个有序链表&quot;&gt;&lt;a href=&quot;#合并两个有序链表&quot; class=&quot;headerlink&quot; title=&quot;合并两个有序链表&quot;&gt;&lt;/a&gt;合并两个有序链表&lt;/h3&gt;</description>
       
       
       
@@ -359,7 +382,7 @@
       <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
       
       
-      <comments>https://tskfok.github.io/2025/07/23/algorithm2025073015/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/07/23/algorithm2025072315/#disqus_thread</comments>
       
     </item>
     
@@ -446,33 +469,6 @@
       
       
       <comments>https://tskfok.github.io/2025/06/23/tx-kafka/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>unraid内网访问</title>
-      <link>https://tskfok.github.io/2025/06/19/unraid-remote/</link>
-      <guid>https://tskfok.github.io/2025/06/19/unraid-remote/</guid>
-      <pubDate>Thu, 19 Jun 2025 06:46:40 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;unraid内网访问&quot;&gt;&lt;a href=&quot;#unraid内网访问&quot; class=&quot;headerlink&quot; title=&quot;unraid内网访问&quot;&gt;&lt;/a&gt;unraid内网访问&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/nas/">nas</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">内网穿透</category>
-      
-      <category domain="https://tskfok.github.io/tags/unraid/">unraid</category>
-      
-      <category domain="https://tskfok.github.io/tags/frp/">frp</category>
-      
-      <category domain="https://tskfok.github.io/tags/openvpn/">openvpn</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/06/19/unraid-remote/#disqus_thread</comments>
       
     </item>
     
