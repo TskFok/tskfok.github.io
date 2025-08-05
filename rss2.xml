@@ -15,14 +15,14 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 04 Aug 2025 02:42:13 GMT</pubDate>
+    <pubDate>Tue, 05 Aug 2025 05:27:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>algorithm2025072315</title>
-      <link>https://tskfok.github.io/2025/08/04/algorithm/</link>
-      <guid>https://tskfok.github.io/2025/08/04/algorithm/</guid>
-      <pubDate>Mon, 04 Aug 2025 07:41:19 GMT</pubDate>
+      <link>https://tskfok.github.io/2025/08/05/algorithm/</link>
+      <guid>https://tskfok.github.io/2025/08/05/algorithm/</guid>
+      <pubDate>Tue, 05 Aug 2025 05:41:19 GMT</pubDate>
       
       <description>&lt;h3 id=&quot;有效的括号&quot;&gt;&lt;a href=&quot;#有效的括号&quot; class=&quot;headerlink&quot; title=&quot;有效的括号&quot;&gt;&lt;/a&gt;有效的括号&lt;/h3&gt;</description>
       
@@ -37,7 +37,30 @@
       <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
       
       
-      <comments>https://tskfok.github.io/2025/08/04/algorithm/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/08/05/algorithm/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Excel表列名称</title>
+      <link>https://tskfok.github.io/2025/08/05/algorithm2025080513/</link>
+      <guid>https://tskfok.github.io/2025/08/05/algorithm2025080513/</guid>
+      <pubDate>Tue, 05 Aug 2025 05:41:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;Excel表列名称&quot;&gt;&lt;a href=&quot;#Excel表列名称&quot; class=&quot;headerlink&quot; title=&quot;Excel表列名称&quot;&gt;&lt;/a&gt;Excel表列名称&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/05/algorithm2025080513/#disqus_thread</comments>
       
     </item>
     
@@ -387,29 +410,6 @@
     </item>
     
     <item>
-      <title>括号生成</title>
-      <link>https://tskfok.github.io/2025/07/23/algorithm2025073011/</link>
-      <guid>https://tskfok.github.io/2025/07/23/algorithm2025073011/</guid>
-      <pubDate>Wed, 23 Jul 2025 07:41:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;括号生成&quot;&gt;&lt;a href=&quot;#括号生成&quot; class=&quot;headerlink&quot; title=&quot;括号生成&quot;&gt;&lt;/a&gt;括号生成&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/07/23/algorithm2025073011/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>x 的平方根</title>
       <link>https://tskfok.github.io/2025/07/23/algorithm2025073015/</link>
       <guid>https://tskfok.github.io/2025/07/23/algorithm2025073015/</guid>
@@ -433,6 +433,29 @@
     </item>
     
     <item>
+      <title>括号生成</title>
+      <link>https://tskfok.github.io/2025/07/23/algorithm2025073011/</link>
+      <guid>https://tskfok.github.io/2025/07/23/algorithm2025073011/</guid>
+      <pubDate>Wed, 23 Jul 2025 07:41:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;括号生成&quot;&gt;&lt;a href=&quot;#括号生成&quot; class=&quot;headerlink&quot; title=&quot;括号生成&quot;&gt;&lt;/a&gt;括号生成&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/07/23/algorithm2025073011/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>有效的括号</title>
       <link>https://tskfok.github.io/2025/07/23/algorithm2025072314/</link>
       <guid>https://tskfok.github.io/2025/07/23/algorithm2025072314/</guid>
@@ -452,25 +475,6 @@
       
       
       <comments>https://tskfok.github.io/2025/07/23/algorithm2025072314/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>mysql查询问题</title>
-      <link>https://tskfok.github.io/2025/07/15/question/</link>
-      <guid>https://tskfok.github.io/2025/07/15/question/</guid>
-      <pubDate>Tue, 15 Jul 2025 03:47:09 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;mysql查询问题&quot;&gt;&lt;a href=&quot;#mysql查询问题&quot; class=&quot;headerlink&quot; title=&quot;mysql查询问题&quot;&gt;&lt;/a&gt;mysql查询问题&lt;/h3&gt;</description>
-      
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/tags/mysql/">mysql</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/07/15/question/#disqus_thread</comments>
       
     </item>
     

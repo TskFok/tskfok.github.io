@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-08-04T02:42:13.724Z</updated>
+  <updated>2025-08-05T05:27:48.679Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -18,13 +18,34 @@
   
   <entry>
     <title>algorithm2025072315</title>
-    <link href="https://tskfok.github.io/2025/08/04/algorithm/"/>
-    <id>https://tskfok.github.io/2025/08/04/algorithm/</id>
-    <published>2025-08-04T07:41:19.000Z</published>
-    <updated>2025-08-04T02:42:13.724Z</updated>
+    <link href="https://tskfok.github.io/2025/08/05/algorithm/"/>
+    <id>https://tskfok.github.io/2025/08/05/algorithm/</id>
+    <published>2025-08-05T05:41:19.000Z</published>
+    <updated>2025-08-05T05:27:48.679Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;有效的括号&quot;&gt;&lt;a href=&quot;#有效的括号&quot; class=&quot;headerlink&quot; title=&quot;有效的括号&quot;&gt;&lt;/a&gt;有效的括号&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Excel表列名称</title>
+    <link href="https://tskfok.github.io/2025/08/05/algorithm2025080513/"/>
+    <id>https://tskfok.github.io/2025/08/05/algorithm2025080513/</id>
+    <published>2025-08-05T05:41:19.000Z</published>
+    <updated>2025-08-05T05:43:24.911Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;Excel表列名称&quot;&gt;&lt;a href=&quot;#Excel表列名称&quot; class=&quot;headerlink&quot; title=&quot;Excel表列名称&quot;&gt;&lt;/a&gt;Excel表列名称&lt;/h3&gt;</summary>
     
     
     
@@ -353,14 +374,14 @@
   </entry>
   
   <entry>
-    <title>括号生成</title>
-    <link href="https://tskfok.github.io/2025/07/23/algorithm2025073011/"/>
-    <id>https://tskfok.github.io/2025/07/23/algorithm2025073011/</id>
+    <title>x 的平方根</title>
+    <link href="https://tskfok.github.io/2025/07/23/algorithm2025073015/"/>
+    <id>https://tskfok.github.io/2025/07/23/algorithm2025073015/</id>
     <published>2025-07-23T07:41:19.000Z</published>
-    <updated>2025-07-30T03:33:14.045Z</updated>
+    <updated>2025-07-30T07:25:37.096Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;括号生成&quot;&gt;&lt;a href=&quot;#括号生成&quot; class=&quot;headerlink&quot; title=&quot;括号生成&quot;&gt;&lt;/a&gt;括号生成&lt;/h3&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;x-的平方根&quot;&gt;&lt;a href=&quot;#x-的平方根&quot; class=&quot;headerlink&quot; title=&quot;x 的平方根&quot;&gt;&lt;/a&gt;x 的平方根&lt;/h3&gt;</summary>
     
     
     
@@ -374,14 +395,14 @@
   </entry>
   
   <entry>
-    <title>x 的平方根</title>
-    <link href="https://tskfok.github.io/2025/07/23/algorithm2025073015/"/>
-    <id>https://tskfok.github.io/2025/07/23/algorithm2025073015/</id>
+    <title>括号生成</title>
+    <link href="https://tskfok.github.io/2025/07/23/algorithm2025073011/"/>
+    <id>https://tskfok.github.io/2025/07/23/algorithm2025073011/</id>
     <published>2025-07-23T07:41:19.000Z</published>
-    <updated>2025-07-30T07:25:37.096Z</updated>
+    <updated>2025-07-30T03:33:14.045Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;x-的平方根&quot;&gt;&lt;a href=&quot;#x-的平方根&quot; class=&quot;headerlink&quot; title=&quot;x 的平方根&quot;&gt;&lt;/a&gt;x 的平方根&lt;/h3&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;括号生成&quot;&gt;&lt;a href=&quot;#括号生成&quot; class=&quot;headerlink&quot; title=&quot;括号生成&quot;&gt;&lt;/a&gt;括号生成&lt;/h3&gt;</summary>
     
     
     
@@ -412,23 +433,6 @@
     
     
     <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mysql查询问题</title>
-    <link href="https://tskfok.github.io/2025/07/15/question/"/>
-    <id>https://tskfok.github.io/2025/07/15/question/</id>
-    <published>2025-07-15T03:47:09.000Z</published>
-    <updated>2025-07-15T03:49:48.490Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;mysql查询问题&quot;&gt;&lt;a href=&quot;#mysql查询问题&quot; class=&quot;headerlink&quot; title=&quot;mysql查询问题&quot;&gt;&lt;/a&gt;mysql查询问题&lt;/h3&gt;</summary>
-    
-    
-    
-    
-    <category term="mysql" scheme="https://tskfok.github.io/tags/mysql/"/>
     
   </entry>
   
