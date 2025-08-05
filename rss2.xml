@@ -134,6 +134,29 @@
     </item>
     
     <item>
+      <title>快乐数</title>
+      <link>https://tskfok.github.io/2025/08/04/algorithm2025080518/</link>
+      <guid>https://tskfok.github.io/2025/08/04/algorithm2025080518/</guid>
+      <pubDate>Mon, 04 Aug 2025 07:41:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;快乐数&quot;&gt;&lt;a href=&quot;#快乐数&quot; class=&quot;headerlink&quot; title=&quot;快乐数&quot;&gt;&lt;/a&gt;快乐数&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/04/algorithm2025080518/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>只出现一次的数字</title>
       <link>https://tskfok.github.io/2025/08/04/algorithm2025080414/</link>
       <guid>https://tskfok.github.io/2025/08/04/algorithm2025080414/</guid>
@@ -410,29 +433,6 @@
     </item>
     
     <item>
-      <title>合并两个有序链表</title>
-      <link>https://tskfok.github.io/2025/07/23/algorithm2025072315/</link>
-      <guid>https://tskfok.github.io/2025/07/23/algorithm2025072315/</guid>
-      <pubDate>Wed, 23 Jul 2025 07:41:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;合并两个有序链表&quot;&gt;&lt;a href=&quot;#合并两个有序链表&quot; class=&quot;headerlink&quot; title=&quot;合并两个有序链表&quot;&gt;&lt;/a&gt;合并两个有序链表&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/07/23/algorithm2025072315/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>括号生成</title>
       <link>https://tskfok.github.io/2025/07/23/algorithm2025073011/</link>
       <guid>https://tskfok.github.io/2025/07/23/algorithm2025073011/</guid>
@@ -456,12 +456,12 @@
     </item>
     
     <item>
-      <title>x 的平方根</title>
-      <link>https://tskfok.github.io/2025/07/23/algorithm2025073015/</link>
-      <guid>https://tskfok.github.io/2025/07/23/algorithm2025073015/</guid>
+      <title>合并两个有序链表</title>
+      <link>https://tskfok.github.io/2025/07/23/algorithm2025072315/</link>
+      <guid>https://tskfok.github.io/2025/07/23/algorithm2025072315/</guid>
       <pubDate>Wed, 23 Jul 2025 07:41:19 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;x-的平方根&quot;&gt;&lt;a href=&quot;#x-的平方根&quot; class=&quot;headerlink&quot; title=&quot;x 的平方根&quot;&gt;&lt;/a&gt;x 的平方根&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;合并两个有序链表&quot;&gt;&lt;a href=&quot;#合并两个有序链表&quot; class=&quot;headerlink&quot; title=&quot;合并两个有序链表&quot;&gt;&lt;/a&gt;合并两个有序链表&lt;/h3&gt;</description>
       
       
       
@@ -474,7 +474,7 @@
       <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
       
       
-      <comments>https://tskfok.github.io/2025/07/23/algorithm2025073015/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/07/23/algorithm2025072315/#disqus_thread</comments>
       
     </item>
     
