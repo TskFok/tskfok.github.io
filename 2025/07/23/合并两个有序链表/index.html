@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>有效的括号 | 每天进步一点点🤏</title>
+  <title>合并两个有序链表 | 每天进步一点点🤏</title>
   <meta name="author" content="Y Y" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -15,15 +15,15 @@
   
     <meta name="keywords" content="算法" />
   
-  <meta name="description" content="有效的括号">
+  <meta name="description" content="合并两个有序链表">
 <meta property="og:type" content="article">
-<meta property="og:title" content="有效的括号">
-<meta property="og:url" content="https://tskfok.github.io/2025/07/23/algorithm2025072314/index.html">
+<meta property="og:title" content="合并两个有序链表">
+<meta property="og:url" content="https://tskfok.github.io/2025/07/23/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/index.html">
 <meta property="og:site_name" content="每天进步一点点🤏">
-<meta property="og:description" content="有效的括号">
+<meta property="og:description" content="合并两个有序链表">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-07-23T06:34:23.000Z">
-<meta property="article:modified_time" content="2025-07-30T03:05:23.182Z">
+<meta property="article:published_time" content="2025-07-23T07:41:19.000Z">
+<meta property="article:modified_time" content="2025-07-30T03:05:23.174Z">
 <meta property="article:author" content="Y Y">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -459,15 +459,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2025/07/23/algorithm2025072314/">
+    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2025/07/23/%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">有效的括号</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">合并两个有序链表</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2025-07-23T06:34:23.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-07-23</time></li>
+                <li><time datetime="2025-07-23T07:41:19.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-07-23</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Y Y</span>
                 </li>
@@ -475,7 +475,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~2.87K
+                        1195
                     
                     字
                 </li>
@@ -485,27 +485,19 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1753844723182"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1753844723174"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
-            <div itemprop="articleBody"><h3 id="有效的括号"><a href="#有效的括号" class="headerlink" title="有效的括号"></a>有效的括号</h3><span id="more"></span>
+            <div itemprop="articleBody"><h3 id="合并两个有序链表"><a href="#合并两个有序链表" class="headerlink" title="合并两个有序链表"></a>合并两个有序链表</h3><span id="more"></span>
 
 <h1>题目</h1>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">给定一个只包括 &#x27;(&#x27;，&#x27;)&#x27;，&#x27;&#123;&#x27;，&#x27;&#125;&#x27;，&#x27;[&#x27;，&#x27;]&#x27; 的字符串 s ，判断字符串是否有效。</span><br><span class="line"></span><br><span class="line">有效字符串需满足：</span><br><span class="line">左括号必须用相同类型的右括号闭合。</span><br><span class="line">左括号必须以正确的顺序闭合。</span><br><span class="line">每个右括号都有一个对应的相同类型的左括号。</span><br><span class="line"></span><br><span class="line">示例 1：</span><br><span class="line">输入：s = &quot;()&quot;</span><br><span class="line">输出：true</span><br><span class="line"></span><br><span class="line">示例 2：</span><br><span class="line">输入：s = &quot;()[]&#123;&#125;&quot;</span><br><span class="line">输出：true</span><br><span class="line"></span><br><span class="line">示例 3：</span><br><span class="line">输入：s = &quot;(]&quot;</span><br><span class="line">输出：false</span><br><span class="line"></span><br><span class="line">示例 4：</span><br><span class="line">输入：s = &quot;([])&quot;</span><br><span class="line">输出：true</span><br><span class="line"></span><br><span class="line">示例 5：</span><br><span class="line">输入：s = &quot;([)]&quot;</span><br><span class="line">输出：false</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 </span><br><span class="line"></span><br><span class="line">示例 1：</span><br><span class="line">输入：l1 = [1,2,4], l2 = [1,3,4]</span><br><span class="line">输出：[1,1,2,3,4,4]</span><br><span class="line"></span><br><span class="line">示例 2：</span><br><span class="line">输入：l1 = [], l2 = []</span><br><span class="line">输出：[]</span><br><span class="line"></span><br><span class="line">示例 3：</span><br><span class="line">输入：l1 = [], l2 = [0]</span><br><span class="line">输出：[0]</span><br></pre></td></tr></table></figure>
 
-<h1>解法1</h1>
+<h1>解法</h1>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">思路:</span><br><span class="line">不断消除相邻的有效括号,每次消除后必定产生新的有效括号,否则返回false,直到字符串为空,返回true</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line">function isValid($s) &#123;</span><br><span class="line">    $map = [</span><br><span class="line">        &#x27;(&#x27; =&gt; &#x27;)&#x27;,</span><br><span class="line">        &#x27;[&#x27; =&gt; &#x27;]&#x27;,</span><br><span class="line">        &#x27;&#123;&#x27; =&gt; &#x27;&#125;&#x27;,</span><br><span class="line">    ];</span><br><span class="line"></span><br><span class="line">    $i = 0;</span><br><span class="line">    while (1) &#123;</span><br><span class="line">        if (!isset($s[$i + 1])) &#123;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        $now = $map[$s[$i]] ?? &#x27;&#x27;;</span><br><span class="line"></span><br><span class="line">        if ($now == $s[$i + 1]) &#123;</span><br><span class="line">            $s = substr_replace($s, &#x27;&#x27;, $i, 2);</span><br><span class="line">            $i = 0;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            $i++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if ($s) &#123;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return true;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1>解法2</h1>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">思路:</span><br><span class="line">将遍历过的字符存入数组中,如果遇到右半边的括号,从数组中弹出一个字符,如果弹出的字符和右边的括号不匹配,返回false,</span><br><span class="line">如果遍历一遍的字符后,数组内还有剩余的字符,返回false</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line">function isValid($s) &#123;</span><br><span class="line">    $map = [</span><br><span class="line">        &#x27;)&#x27; =&gt; &#x27;(&#x27;,</span><br><span class="line">        &#x27;]&#x27; =&gt; &#x27;[&#x27;,</span><br><span class="line">        &#x27;&#125;&#x27; =&gt; &#x27;&#123;&#x27;,</span><br><span class="line">    ];</span><br><span class="line"></span><br><span class="line">    $len = strlen($s);</span><br><span class="line"></span><br><span class="line">    $arr = [];</span><br><span class="line">    for ($i = 0; $i &lt; $len; $i++) &#123;</span><br><span class="line">        if (isset($map[$s[$i]])) &#123;</span><br><span class="line">            $f = array_shift($arr);</span><br><span class="line"></span><br><span class="line">            if (null === $f) &#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            if ($f !== $map[$s[$i]]) &#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            array_unshift($arr, $s[$i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if ($arr) &#123;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return true;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1>解法3</h1>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">思路:</span><br><span class="line">思路与解法2相同,将array_shift改为array_pop,提高性能</span><br><span class="line">array_pop() 的性能更优,时间复杂度:O(1),只需要移除数组最后一个元素,不需要重新索引数组</span><br><span class="line">array_shift() 性能较差,时间复杂度:O(n),移除第一个元素后,PHP 会自动将数组中剩余元素的键值向前移动（重新索引）,这是一个线性操作,耗费时间随数组长度增加。</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line">function isValid($s) &#123;</span><br><span class="line">    $map = [</span><br><span class="line">        &#x27;)&#x27; =&gt; &#x27;(&#x27;,</span><br><span class="line">        &#x27;]&#x27; =&gt; &#x27;[&#x27;,</span><br><span class="line">        &#x27;&#125;&#x27; =&gt; &#x27;&#123;&#x27;,</span><br><span class="line">    ];</span><br><span class="line"></span><br><span class="line">    $len = strlen($s);</span><br><span class="line"></span><br><span class="line">    $arr = [];</span><br><span class="line">    for ($i = 0; $i &lt; $len; $i++) &#123;</span><br><span class="line">        if (isset($map[$s[$i]])) &#123;</span><br><span class="line">            $f = array_pop($arr);</span><br><span class="line"></span><br><span class="line">            if (null === $f) &#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            if ($f !== $map[$s[$i]]) &#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            $arr[] = $s[$i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if ($arr) &#123;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return true;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">思路:</span><br><span class="line">比较两个list的val大小,小的一方的next继续和大的一方比较</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line">/**</span><br><span class="line"> * Definition for a singly-linked list.</span><br><span class="line"> * class ListNode &#123;</span><br><span class="line"> *     public $val = 0;</span><br><span class="line"> *     public $next = null;</span><br><span class="line"> *     function __construct($val = 0, $next = null) &#123;</span><br><span class="line"> *         $this-&gt;val = $val;</span><br><span class="line"> *         $this-&gt;next = $next;</span><br><span class="line"> *     &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span><br><span class="line">class Solution &#123;</span><br><span class="line">    /**</span><br><span class="line">     * @param ListNode $list1</span><br><span class="line">     * @param ListNode $list2</span><br><span class="line">     * @return ListNode</span><br><span class="line">     */</span><br><span class="line">    function mergeTwoLists($list1, $list2) &#123;</span><br><span class="line">        if (null === $list1) &#123;</span><br><span class="line">            return $list2;</span><br><span class="line">        &#125; elseif (null === $list2) &#123;</span><br><span class="line">            return $list1;</span><br><span class="line">        &#125; elseif ($list1-&gt;val &lt;= $list2-&gt;val) &#123;</span><br><span class="line">            $list1-&gt;next = $this-&gt;mergeTwoLists($list1-&gt;next, $list2);</span><br><span class="line"></span><br><span class="line">            return $list1;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            $list2-&gt;next = $this-&gt;mergeTwoLists($list1, $list2-&gt;next);</span><br><span class="line"></span><br><span class="line">            return $list2;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -516,7 +508,7 @@
                     <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2025-07-30T03:05:23.182Z" itemprop="dateModified">最后编辑：2025-07-30</time>
+                    <time datetime="2025-07-30T03:05:23.174Z" itemprop="dateModified">最后编辑：2025-07-30</time>
                 </div>
             </div>
         </footer>
@@ -525,12 +517,12 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" mysql查询问题" href="/2025/07/15/question/">&lt; 上一篇</a>
+                <a title=" 括号生成" href="/2025/07/23/algorithm2025073011/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" x 的平方根" href="/2025/07/23/algorithm2025073015/">下一篇 &gt;</a>
+                <a title=" 爬楼梯" href="/2025/07/30/algorithm2025073016/">下一篇 &gt;</a>
             </div>
             
         </nav>
