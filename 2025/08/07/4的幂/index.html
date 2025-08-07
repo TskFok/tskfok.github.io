@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>docker-redis | 每天进步一点点🤏</title>
+  <title>4的幂 | 每天进步一点点🤏</title>
   <meta name="author" content="Y Y" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,22 +13,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="redis" />
+    <meta name="keywords" content="算法" />
   
-  <meta name="description" content="在docker中搭建redis">
+  <meta name="description" content="4的幂">
 <meta property="og:type" content="article">
-<meta property="og:title" content="docker-redis">
-<meta property="og:url" content="https://tskfok.github.io/2023/07/05/docker-redis/index.html">
+<meta property="og:title" content="4的幂">
+<meta property="og:url" content="https://tskfok.github.io/2025/08/07/4%E7%9A%84%E5%B9%82/index.html">
 <meta property="og:site_name" content="每天进步一点点🤏">
-<meta property="og:description" content="在docker中搭建redis">
+<meta property="og:description" content="4的幂">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tskfok.github.io/2023/07/05/docker-redis/https:/img.adiosat.com/redis/redis.png">
-<meta property="article:published_time" content="2023-07-05T09:28:56.000Z">
-<meta property="article:modified_time" content="2023-12-14T09:42:43.322Z">
+<meta property="article:published_time" content="2025-08-07T10:25:19.000Z">
+<meta property="article:modified_time" content="2025-08-07T10:30:16.985Z">
 <meta property="article:author" content="Y Y">
-<meta property="article:tag" content="redis">
+<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tskfok.github.io/2023/07/05/docker-redis/https:/img.adiosat.com/redis/redis.png">
   
   <!-- 站点验证相关 -->
   
@@ -475,15 +473,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2023/07/05/docker-redis/">
+    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2025/08/07/4%E7%9A%84%E5%B9%82/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">docker-redis</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">4的幂</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2023-07-05T09:28:56.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-07-05</time></li>
+                <li><time datetime="2025-08-07T10:25:19.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-08-07</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Y Y</span>
                 </li>
@@ -491,7 +489,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~2.61K
+                        557
                     
                     字
                 </li>
@@ -501,31 +499,19 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1702546963322"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1754562616985"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
-            <div itemprop="articleBody"><h3 id="在docker中搭建redis"><a href="#在docker中搭建redis" class="headerlink" title="在docker中搭建redis"></a>在docker中搭建redis</h3><span id="more"></span>
+            <div itemprop="articleBody"><h3 id="4的幂"><a href="#4的幂" class="headerlink" title="4的幂"></a>4的幂</h3><span id="more"></span>
 
-<h1>配置文件</h1>
+<h1>题目</h1>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br></pre></td><td class="code"><pre><span class="line">修改端口号: port</span><br><span class="line">修改默认密码: requirepass</span><br><span class="line">修改支持远程登陆: protected-mode no</span><br><span class="line">修改监听端口号: bind 0.0.0.0</span><br><span class="line">添加用户(用户名XX 密码******** 状态是on 权限是all): user XX ~* &amp;* +@all on &gt;********</span><br><span class="line"></span><br><span class="line">bind 0.0.0.0</span><br><span class="line"></span><br><span class="line">protected-mode no</span><br><span class="line"></span><br><span class="line">port 12359</span><br><span class="line"></span><br><span class="line">tcp-backlog 511</span><br><span class="line"></span><br><span class="line">timeout 0</span><br><span class="line"></span><br><span class="line">tcp-keepalive 300</span><br><span class="line"></span><br><span class="line">daemonize no</span><br><span class="line"></span><br><span class="line">supervised no</span><br><span class="line"></span><br><span class="line">pidfile /var/run/redis_6379.pid</span><br><span class="line"></span><br><span class="line">loglevel notice</span><br><span class="line"></span><br><span class="line">logfile &quot;&quot;</span><br><span class="line"></span><br><span class="line">databases 16</span><br><span class="line"></span><br><span class="line">always-show-logo yes</span><br><span class="line"></span><br><span class="line">save 900 1</span><br><span class="line">save 300 10</span><br><span class="line">save 60 10000</span><br><span class="line"></span><br><span class="line">stop-writes-on-bgsave-error yes</span><br><span class="line"></span><br><span class="line">rdbcompression yes</span><br><span class="line"></span><br><span class="line">rdbchecksum yes</span><br><span class="line"></span><br><span class="line">dbfilename dump.rdb</span><br><span class="line"></span><br><span class="line">rdb-del-sync-files no</span><br><span class="line"></span><br><span class="line">dir ./</span><br><span class="line"></span><br><span class="line">replica-serve-stale-data yes</span><br><span class="line"></span><br><span class="line">replica-read-only yes</span><br><span class="line"></span><br><span class="line">repl-diskless-sync no</span><br><span class="line"></span><br><span class="line">repl-diskless-sync-delay 5</span><br><span class="line"></span><br><span class="line">repl-diskless-load disabled</span><br><span class="line"></span><br><span class="line">repl-disable-tcp-nodelay no</span><br><span class="line"></span><br><span class="line">replica-priority 100</span><br><span class="line"></span><br><span class="line">user XX ~* &amp;* +@all on &gt;********</span><br><span class="line"></span><br><span class="line">acllog-max-len 128</span><br><span class="line"></span><br><span class="line">requirepass *********</span><br><span class="line"></span><br><span class="line">lazyfree-lazy-eviction no</span><br><span class="line">lazyfree-lazy-expire no</span><br><span class="line">lazyfree-lazy-server-del no</span><br><span class="line">replica-lazy-flush no</span><br><span class="line"></span><br><span class="line">lazyfree-lazy-user-del no</span><br><span class="line"></span><br><span class="line">appendonly no</span><br><span class="line"></span><br><span class="line">appendfilename &quot;appendonly.aof&quot;</span><br><span class="line"></span><br><span class="line">appendfsync everysec</span><br><span class="line"></span><br><span class="line">no-appendfsync-on-rewrite no</span><br><span class="line"></span><br><span class="line">auto-aof-rewrite-percentage 100</span><br><span class="line">auto-aof-rewrite-min-size 64mb</span><br><span class="line"></span><br><span class="line">aof-load-truncated yes</span><br><span class="line"></span><br><span class="line">aof-use-rdb-preamble yes</span><br><span class="line"></span><br><span class="line">lua-time-limit 5000</span><br><span class="line"></span><br><span class="line">slowlog-log-slower-than 10000</span><br><span class="line"></span><br><span class="line">slowlog-max-len 128</span><br><span class="line"></span><br><span class="line">latency-monitor-threshold 0</span><br><span class="line"></span><br><span class="line">notify-keyspace-events &quot;&quot;</span><br><span class="line"></span><br><span class="line">hash-max-ziplist-entries 512</span><br><span class="line">hash-max-ziplist-value 64</span><br><span class="line"></span><br><span class="line">list-max-ziplist-size -2</span><br><span class="line"></span><br><span class="line">list-compress-depth 0</span><br><span class="line"></span><br><span class="line">set-max-intset-entries 512</span><br><span class="line"></span><br><span class="line">zset-max-ziplist-entries 128</span><br><span class="line">zset-max-ziplist-value 64</span><br><span class="line"></span><br><span class="line">hll-sparse-max-bytes 3000</span><br><span class="line"></span><br><span class="line">stream-node-max-bytes 4096</span><br><span class="line">stream-node-max-entries 100</span><br><span class="line"></span><br><span class="line">activerehashing yes</span><br><span class="line"></span><br><span class="line">client-output-buffer-limit normal 0 0 0</span><br><span class="line">client-output-buffer-limit replica 256mb 64mb 60</span><br><span class="line">client-output-buffer-limit pubsub 32mb 8mb 60</span><br><span class="line"></span><br><span class="line">hz 10</span><br><span class="line"></span><br><span class="line">dynamic-hz yes</span><br><span class="line"></span><br><span class="line">aof-rewrite-incremental-fsync yes</span><br><span class="line"></span><br><span class="line">rdb-save-incremental-fsync yes</span><br><span class="line"></span><br><span class="line">jemalloc-bg-thread yes</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">给定一个整数,写一个函数来判断它是否是 4 的幂次方</span><br><span class="line">如果是,返回 true 否则,返回 false</span><br><span class="line">整数 n 是 4 的幂次方需满足：存在整数 x 使得 n == 4x</span><br><span class="line"></span><br><span class="line">示例 1：</span><br><span class="line">输入：n = 16</span><br><span class="line">输出：true</span><br><span class="line"></span><br><span class="line">示例 2：</span><br><span class="line">输入：n = 5</span><br><span class="line">输出：false</span><br><span class="line"></span><br><span class="line">示例 3：</span><br><span class="line">输入：n = 1</span><br><span class="line">输出：true</span><br></pre></td></tr></table></figure>
 
-<h1>Dockerfile</h1>
+<h1>解法</h1>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">FROM redis</span><br><span class="line"></span><br><span class="line">COPY redis.conf /usr/local/etc/redis/redis.conf</span><br><span class="line"></span><br><span class="line">EXPOSE 12359</span><br><span class="line"></span><br><span class="line">CMD [ &quot;redis-server&quot;, &quot;/usr/local/etc/redis/redis.conf&quot; ]</span><br></pre></td></tr></table></figure>
-
-<h1>build</h1>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker build -t redis-server .</span><br></pre></td></tr></table></figure>
-
-<h1>run</h1>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">将配置中的port暴露出来</span><br><span class="line">docker run -p 12359:12359 --restart=always \</span><br><span class="line">-v /*****/data:/data \</span><br><span class="line">--name=&quot;redis-server&quot; \</span><br><span class="line">-d redis</span><br></pre></td></tr></table></figure>
-
-<h1>新建用户</h1>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">没有在redis.conf里添加用户时,可以使用以下指令添加添加</span><br><span class="line"></span><br><span class="line">登陆默认帐号 </span><br><span class="line">AUTH *******</span><br><span class="line">新建用户XX 密码*******</span><br><span class="line">ACL SETUSER XX &gt;*******</span><br><span class="line">启用用户XX</span><br><span class="line">ACL SETUSER XX on</span><br><span class="line">为用户XX添加string权限</span><br><span class="line">ACL SETUSER XX resetkeys ~* +@string</span><br><span class="line">为用户XX添加所有权限</span><br><span class="line">ACL SETUSER XX resetkeys  ~* &amp;* +@all</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">思路:</span><br><span class="line">2的幂相当于二进制只有一个为1的数,4的幂也一样,2的幂一次跳一格,4跳两格</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line">/**</span><br><span class="line"> * @param Integer $n</span><br><span class="line"> *</span><br><span class="line"> * @return Boolean</span><br><span class="line"> */</span><br><span class="line">function isPowerOfFour($n)</span><br><span class="line">&#123;</span><br><span class="line">    // $n &amp; $n - 1判断二进制数是否只有一个1</span><br><span class="line">    // $n &amp; 0xaaaaaaaa 判断是否只在偶数位存在1</span><br><span class="line">    // 0xa 是1010的16进制, 如果奇数位存在1, 则$n &amp; 0xaaaaaaaa不会为0</span><br><span class="line">    return $n &gt; 0 &amp;&amp; ($n &amp; $n - 1) == 0 &amp;&amp; ($n &amp; 0xaaaaaaaa) == 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </div>
         </div>
         
@@ -534,10 +520,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/redis/" rel="tag">redis</a>
+                    <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2023-12-14T09:42:43.322Z" itemprop="dateModified">最后编辑：2023-12-14</time>
+                    <time datetime="2025-08-07T10:30:16.985Z" itemprop="dateModified">最后编辑：2025-08-07</time>
                 </div>
             </div>
         </footer>
@@ -546,13 +532,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" chat-ui" href="/2023/07/05/chat-ui/">&lt; 上一篇</a>
+                <a title=" 比特位计数" href="/2025/08/07/比特位计数/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" unraid安装黑群晖" href="/2023/07/28/unraid-dsm/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
