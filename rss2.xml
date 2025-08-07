@@ -15,8 +15,31 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 07 Aug 2025 05:51:07 GMT</pubDate>
+    <pubDate>Thu, 07 Aug 2025 06:32:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>单词规律</title>
+      <link>https://tskfok.github.io/2025/08/07/%E5%8D%95%E8%AF%8D%E8%A7%84%E5%BE%8B/</link>
+      <guid>https://tskfok.github.io/2025/08/07/%E5%8D%95%E8%AF%8D%E8%A7%84%E5%BE%8B/</guid>
+      <pubDate>Thu, 07 Aug 2025 06:09:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;单词规律&quot;&gt;&lt;a href=&quot;#单词规律&quot; class=&quot;headerlink&quot; title=&quot;单词规律&quot;&gt;&lt;/a&gt;单词规律&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/07/%E5%8D%95%E8%AF%8D%E8%A7%84%E5%BE%8B/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>移动零</title>
@@ -452,29 +475,6 @@
       
       
       <comments>https://tskfok.github.io/2025/07/31/%E5%B0%86%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E8%BD%AC%E6%8D%A2%E4%B8%BA%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>二叉树的最大深度</title>
-      <link>https://tskfok.github.io/2025/07/31/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6/</link>
-      <guid>https://tskfok.github.io/2025/07/31/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6/</guid>
-      <pubDate>Thu, 31 Jul 2025 08:41:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;二叉树的最大深度&quot;&gt;&lt;a href=&quot;#二叉树的最大深度&quot; class=&quot;headerlink&quot; title=&quot;二叉树的最大深度&quot;&gt;&lt;/a&gt;二叉树的最大深度&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/07/31/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6/#disqus_thread</comments>
       
     </item>
     
