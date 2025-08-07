@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>只出现一次的数字 | 每天进步一点点🤏</title>
+  <title>Nim游戏 | 每天进步一点点🤏</title>
   <meta name="author" content="Y Y" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -15,15 +15,15 @@
   
     <meta name="keywords" content="算法" />
   
-  <meta name="description" content="只出现一次的数字">
+  <meta name="description" content="Nim游戏">
 <meta property="og:type" content="article">
-<meta property="og:title" content="只出现一次的数字">
-<meta property="og:url" content="https://tskfok.github.io/2025/08/04/%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97/index.html">
+<meta property="og:title" content="Nim游戏">
+<meta property="og:url" content="https://tskfok.github.io/2025/08/07/Nim%E6%B8%B8%E6%88%8F/index.html">
 <meta property="og:site_name" content="每天进步一点点🤏">
-<meta property="og:description" content="只出现一次的数字">
+<meta property="og:description" content="Nim游戏">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-08-04T06:50:19.000Z">
-<meta property="article:modified_time" content="2025-08-04T07:22:07.299Z">
+<meta property="article:published_time" content="2025-08-07T07:03:19.000Z">
+<meta property="article:modified_time" content="2025-08-07T07:27:12.601Z">
 <meta property="article:author" content="Y Y">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -467,15 +467,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2025/08/04/%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97/">
+    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2025/08/07/Nim%E6%B8%B8%E6%88%8F/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">只出现一次的数字</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">Nim游戏</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2025-08-04T06:50:19.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-08-04</time></li>
+                <li><time datetime="2025-08-07T07:03:19.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-08-07</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">Y Y</span>
                 </li>
@@ -483,7 +483,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        870
+                        826
                     
                     字
                 </li>
@@ -493,23 +493,19 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1754292127299"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1754551632601"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
-            <div itemprop="articleBody"><h3 id="只出现一次的数字"><a href="#只出现一次的数字" class="headerlink" title="只出现一次的数字"></a>只出现一次的数字</h3><span id="more"></span>
+            <div itemprop="articleBody"><h3 id="Nim游戏"><a href="#Nim游戏" class="headerlink" title="Nim游戏"></a>Nim游戏</h3><span id="more"></span>
 
 <h1>题目</h1>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">给你一个 非空 整数数组 nums,除了某个元素只出现一次以外,其余每个元素均出现两次.找出那个只出现了一次的元素</span><br><span class="line"></span><br><span class="line">你必须设计并实现线性时间复杂度的算法来解决此问题，且该算法只使用常量额外空间。</span><br><span class="line"></span><br><span class="line">示例 1</span><br><span class="line">输入：nums = [2,2,1]</span><br><span class="line">输出：1</span><br><span class="line"></span><br><span class="line">示例 2</span><br><span class="line">输入：nums = [4,1,2,1,2]</span><br><span class="line">输出：4</span><br><span class="line"></span><br><span class="line">示例 3</span><br><span class="line">输入：nums = [1]</span><br><span class="line">输出：1</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">你和你的朋友,两个人一起玩 Nim 游戏：</span><br><span class="line">桌子上有一堆石头  </span><br><span class="line">你们轮流进行自己的回合, 你作为先手   </span><br><span class="line">每一回合,轮到的人拿掉 1 - 3 块石头  </span><br><span class="line">拿掉最后一块石头的人就是获胜者  </span><br><span class="line"></span><br><span class="line">假设你们每一步都是最优解  请编写一个函数,来判断你是否可以在给定石头数量为 n 的情况下赢得游戏  </span><br><span class="line">如果可以赢,返回 true；否则,返回 false   </span><br><span class="line"></span><br><span class="line">示例 1：</span><br><span class="line"></span><br><span class="line">输入：n = 4</span><br><span class="line">输出：false </span><br><span class="line">解释：以下是可能的结果:</span><br><span class="line">1. 移除1颗石头  你的朋友移走了3块石头,包括最后一块  你的朋友赢了  </span><br><span class="line">2. 移除2个石子  你的朋友移走2块石头,包括最后一块  你的朋友赢了  </span><br><span class="line">3.你移走3颗石子  你的朋友移走了最后一块石头  你的朋友赢了  </span><br><span class="line">在所有结果中,你的朋友是赢家  </span><br><span class="line"></span><br><span class="line">示例 2：</span><br><span class="line">输入：n = 1</span><br><span class="line">输出：true</span><br><span class="line"></span><br><span class="line">示例 3：</span><br><span class="line">输入：n = 2</span><br><span class="line">输出：true</span><br></pre></td></tr></table></figure>
 
-<h1>解法1</h1>
+<h1>解法</h1>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">思路:</span><br><span class="line">将数字作为key存入数组,值为出现的次数</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line">function singleNumber($nums)</span><br><span class="line">&#123;</span><br><span class="line">    $arr = [];</span><br><span class="line"></span><br><span class="line">    foreach ($nums as $num) &#123;</span><br><span class="line">        if (!isset($arr[$num])) &#123;</span><br><span class="line">            $arr[$num] = 0;</span><br><span class="line">        &#125;</span><br><span class="line">        $arr[$num]++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    foreach ($arr as $k =&gt; $val) &#123;</span><br><span class="line">        if ($val === 1) &#123;</span><br><span class="line">            return $k;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1>解法2</h1>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">思路:</span><br><span class="line">使用^异或运算,当a^a前后两个值相同时,返回0,因为只有一个值出现一次,其他的出现两次,刚好抵消为0</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line">/**</span><br><span class="line"> * @param Integer[] $nums</span><br><span class="line"> * @return Integer</span><br><span class="line"> */</span><br><span class="line">function singleNumber($nums) &#123;</span><br><span class="line">    $a = 0;</span><br><span class="line">    foreach ($nums as $num) &#123;</span><br><span class="line">        $a ^= $num;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return $a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">思路:</span><br><span class="line">这是一道数学题</span><br><span class="line">拿走最后一块石头的人获胜,也就是说获胜的人最后一轮得到的石头数量为1,2,3</span><br><span class="line">所以只有将4块是否交给对方才能一定获胜, 对方会用各种方法将4交到我方</span><br><span class="line">自己是先手,所以胜利范围是1,2,3 + 4*n</span><br><span class="line">如果能被4整除,最后一定能将4交到我方,因为双方范围是1-3,无论己方拿几块石头,对方都可以让数量变成4的倍数</span><br><span class="line"></span><br><span class="line">先手方想赢,必须把石头控制成4的倍数给后手方,这样对方不可能控制成4的倍数返回</span><br><span class="line">后手方想赢,必须要石头控制成4的倍数给先手方,取决于一开始的时候是不是4的倍数,如果是,则先手方拿取石头后一定不是4的倍数</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line">/**</span><br><span class="line"> * @param Integer $n</span><br><span class="line"> * @return Boolean</span><br><span class="line"> */</span><br><span class="line">function canWinNim($n) &#123;</span><br><span class="line">    return $n % 4 != 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
         </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -520,7 +516,7 @@
                     <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2025-08-04T07:22:07.299Z" itemprop="dateModified">最后编辑：2025-08-04</time>
+                    <time datetime="2025-08-07T07:27:12.601Z" itemprop="dateModified">最后编辑：2025-08-07</time>
                 </div>
             </div>
         </footer>
@@ -529,13 +525,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" 买卖股票的最佳时机" href="/2025/08/04/买卖股票的最佳时机/">&lt; 上一篇</a>
+                <a title=" 单词规律" href="/2025/08/07/单词规律/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" 快乐数" href="/2025/08/04/快乐数/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
