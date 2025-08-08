@@ -15,8 +15,31 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 08 Aug 2025 03:25:38 GMT</pubDate>
+    <pubDate>Fri, 08 Aug 2025 03:53:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>两个数组的交集2</title>
+      <link>https://tskfok.github.io/2025/08/08/%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%862/</link>
+      <guid>https://tskfok.github.io/2025/08/08/%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%862/</guid>
+      <pubDate>Fri, 08 Aug 2025 03:35:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;两个数组的交集2&quot;&gt;&lt;a href=&quot;#两个数组的交集2&quot; class=&quot;headerlink&quot; title=&quot;两个数组的交集2&quot;&gt;&lt;/a&gt;两个数组的交集2&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/08/%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%862/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>两个数组的交集</title>
@@ -452,29 +475,6 @@
       
       
       <comments>https://tskfok.github.io/2025/08/04/%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>只出现一次的数字</title>
-      <link>https://tskfok.github.io/2025/08/04/%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97/</link>
-      <guid>https://tskfok.github.io/2025/08/04/%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97/</guid>
-      <pubDate>Mon, 04 Aug 2025 06:50:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;只出现一次的数字&quot;&gt;&lt;a href=&quot;#只出现一次的数字&quot; class=&quot;headerlink&quot; title=&quot;只出现一次的数字&quot;&gt;&lt;/a&gt;只出现一次的数字&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/04/%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0%E5%AD%97/#disqus_thread</comments>
       
     </item>
     
