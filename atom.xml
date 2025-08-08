@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-08-07T10:30:16.985Z</updated>
+  <updated>2025-08-08T02:47:47.593Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>反转字符串中的元音字母</title>
+    <link href="https://tskfok.github.io/2025/08/08/%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%85%83%E9%9F%B3%E5%AD%97%E6%AF%8D/"/>
+    <id>https://tskfok.github.io/2025/08/08/%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%85%83%E9%9F%B3%E5%AD%97%E6%AF%8D/</id>
+    <published>2025-08-08T02:36:19.000Z</published>
+    <updated>2025-08-08T02:47:47.593Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;反转字符串中的元音字母&quot;&gt;&lt;a href=&quot;#反转字符串中的元音字母&quot; class=&quot;headerlink&quot; title=&quot;反转字符串中的元音字母&quot;&gt;&lt;/a&gt;反转字符串中的元音字母&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>4的幂</title>
@@ -403,27 +424,6 @@
     
     
     <summary type="html">&lt;h3 id=&quot;买卖股票的最佳时机&quot;&gt;&lt;a href=&quot;#买卖股票的最佳时机&quot; class=&quot;headerlink&quot; title=&quot;买卖股票的最佳时机&quot;&gt;&lt;/a&gt;买卖股票的最佳时机&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
-    
-    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>杨辉三角</title>
-    <link href="https://tskfok.github.io/2025/08/04/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/"/>
-    <id>https://tskfok.github.io/2025/08/04/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/</id>
-    <published>2025-08-04T02:41:19.000Z</published>
-    <updated>2025-08-04T06:53:40.394Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;杨辉三角&quot;&gt;&lt;a href=&quot;#杨辉三角&quot; class=&quot;headerlink&quot; title=&quot;杨辉三角&quot;&gt;&lt;/a&gt;杨辉三角&lt;/h3&gt;</summary>
     
     
     
