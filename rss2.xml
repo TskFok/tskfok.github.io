@@ -15,8 +15,77 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 08 Aug 2025 07:39:30 GMT</pubDate>
+    <pubDate>Fri, 08 Aug 2025 10:38:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>数字转换为十六进制数</title>
+      <link>https://tskfok.github.io/2025/08/08/%E6%95%B0%E5%AD%97%E8%BD%AC%E6%8D%A2%E4%B8%BA%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E6%95%B0/</link>
+      <guid>https://tskfok.github.io/2025/08/08/%E6%95%B0%E5%AD%97%E8%BD%AC%E6%8D%A2%E4%B8%BA%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E6%95%B0/</guid>
+      <pubDate>Fri, 08 Aug 2025 10:33:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;数字转换为十六进制数&quot;&gt;&lt;a href=&quot;#数字转换为十六进制数&quot; class=&quot;headerlink&quot; title=&quot;数字转换为十六进制数&quot;&gt;&lt;/a&gt;数字转换为十六进制数&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/08/%E6%95%B0%E5%AD%97%E8%BD%AC%E6%8D%A2%E4%B8%BA%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E6%95%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>二进制手表</title>
+      <link>https://tskfok.github.io/2025/08/08/%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%89%8B%E8%A1%A8/</link>
+      <guid>https://tskfok.github.io/2025/08/08/%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%89%8B%E8%A1%A8/</guid>
+      <pubDate>Fri, 08 Aug 2025 08:50:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;二进制手表&quot;&gt;&lt;a href=&quot;#二进制手表&quot; class=&quot;headerlink&quot; title=&quot;二进制手表&quot;&gt;&lt;/a&gt;二进制手表&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/08/%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%89%8B%E8%A1%A8/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>判断子序列</title>
+      <link>https://tskfok.github.io/2025/08/08/%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/</link>
+      <guid>https://tskfok.github.io/2025/08/08/%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/</guid>
+      <pubDate>Fri, 08 Aug 2025 07:26:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;判断子序列&quot;&gt;&lt;a href=&quot;#判断子序列&quot; class=&quot;headerlink&quot; title=&quot;判断子序列&quot;&gt;&lt;/a&gt;判断子序列&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/08/%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>字符串中第一个唯一字符</title>
@@ -406,75 +475,6 @@
       
       
       <comments>https://tskfok.github.io/2025/08/06/%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>颠倒二进制位</title>
-      <link>https://tskfok.github.io/2025/08/05/%E9%A2%A0%E5%80%92%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%BD%8D/</link>
-      <guid>https://tskfok.github.io/2025/08/05/%E9%A2%A0%E5%80%92%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%BD%8D/</guid>
-      <pubDate>Tue, 05 Aug 2025 07:41:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;颠倒二进制位&quot;&gt;&lt;a href=&quot;#颠倒二进制位&quot; class=&quot;headerlink&quot; title=&quot;颠倒二进制位&quot;&gt;&lt;/a&gt;颠倒二进制位&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/05/%E9%A2%A0%E5%80%92%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%BD%8D/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Excel表列序号</title>
-      <link>https://tskfok.github.io/2025/08/05/Excel%E8%A1%A8%E5%88%97%E5%BA%8F%E5%8F%B7/</link>
-      <guid>https://tskfok.github.io/2025/08/05/Excel%E8%A1%A8%E5%88%97%E5%BA%8F%E5%8F%B7/</guid>
-      <pubDate>Tue, 05 Aug 2025 06:41:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;Excel表列序号&quot;&gt;&lt;a href=&quot;#Excel表列序号&quot; class=&quot;headerlink&quot; title=&quot;Excel表列序号&quot;&gt;&lt;/a&gt;Excel表列序号&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/05/Excel%E8%A1%A8%E5%88%97%E5%BA%8F%E5%8F%B7/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Excel表列名称</title>
-      <link>https://tskfok.github.io/2025/08/05/Excel%E8%A1%A8%E5%88%97%E5%90%8D%E7%A7%B0/</link>
-      <guid>https://tskfok.github.io/2025/08/05/Excel%E8%A1%A8%E5%88%97%E5%90%8D%E7%A7%B0/</guid>
-      <pubDate>Tue, 05 Aug 2025 05:41:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;Excel表列名称&quot;&gt;&lt;a href=&quot;#Excel表列名称&quot; class=&quot;headerlink&quot; title=&quot;Excel表列名称&quot;&gt;&lt;/a&gt;Excel表列名称&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/05/Excel%E8%A1%A8%E5%88%97%E5%90%8D%E7%A7%B0/#disqus_thread</comments>
       
     </item>
     
