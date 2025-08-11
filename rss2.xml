@@ -15,8 +15,31 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 08 Aug 2025 10:38:50 GMT</pubDate>
+    <pubDate>Mon, 11 Aug 2025 03:58:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>最长回文串</title>
+      <link>https://tskfok.github.io/2025/08/11/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E4%B8%B2/</link>
+      <guid>https://tskfok.github.io/2025/08/11/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E4%B8%B2/</guid>
+      <pubDate>Mon, 11 Aug 2025 03:54:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;最长回文串&quot;&gt;&lt;a href=&quot;#最长回文串&quot; class=&quot;headerlink&quot; title=&quot;最长回文串&quot;&gt;&lt;/a&gt;最长回文串&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/11/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E4%B8%B2/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>数字转换为十六进制数</title>
@@ -452,29 +475,6 @@
       
       
       <comments>https://tskfok.github.io/2025/08/06/%E5%90%8C%E6%9E%84%E5%AD%97%E7%AC%A6%E4%B8%B2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>移除链表元素</title>
-      <link>https://tskfok.github.io/2025/08/06/%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0/</link>
-      <guid>https://tskfok.github.io/2025/08/06/%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0/</guid>
-      <pubDate>Wed, 06 Aug 2025 03:41:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;移除链表元素&quot;&gt;&lt;a href=&quot;#移除链表元素&quot; class=&quot;headerlink&quot; title=&quot;移除链表元素&quot;&gt;&lt;/a&gt;移除链表元素&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/06/%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0/#disqus_thread</comments>
       
     </item>
     
