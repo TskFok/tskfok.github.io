@@ -15,8 +15,54 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Mon, 11 Aug 2025 04:11:58 GMT</pubDate>
+    <pubDate>Wed, 13 Aug 2025 06:57:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>重复的子字符串</title>
+      <link>https://tskfok.github.io/2025/08/13/%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+      <guid>https://tskfok.github.io/2025/08/13/%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
+      <pubDate>Wed, 13 Aug 2025 06:57:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;重复的子字符串&quot;&gt;&lt;a href=&quot;#重复的子字符串&quot; class=&quot;headerlink&quot; title=&quot;重复的子字符串&quot;&gt;&lt;/a&gt;重复的子字符串&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/13/%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>找到所有数组中消失的数字</title>
+      <link>https://tskfok.github.io/2025/08/11/%E6%89%BE%E5%88%B0%E6%89%80%E6%9C%89%E6%95%B0%E7%BB%84%E4%B8%AD%E6%B6%88%E5%A4%B1%E7%9A%84%E6%95%B0%E5%AD%97/</link>
+      <guid>https://tskfok.github.io/2025/08/11/%E6%89%BE%E5%88%B0%E6%89%80%E6%9C%89%E6%95%B0%E7%BB%84%E4%B8%AD%E6%B6%88%E5%A4%B1%E7%9A%84%E6%95%B0%E5%AD%97/</guid>
+      <pubDate>Mon, 11 Aug 2025 08:31:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;找到所有数组中消失的数字&quot;&gt;&lt;a href=&quot;#找到所有数组中消失的数字&quot; class=&quot;headerlink&quot; title=&quot;找到所有数组中消失的数字&quot;&gt;&lt;/a&gt;找到所有数组中消失的数字&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/11/%E6%89%BE%E5%88%B0%E6%89%80%E6%9C%89%E6%95%B0%E7%BB%84%E4%B8%AD%E6%B6%88%E5%A4%B1%E7%9A%84%E6%95%B0%E5%AD%97/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>最长回文串</title>
@@ -429,52 +475,6 @@
       
       
       <comments>https://tskfok.github.io/2025/08/06/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%89%80%E6%9C%89%E8%B7%AF%E5%BE%84/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>反转链表</title>
-      <link>https://tskfok.github.io/2025/08/06/%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/</link>
-      <guid>https://tskfok.github.io/2025/08/06/%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/</guid>
-      <pubDate>Wed, 06 Aug 2025 06:41:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;反转链表&quot;&gt;&lt;a href=&quot;#反转链表&quot; class=&quot;headerlink&quot; title=&quot;反转链表&quot;&gt;&lt;/a&gt;反转链表&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/06/%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>同构字符串</title>
-      <link>https://tskfok.github.io/2025/08/06/%E5%90%8C%E6%9E%84%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
-      <guid>https://tskfok.github.io/2025/08/06/%E5%90%8C%E6%9E%84%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
-      <pubDate>Wed, 06 Aug 2025 05:41:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;同构字符串&quot;&gt;&lt;a href=&quot;#同构字符串&quot; class=&quot;headerlink&quot; title=&quot;同构字符串&quot;&gt;&lt;/a&gt;同构字符串&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/06/%E5%90%8C%E6%9E%84%E5%AD%97%E7%AC%A6%E4%B8%B2/#disqus_thread</comments>
       
     </item>
     
