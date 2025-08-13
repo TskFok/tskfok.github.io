@@ -23,7 +23,7 @@
 <meta property="og:description" content="重复的子字符串">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-08-13T06:57:19.000Z">
-<meta property="article:modified_time" content="2025-08-13T06:57:39.491Z">
+<meta property="article:modified_time" content="2025-08-13T06:59:44.011Z">
 <meta property="article:author" content="Y Y">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -513,7 +513,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~2.66K
+                        ~2.69K
                     
                     字
                 </li>
@@ -523,7 +523,7 @@
         <div class="kratos-post-content">
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1755068259491"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1755068384011"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             <hr />
@@ -535,7 +535,7 @@
 
 <h1>解法1</h1>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">思路:</span><br><span class="line">具体思路看代码</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line">/**</span><br><span class="line"> * @param String $s</span><br><span class="line"> *</span><br><span class="line"> * @return Boolean</span><br><span class="line"> */</span><br><span class="line">function repeatedSubstringPattern($s)</span><br><span class="line">&#123;</span><br><span class="line">    $count = strlen($s);</span><br><span class="line">    //创建一个使用-1填充的长度和s一样的数组</span><br><span class="line">    $indexMap = array_fill(0, $count, -1);</span><br><span class="line"></span><br><span class="line">    // 下标i一直前进</span><br><span class="line">    // 下标j根据能否匹配下标i当前的值前进或者回退</span><br><span class="line">    for ($i = 1; $i &lt; $count; $i++) &#123;</span><br><span class="line">        //上一次循环记录的j的下标</span><br><span class="line">        $j = $indexMap[$i - 1];</span><br><span class="line"></span><br><span class="line">        //如果j=-1,证明上个循环没有匹配到对应的值</span><br><span class="line">        //如果j!=-1,s[i]!=s[j],证明出现了不匹配的情况,j需要回退到之前匹配的下标</span><br><span class="line">        while ($j != -1 &amp;&amp; $s[$i] !== $s[$j + 1]) &#123;</span><br><span class="line">            //j = j之前匹配的下标,为-1就从头开始</span><br><span class="line">            $j = $indexMap[$j];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if ($s[$i] == $s[$j + 1]) &#123;</span><br><span class="line">            //值匹配,i和j一起前进,j+1</span><br><span class="line">            $indexMap[$i] = $j + 1;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 数组尾部为-1,证明尾部匹配失败,返回false</span><br><span class="line">    // 数组尾部不为-1,存储的是匹配的下标,匹配的数量+1,总数-匹配的数量=重复的字符串长度,能被总数整除</span><br><span class="line">    return $indexMap[$count - 1] !== -1 &amp;&amp; $count % ($count - ($indexMap[$count - 1] + 1)) === 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">思路:</span><br><span class="line">具体思路看代码</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line">/**</span><br><span class="line"> * @param String $s</span><br><span class="line"> *</span><br><span class="line"> * @return Boolean</span><br><span class="line"> */</span><br><span class="line">function repeatedSubstringPattern($s)</span><br><span class="line">&#123;</span><br><span class="line">    $count = strlen($s);</span><br><span class="line">    //创建一个使用-1填充的长度和s一样的数组</span><br><span class="line">    $indexMap = array_fill(0, $count, -1);</span><br><span class="line"></span><br><span class="line">    // 下标i一直前进</span><br><span class="line">    // 下标j根据能否匹配下标i当前的值前进或者回退</span><br><span class="line">    for ($i = 1; $i &lt; $count; $i++) &#123;</span><br><span class="line">        //上一次循环记录的j的下标</span><br><span class="line">        $j = $indexMap[$i - 1];</span><br><span class="line"></span><br><span class="line">        //如果j=-1,证明上个循环没有匹配到对应的值</span><br><span class="line">        //如果j!=-1,s[i]!=s[j],证明出现了不匹配的情况,j需要回退到之前匹配的下标</span><br><span class="line">        while ($j != -1 &amp;&amp; $s[$i] !== $s[$j + 1]) &#123;</span><br><span class="line">            //j = j之前匹配的下标,为-1就从头开始</span><br><span class="line">            $j = $indexMap[$j]; //如果依旧不匹配,回到更早的位置直到j=-1回到开头</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if ($s[$i] == $s[$j + 1]) &#123;</span><br><span class="line">            //值匹配,i和j一起前进,j+1</span><br><span class="line">            $indexMap[$i] = $j + 1;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 数组尾部为-1,证明尾部匹配失败,返回false</span><br><span class="line">    // 数组尾部不为-1,存储的是匹配的下标,匹配的数量+1,总数-匹配的数量=重复的字符串长度,能被总数整除</span><br><span class="line">    return $indexMap[$count - 1] !== -1 &amp;&amp; $count % ($count - ($indexMap[$count - 1] + 1)) === 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h1>解法2</h1>
 
@@ -554,7 +554,7 @@
                     <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2025-08-13T06:57:39.491Z" itemprop="dateModified">最后编辑：2025-08-13</time>
+                    <time datetime="2025-08-13T06:59:44.011Z" itemprop="dateModified">最后编辑：2025-08-13</time>
                 </div>
             </div>
         </footer>
