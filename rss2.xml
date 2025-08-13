@@ -15,8 +15,31 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 13 Aug 2025 08:07:41 GMT</pubDate>
+    <pubDate>Wed, 13 Aug 2025 08:40:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>岛屿的周长</title>
+      <link>https://tskfok.github.io/2025/08/13/%E5%B2%9B%E5%B1%BF%E7%9A%84%E5%91%A8%E9%95%BF/</link>
+      <guid>https://tskfok.github.io/2025/08/13/%E5%B2%9B%E5%B1%BF%E7%9A%84%E5%91%A8%E9%95%BF/</guid>
+      <pubDate>Wed, 13 Aug 2025 08:22:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;岛屿的周长&quot;&gt;&lt;a href=&quot;#岛屿的周长&quot; class=&quot;headerlink&quot; title=&quot;岛屿的周长&quot;&gt;&lt;/a&gt;岛屿的周长&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/13/%E5%B2%9B%E5%B1%BF%E7%9A%84%E5%91%A8%E9%95%BF/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>汉明距离</title>
@@ -55,6 +78,8 @@
       <category domain="https://tskfok.github.io/categories/php/">php</category>
       
       <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/%E9%9C%80%E9%87%8D%E5%A4%8D%E5%AD%A6%E4%B9%A0/">需重复学习</category>
       
       
       <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
@@ -452,29 +477,6 @@
       
       
       <comments>https://tskfok.github.io/2025/08/07/%E7%A7%BB%E5%8A%A8%E9%9B%B6/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>第一个错误的版本</title>
-      <link>https://tskfok.github.io/2025/08/06/%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%94%99%E8%AF%AF%E7%9A%84%E7%89%88%E6%9C%AC/</link>
-      <guid>https://tskfok.github.io/2025/08/06/%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%94%99%E8%AF%AF%E7%9A%84%E7%89%88%E6%9C%AC/</guid>
-      <pubDate>Wed, 06 Aug 2025 10:41:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;第一个错误的版本&quot;&gt;&lt;a href=&quot;#第一个错误的版本&quot; class=&quot;headerlink&quot; title=&quot;第一个错误的版本&quot;&gt;&lt;/a&gt;第一个错误的版本&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/06/%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%94%99%E8%AF%AF%E7%9A%84%E7%89%88%E6%9C%AC/#disqus_thread</comments>
       
     </item>
     

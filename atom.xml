@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-08-13T08:07:41.454Z</updated>
+  <updated>2025-08-13T08:40:33.647Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>岛屿的周长</title>
+    <link href="https://tskfok.github.io/2025/08/13/%E5%B2%9B%E5%B1%BF%E7%9A%84%E5%91%A8%E9%95%BF/"/>
+    <id>https://tskfok.github.io/2025/08/13/%E5%B2%9B%E5%B1%BF%E7%9A%84%E5%91%A8%E9%95%BF/</id>
+    <published>2025-08-13T08:22:19.000Z</published>
+    <updated>2025-08-13T08:40:33.647Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;岛屿的周长&quot;&gt;&lt;a href=&quot;#岛屿的周长&quot; class=&quot;headerlink&quot; title=&quot;岛屿的周长&quot;&gt;&lt;/a&gt;岛屿的周长&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>汉明距离</title>
@@ -42,7 +63,7 @@
     <link href="https://tskfok.github.io/2025/08/13/%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     <id>https://tskfok.github.io/2025/08/13/%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
     <published>2025-08-13T06:57:19.000Z</published>
-    <updated>2025-08-13T06:59:44.011Z</updated>
+    <updated>2025-08-13T08:09:05.034Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;重复的子字符串&quot;&gt;&lt;a href=&quot;#重复的子字符串&quot; class=&quot;headerlink&quot; title=&quot;重复的子字符串&quot;&gt;&lt;/a&gt;重复的子字符串&lt;/h3&gt;</summary>
@@ -52,6 +73,8 @@
     <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
     
     <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="需重复学习" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/%E9%9C%80%E9%87%8D%E5%A4%8D%E5%AD%A6%E4%B9%A0/"/>
     
     
     <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
@@ -403,27 +426,6 @@
     
     
     <summary type="html">&lt;h3 id=&quot;移动零&quot;&gt;&lt;a href=&quot;#移动零&quot; class=&quot;headerlink&quot; title=&quot;移动零&quot;&gt;&lt;/a&gt;移动零&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
-    
-    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一个错误的版本</title>
-    <link href="https://tskfok.github.io/2025/08/06/%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%94%99%E8%AF%AF%E7%9A%84%E7%89%88%E6%9C%AC/"/>
-    <id>https://tskfok.github.io/2025/08/06/%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%94%99%E8%AF%AF%E7%9A%84%E7%89%88%E6%9C%AC/</id>
-    <published>2025-08-06T10:41:19.000Z</published>
-    <updated>2025-08-06T10:44:23.356Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;第一个错误的版本&quot;&gt;&lt;a href=&quot;#第一个错误的版本&quot; class=&quot;headerlink&quot; title=&quot;第一个错误的版本&quot;&gt;&lt;/a&gt;第一个错误的版本&lt;/h3&gt;</summary>
     
     
     
