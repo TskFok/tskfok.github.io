@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="">
-  <title>每天进步一点点🤏</title>
+  <title>汉明距离 | 每天进步一点点🤏</title>
   <meta name="author" content="Y Y" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -13,14 +13,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="算法" />
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="每天进步一点点🤏">
-<meta property="og:url" content="https://tskfok.github.io/categories/index.html">
+  <meta name="description" content="汉明距离">
+<meta property="og:type" content="article">
+<meta property="og:title" content="汉明距离">
+<meta property="og:url" content="https://tskfok.github.io/2025/08/13/%E6%B1%89%E6%98%8E%E8%B7%9D%E7%A6%BB/index.html">
 <meta property="og:site_name" content="每天进步一点点🤏">
+<meta property="og:description" content="汉明距离">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-08-13T07:48:19.000Z">
+<meta property="article:modified_time" content="2025-08-13T08:07:41.454Z">
 <meta property="article:author" content="Y Y">
+<meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
   
   <!-- 站点验证相关 -->
@@ -126,8 +131,6 @@
 <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
     <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
     
-        <div class="sticky-area">
-    
     
                 <aside id="krw-about" class="widget widget-kratos-about clearfix">
     <div class="photo-background"></div>
@@ -167,6 +170,8 @@
     </div>
 </aside>
             
+                    <div class="sticky-area">
+                
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
@@ -492,77 +497,73 @@
 
         
 
-            <style>
-  .categories ul {
-    list-style: none;
-  }
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2025/08/13/%E6%B1%89%E6%98%8E%E8%B7%9D%E7%A6%BB/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">汉明距离</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2025-08-13T07:48:19.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-08-13</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">Y Y</span>
+                </li>
+                <li>
+                    <i class="fa fa-edit"></i> 
+                    
+                    
+                        950
+                    
+                    字
+                </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1755072461454"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            <hr />
+            <div itemprop="articleBody"><h3 id="汉明距离"><a href="#汉明距离" class="headerlink" title="汉明距离"></a>汉明距离</h3><span id="more"></span>
 
-  .categories .category-list-item {
-    position: relative;
-    padding-top: 20px;
-  }
+<h1>题目</h1>
 
-  .categories .category-list-item .category-list-link::before {
-    content: " ";
-    position: absolute;
-    left: -30px;
-    top: 50%;
-    margin-left: -4px;
-    margin-top: -4px;
-    width: 8px;
-    height: 8px;
-    background: #bbb;
-    border-radius: 50%;
-    transition: all .3s ease-in-out;
-  }
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">两个整数之间的 汉明距离 指的是这两个数字对应二进制位不同的位置的数目</span><br><span class="line">给你两个整数 x 和 y,计算并返回它们之间的汉明距离</span><br><span class="line"></span><br><span class="line">示例 1：</span><br><span class="line">输入：x = 1, y = 4</span><br><span class="line">输出：2</span><br><span class="line">解释：</span><br><span class="line">1   (0 0 0 1)</span><br><span class="line">4   (0 1 0 0)</span><br><span class="line">       ↑   ↑</span><br><span class="line">上面的箭头指出了对应二进制位不同的位置。</span><br><span class="line"></span><br><span class="line">示例 2：</span><br><span class="line">输入：x = 3, y = 1</span><br><span class="line">输出：1</span><br></pre></td></tr></table></figure>
 
-  .categories .category-list-item .category-list-link:hover::before {
-    background: #222;
-  }
+<h1>解法</h1>
 
-  a {
-    color:#666;
-  }
-
-  .categories .category-list-item .category-list-link {
-    position: relative;
-    margin-left: 24px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: inherit;
-  }
-
-  .categories .category-list-item .category-list-link::after {
-    font-family: fontawesome;
-    opacity: 0;
-    content: "\f138";
-    margin-left: 12px;
-    color: #00a7e0;
-    transition: opacity .3s ease-in-out;
-  }
-
-  .categories .category-list-item .category-list-link:hover::after {
-    opacity: 100%;
-  }
-</style>
-<article>
-  <div class="kratos-hentry kratos-post-inner clearfix">
-    <div class="kratos-post-content">
-      <h2 class="title-h2 text-center">
-        分类目录
-      </h2>
-      <div style="margin-left: 2em;">
-        <h3 class="archive-page-counter">
-          当前共有 56 种分类 (゜-゜)つロ 干杯~
-        </h3>
-        <div class="categories">
-          
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/composer/">composer</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/elasticsearch/">elasticsearch</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/frp/">frp</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/">go</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/go/build/">build</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/excel/">excel</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/for/">for</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/gin/">gin</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/go/gin/static/">static</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/https/">https</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/process/">process</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/string/">string</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/switch/">switch</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/viper/">viper</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/rune%E7%B1%BB%E5%9E%8B/">rune类型</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E4%B8%8B%E5%88%92%E7%BA%BF/">下划线</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/">实用技巧</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D-0/">按位取反(^0)</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%B5%AE%E7%82%B9%E6%95%B0%E8%AE%A1%E7%AE%97/">浮点数计算</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%96%91%E9%97%AE/">疑问</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%A7%BB%E4%BD%8D-1-64/">移位(1<<64)</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%AE%97%E6%B3%95/">算法</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/">进制</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/https/">https</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/kafka/">kafka</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/kafka/%E8%85%BE%E8%AE%AF%E4%BA%91/">腾讯云</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/kafka/%E8%85%BE%E8%AE%AF%E4%BA%91/go/">go</a></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/collection/">collection</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/select/">select</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/nas/">nas</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/nginx/">nginx</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/nginx/docker/">docker</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/openvpn/">openvpn</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/openvpn/frp/">frp</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/">php</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/php/doctrine/">doctrine</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/excel/">excel</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/log/">log</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/oss/">oss</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/pdf/">pdf</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/php-fpm/">php-fpm</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/swoole/">swoole</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/word/">word</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/%E7%AE%97%E6%B3%95/">算法</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/proxy/">proxy</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/proxy/wary/">wary</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/">tool</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/tool/msoffice/">msoffice</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/vue/">vue</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/rss/">rss</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E8%AF%B4%E9%98%85%E8%AF%BB%E5%99%A8/">小说阅读器</a></li></ul>
-          
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">思路:</span><br><span class="line">计算两个二进制位不同的数目,使用^位异或,相同的位返回0不同返回1,直接数1的数量,就是结果</span><br><span class="line"></span><br><span class="line">代码:</span><br><span class="line">/**</span><br><span class="line"> * @param Integer $x</span><br><span class="line"> * @param Integer $y</span><br><span class="line"> *</span><br><span class="line"> * @return Integer</span><br><span class="line"> */</span><br><span class="line">function hammingDistance($x, $y)</span><br><span class="line">&#123;</span><br><span class="line">    $n = $x ^ $y;</span><br><span class="line"></span><br><span class="line">    $num = 0;</span><br><span class="line">    while ($n &gt; 0) &#123;</span><br><span class="line">        $n = intdiv($n, 2);</span><br><span class="line">        if ($n % 2 === 1) &#123;</span><br><span class="line">            $num++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return $num;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">进阶代码: 只遍历1</span><br><span class="line">/**</span><br><span class="line"> * @param Integer $x</span><br><span class="line"> * @param Integer $y</span><br><span class="line"> *</span><br><span class="line"> * @return Integer</span><br><span class="line"> */</span><br><span class="line">function hammingDistance($x, $y)</span><br><span class="line">&#123;</span><br><span class="line">    $n = $x ^ $y;</span><br><span class="line"></span><br><span class="line">    $num = 0;</span><br><span class="line">    while ($n &gt; 0) &#123;</span><br><span class="line">        // 一个数与这个数-1,进行位与运算,得到的结果=这个数移除最右边的1</span><br><span class="line">        // 每次移除一个1直到$n==0为止</span><br><span class="line">        $n = $n &amp; ($n - 1);</span><br><span class="line">        $num++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return $num;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
         </div>
-      </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2025-08-13T08:07:41.454Z" itemprop="dateModified">最后编辑：2025-08-13</time>
+                </div>
+            </div>
+        </footer>
     </div>
-  </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" 重复的子字符串" href="/2025/08/13/重复的子字符串/">&lt; 上一篇</a>
+            </div>
+            
+            
+        </nav>
+    
+    
 </article>
 
         

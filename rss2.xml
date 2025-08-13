@@ -15,8 +15,31 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 13 Aug 2025 06:59:44 GMT</pubDate>
+    <pubDate>Wed, 13 Aug 2025 08:07:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>汉明距离</title>
+      <link>https://tskfok.github.io/2025/08/13/%E6%B1%89%E6%98%8E%E8%B7%9D%E7%A6%BB/</link>
+      <guid>https://tskfok.github.io/2025/08/13/%E6%B1%89%E6%98%8E%E8%B7%9D%E7%A6%BB/</guid>
+      <pubDate>Wed, 13 Aug 2025 07:48:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;汉明距离&quot;&gt;&lt;a href=&quot;#汉明距离&quot; class=&quot;headerlink&quot; title=&quot;汉明距离&quot;&gt;&lt;/a&gt;汉明距离&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/13/%E6%B1%89%E6%98%8E%E8%B7%9D%E7%A6%BB/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>重复的子字符串</title>
@@ -134,12 +157,12 @@
     </item>
     
     <item>
-      <title>找不同</title>
-      <link>https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/</link>
-      <guid>https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/</guid>
+      <title>判断子序列</title>
+      <link>https://tskfok.github.io/2025/08/08/%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/</link>
+      <guid>https://tskfok.github.io/2025/08/08/%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/</guid>
       <pubDate>Fri, 08 Aug 2025 07:26:19 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;找不同&quot;&gt;&lt;a href=&quot;#找不同&quot; class=&quot;headerlink&quot; title=&quot;找不同&quot;&gt;&lt;/a&gt;找不同&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;判断子序列&quot;&gt;&lt;a href=&quot;#判断子序列&quot; class=&quot;headerlink&quot; title=&quot;判断子序列&quot;&gt;&lt;/a&gt;判断子序列&lt;/h3&gt;</description>
       
       
       
@@ -152,7 +175,7 @@
       <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
       
       
-      <comments>https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/08/08/%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/#disqus_thread</comments>
       
     </item>
     
@@ -180,12 +203,12 @@
     </item>
     
     <item>
-      <title>判断子序列</title>
-      <link>https://tskfok.github.io/2025/08/08/%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/</link>
-      <guid>https://tskfok.github.io/2025/08/08/%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/</guid>
+      <title>找不同</title>
+      <link>https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/</link>
+      <guid>https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/</guid>
       <pubDate>Fri, 08 Aug 2025 07:26:19 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;判断子序列&quot;&gt;&lt;a href=&quot;#判断子序列&quot; class=&quot;headerlink&quot; title=&quot;判断子序列&quot;&gt;&lt;/a&gt;判断子序列&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;找不同&quot;&gt;&lt;a href=&quot;#找不同&quot; class=&quot;headerlink&quot; title=&quot;找不同&quot;&gt;&lt;/a&gt;找不同&lt;/h3&gt;</description>
       
       
       
@@ -198,7 +221,7 @@
       <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
       
       
-      <comments>https://tskfok.github.io/2025/08/08/%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/#disqus_thread</comments>
       
     </item>
     
@@ -452,29 +475,6 @@
       
       
       <comments>https://tskfok.github.io/2025/08/06/%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%94%99%E8%AF%AF%E7%9A%84%E7%89%88%E6%9C%AC/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>二叉树的所有路径</title>
-      <link>https://tskfok.github.io/2025/08/06/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%89%80%E6%9C%89%E8%B7%AF%E5%BE%84/</link>
-      <guid>https://tskfok.github.io/2025/08/06/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%89%80%E6%9C%89%E8%B7%AF%E5%BE%84/</guid>
-      <pubDate>Wed, 06 Aug 2025 09:41:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;二叉树的所有路径&quot;&gt;&lt;a href=&quot;#二叉树的所有路径&quot; class=&quot;headerlink&quot; title=&quot;二叉树的所有路径&quot;&gt;&lt;/a&gt;二叉树的所有路径&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/06/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%89%80%E6%9C%89%E8%B7%AF%E5%BE%84/#disqus_thread</comments>
       
     </item>
     
