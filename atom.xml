@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-08-13T08:40:33.647Z</updated>
+  <updated>2025-08-14T03:38:49.560Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>下一个更大元素1</title>
+    <link href="https://tskfok.github.io/2025/08/14/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A01/"/>
+    <id>https://tskfok.github.io/2025/08/14/%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%9B%B4%E5%A4%A7%E5%85%83%E7%B4%A01/</id>
+    <published>2025-08-14T03:26:19.000Z</published>
+    <updated>2025-08-14T03:38:49.560Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;下一个更大元素1&quot;&gt;&lt;a href=&quot;#下一个更大元素1&quot; class=&quot;headerlink&quot; title=&quot;下一个更大元素1&quot;&gt;&lt;/a&gt;下一个更大元素1&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>密钥格式化</title>
+    <link href="https://tskfok.github.io/2025/08/13/%E5%AF%86%E9%92%A5%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
+    <id>https://tskfok.github.io/2025/08/13/%E5%AF%86%E9%92%A5%E6%A0%BC%E5%BC%8F%E5%8C%96/</id>
+    <published>2025-08-13T09:48:19.000Z</published>
+    <updated>2025-08-13T09:55:11.850Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;密钥格式化&quot;&gt;&lt;a href=&quot;#密钥格式化&quot; class=&quot;headerlink&quot; title=&quot;密钥格式化&quot;&gt;&lt;/a&gt;密钥格式化&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>岛屿的周长</title>
@@ -59,27 +101,6 @@
   </entry>
   
   <entry>
-    <title>数字的补数</title>
-    <link href="https://tskfok.github.io/2025/08/13/%E6%95%B0%E5%AD%97%E7%9A%84%E8%A1%A5%E6%95%B0/"/>
-    <id>https://tskfok.github.io/2025/08/13/%E6%95%B0%E5%AD%97%E7%9A%84%E8%A1%A5%E6%95%B0/</id>
-    <published>2025-08-13T06:57:19.000Z</published>
-    <updated>2025-08-13T09:18:45.985Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;数字的补数&quot;&gt;&lt;a href=&quot;#数字的补数&quot; class=&quot;headerlink&quot; title=&quot;数字的补数&quot;&gt;&lt;/a&gt;数字的补数&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
-    
-    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>重复的子字符串</title>
     <link href="https://tskfok.github.io/2025/08/13/%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     <id>https://tskfok.github.io/2025/08/13/%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/</id>
@@ -96,6 +117,27 @@
     <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
     
     <category term="需重复学习" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/%E9%9C%80%E9%87%8D%E5%A4%8D%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字的补数</title>
+    <link href="https://tskfok.github.io/2025/08/13/%E6%95%B0%E5%AD%97%E7%9A%84%E8%A1%A5%E6%95%B0/"/>
+    <id>https://tskfok.github.io/2025/08/13/%E6%95%B0%E5%AD%97%E7%9A%84%E8%A1%A5%E6%95%B0/</id>
+    <published>2025-08-13T06:57:19.000Z</published>
+    <updated>2025-08-13T09:18:45.985Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;数字的补数&quot;&gt;&lt;a href=&quot;#数字的补数&quot; class=&quot;headerlink&quot; title=&quot;数字的补数&quot;&gt;&lt;/a&gt;数字的补数&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
     
     
     <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
@@ -208,14 +250,14 @@
   </entry>
   
   <entry>
-    <title>找不同</title>
-    <link href="https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/"/>
-    <id>https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/</id>
+    <title>字符串中第一个唯一字符</title>
+    <link href="https://tskfok.github.io/2025/08/08/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%94%AF%E4%B8%80%E5%AD%97%E7%AC%A6/"/>
+    <id>https://tskfok.github.io/2025/08/08/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%94%AF%E4%B8%80%E5%AD%97%E7%AC%A6/</id>
     <published>2025-08-08T07:26:19.000Z</published>
-    <updated>2025-08-08T08:03:38.940Z</updated>
+    <updated>2025-08-08T07:39:30.325Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;找不同&quot;&gt;&lt;a href=&quot;#找不同&quot; class=&quot;headerlink&quot; title=&quot;找不同&quot;&gt;&lt;/a&gt;找不同&lt;/h3&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;字符串中第一个唯一字符&quot;&gt;&lt;a href=&quot;#字符串中第一个唯一字符&quot; class=&quot;headerlink&quot; title=&quot;字符串中第一个唯一字符&quot;&gt;&lt;/a&gt;字符串中第一个唯一字符&lt;/h3&gt;</summary>
     
     
     
@@ -229,14 +271,14 @@
   </entry>
   
   <entry>
-    <title>字符串中第一个唯一字符</title>
-    <link href="https://tskfok.github.io/2025/08/08/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%94%AF%E4%B8%80%E5%AD%97%E7%AC%A6/"/>
-    <id>https://tskfok.github.io/2025/08/08/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%94%AF%E4%B8%80%E5%AD%97%E7%AC%A6/</id>
+    <title>找不同</title>
+    <link href="https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/"/>
+    <id>https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/</id>
     <published>2025-08-08T07:26:19.000Z</published>
-    <updated>2025-08-08T07:39:30.325Z</updated>
+    <updated>2025-08-08T08:03:38.940Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;字符串中第一个唯一字符&quot;&gt;&lt;a href=&quot;#字符串中第一个唯一字符&quot; class=&quot;headerlink&quot; title=&quot;字符串中第一个唯一字符&quot;&gt;&lt;/a&gt;字符串中第一个唯一字符&lt;/h3&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;找不同&quot;&gt;&lt;a href=&quot;#找不同&quot; class=&quot;headerlink&quot; title=&quot;找不同&quot;&gt;&lt;/a&gt;找不同&lt;/h3&gt;</summary>
     
     
     
@@ -384,48 +426,6 @@
     
     
     <summary type="html">&lt;h3 id=&quot;区域和检索-数组不可变&quot;&gt;&lt;a href=&quot;#区域和检索-数组不可变&quot; class=&quot;headerlink&quot; title=&quot;区域和检索-数组不可变&quot;&gt;&lt;/a&gt;区域和检索-数组不可变&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
-    
-    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nim游戏</title>
-    <link href="https://tskfok.github.io/2025/08/07/Nim%E6%B8%B8%E6%88%8F/"/>
-    <id>https://tskfok.github.io/2025/08/07/Nim%E6%B8%B8%E6%88%8F/</id>
-    <published>2025-08-07T07:03:19.000Z</published>
-    <updated>2025-08-07T07:27:12.601Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;Nim游戏&quot;&gt;&lt;a href=&quot;#Nim游戏&quot; class=&quot;headerlink&quot; title=&quot;Nim游戏&quot;&gt;&lt;/a&gt;Nim游戏&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
-    
-    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>单词规律</title>
-    <link href="https://tskfok.github.io/2025/08/07/%E5%8D%95%E8%AF%8D%E8%A7%84%E5%BE%8B/"/>
-    <id>https://tskfok.github.io/2025/08/07/%E5%8D%95%E8%AF%8D%E8%A7%84%E5%BE%8B/</id>
-    <published>2025-08-07T06:09:19.000Z</published>
-    <updated>2025-08-07T06:32:30.249Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;单词规律&quot;&gt;&lt;a href=&quot;#单词规律&quot; class=&quot;headerlink&quot; title=&quot;单词规律&quot;&gt;&lt;/a&gt;单词规律&lt;/h3&gt;</summary>
     
     
     
