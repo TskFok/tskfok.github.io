@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-08-19T09:41:53.943Z</updated>
+  <updated>2025-08-20T05:48:56.613Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>另一棵树的子树</title>
+    <link href="https://tskfok.github.io/2025/08/20/%E5%8F%A6%E4%B8%80%E6%A3%B5%E6%A0%91%E7%9A%84%E5%AD%90%E6%A0%91/"/>
+    <id>https://tskfok.github.io/2025/08/20/%E5%8F%A6%E4%B8%80%E6%A3%B5%E6%A0%91%E7%9A%84%E5%AD%90%E6%A0%91/</id>
+    <published>2025-08-20T05:37:19.000Z</published>
+    <updated>2025-08-20T05:48:56.613Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;另一棵树的子树&quot;&gt;&lt;a href=&quot;#另一棵树的子树&quot; class=&quot;headerlink&quot; title=&quot;另一棵树的子树&quot;&gt;&lt;/a&gt;另一棵树的子树&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
+    
+    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="需重复学习" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/%E9%9C%80%E9%87%8D%E5%A4%8D%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>重塑矩阵</title>
@@ -292,14 +315,14 @@
   </entry>
   
   <entry>
-    <title>找不同</title>
-    <link href="https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/"/>
-    <id>https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/</id>
+    <title>判断子序列</title>
+    <link href="https://tskfok.github.io/2025/08/08/%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/"/>
+    <id>https://tskfok.github.io/2025/08/08/%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/</id>
     <published>2025-08-08T07:26:19.000Z</published>
-    <updated>2025-08-08T08:03:38.940Z</updated>
+    <updated>2025-08-08T08:30:04.831Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;找不同&quot;&gt;&lt;a href=&quot;#找不同&quot; class=&quot;headerlink&quot; title=&quot;找不同&quot;&gt;&lt;/a&gt;找不同&lt;/h3&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;判断子序列&quot;&gt;&lt;a href=&quot;#判断子序列&quot; class=&quot;headerlink&quot; title=&quot;判断子序列&quot;&gt;&lt;/a&gt;判断子序列&lt;/h3&gt;</summary>
     
     
     
@@ -313,14 +336,14 @@
   </entry>
   
   <entry>
-    <title>判断子序列</title>
-    <link href="https://tskfok.github.io/2025/08/08/%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/"/>
-    <id>https://tskfok.github.io/2025/08/08/%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/</id>
+    <title>找不同</title>
+    <link href="https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/"/>
+    <id>https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/</id>
     <published>2025-08-08T07:26:19.000Z</published>
-    <updated>2025-08-08T08:30:04.831Z</updated>
+    <updated>2025-08-08T08:03:38.940Z</updated>
     
     
-    <summary type="html">&lt;h3 id=&quot;判断子序列&quot;&gt;&lt;a href=&quot;#判断子序列&quot; class=&quot;headerlink&quot; title=&quot;判断子序列&quot;&gt;&lt;/a&gt;判断子序列&lt;/h3&gt;</summary>
+    <summary type="html">&lt;h3 id=&quot;找不同&quot;&gt;&lt;a href=&quot;#找不同&quot; class=&quot;headerlink&quot; title=&quot;找不同&quot;&gt;&lt;/a&gt;找不同&lt;/h3&gt;</summary>
     
     
     
@@ -405,27 +428,6 @@
     
     
     <summary type="html">&lt;h3 id=&quot;两个数组的交集&quot;&gt;&lt;a href=&quot;#两个数组的交集&quot; class=&quot;headerlink&quot; title=&quot;两个数组的交集&quot;&gt;&lt;/a&gt;两个数组的交集&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
-    
-    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>反转字符串中的元音字母</title>
-    <link href="https://tskfok.github.io/2025/08/08/%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%85%83%E9%9F%B3%E5%AD%97%E6%AF%8D/"/>
-    <id>https://tskfok.github.io/2025/08/08/%E5%8F%8D%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%9A%84%E5%85%83%E9%9F%B3%E5%AD%97%E6%AF%8D/</id>
-    <published>2025-08-08T02:36:19.000Z</published>
-    <updated>2025-08-08T02:47:47.593Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;反转字符串中的元音字母&quot;&gt;&lt;a href=&quot;#反转字符串中的元音字母&quot; class=&quot;headerlink&quot; title=&quot;反转字符串中的元音字母&quot;&gt;&lt;/a&gt;反转字符串中的元音字母&lt;/h3&gt;</summary>
     
     
     
