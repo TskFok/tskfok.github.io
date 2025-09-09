@@ -44,6 +44,31 @@
     </item>
     
     <item>
+      <title>获取质数数组</title>
+      <link>https://tskfok.github.io/2025/08/27/%E8%8E%B7%E5%8F%96%E8%B4%A8%E6%95%B0%E6%95%B0%E7%BB%84/</link>
+      <guid>https://tskfok.github.io/2025/08/27/%E8%8E%B7%E5%8F%96%E8%B4%A8%E6%95%B0%E6%95%B0%E7%BB%84/</guid>
+      <pubDate>Wed, 27 Aug 2025 07:48:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;获取质数数组&quot;&gt;&lt;a href=&quot;#获取质数数组&quot; class=&quot;headerlink&quot; title=&quot;获取质数数组&quot;&gt;&lt;/a&gt;获取质数数组&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/%E9%9C%80%E9%87%8D%E5%A4%8D%E5%AD%A6%E4%B9%A0/">需重复学习</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/27/%E8%8E%B7%E5%8F%96%E8%B4%A8%E6%95%B0%E6%95%B0%E7%BB%84/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>使用最小花费爬楼梯</title>
       <link>https://tskfok.github.io/2025/08/27/%E4%BD%BF%E7%94%A8%E6%9C%80%E5%B0%8F%E8%8A%B1%E8%B4%B9%E7%88%AC%E6%A5%BC%E6%A2%AF/</link>
       <guid>https://tskfok.github.io/2025/08/27/%E4%BD%BF%E7%94%A8%E6%9C%80%E5%B0%8F%E8%8A%B1%E8%B4%B9%E7%88%AC%E6%A5%BC%E6%A2%AF/</guid>
@@ -69,12 +94,12 @@
     </item>
     
     <item>
-      <title>获取质数数组</title>
-      <link>https://tskfok.github.io/2025/08/27/%E8%8E%B7%E5%8F%96%E8%B4%A8%E6%95%B0%E6%95%B0%E7%BB%84/</link>
-      <guid>https://tskfok.github.io/2025/08/27/%E8%8E%B7%E5%8F%96%E8%B4%A8%E6%95%B0%E6%95%B0%E7%BB%84/</guid>
+      <title>获取二进制中1的数量</title>
+      <link>https://tskfok.github.io/2025/08/27/%E8%8E%B7%E5%8F%96%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E6%95%B0%E9%87%8F/</link>
+      <guid>https://tskfok.github.io/2025/08/27/%E8%8E%B7%E5%8F%96%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E6%95%B0%E9%87%8F/</guid>
       <pubDate>Wed, 27 Aug 2025 07:48:19 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;获取质数数组&quot;&gt;&lt;a href=&quot;#获取质数数组&quot; class=&quot;headerlink&quot; title=&quot;获取质数数组&quot;&gt;&lt;/a&gt;获取质数数组&lt;/h3&gt;</description>
+      <description>&lt;h3 id=&quot;获取二进制中1的数量&quot;&gt;&lt;a href=&quot;#获取二进制中1的数量&quot; class=&quot;headerlink&quot; title=&quot;获取二进制中1的数量&quot;&gt;&lt;/a&gt;获取二进制中1的数量&lt;/h3&gt;</description>
       
       
       
@@ -89,7 +114,7 @@
       <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
       
       
-      <comments>https://tskfok.github.io/2025/08/27/%E8%8E%B7%E5%8F%96%E8%B4%A8%E6%95%B0%E6%95%B0%E7%BB%84/#disqus_thread</comments>
+      <comments>https://tskfok.github.io/2025/08/27/%E8%8E%B7%E5%8F%96%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E6%95%B0%E9%87%8F/#disqus_thread</comments>
       
     </item>
     
@@ -154,11 +179,38 @@
       
       <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
       
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/%E9%9C%80%E9%87%8D%E5%A4%8D%E5%AD%A6%E4%B9%A0/">需重复学习</category>
+      
       
       <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
       
       
       <comments>https://tskfok.github.io/2025/08/14/%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E7%9A%84%E4%BC%97%E6%95%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>距离顺序排列矩阵单元格</title>
+      <link>https://tskfok.github.io/2025/08/14/%E8%B7%9D%E7%A6%BB%E9%A1%BA%E5%BA%8F%E6%8E%92%E5%88%97%E7%9F%A9%E9%98%B5%E5%8D%95%E5%85%83%E6%A0%BC/</link>
+      <guid>https://tskfok.github.io/2025/08/14/%E8%B7%9D%E7%A6%BB%E9%A1%BA%E5%BA%8F%E6%8E%92%E5%88%97%E7%9F%A9%E9%98%B5%E5%8D%95%E5%85%83%E6%A0%BC/</guid>
+      <pubDate>Thu, 14 Aug 2025 09:00:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;距离顺序排列矩阵单元格&quot;&gt;&lt;a href=&quot;#距离顺序排列矩阵单元格&quot; class=&quot;headerlink&quot; title=&quot;距离顺序排列矩阵单元格&quot;&gt;&lt;/a&gt;距离顺序排列矩阵单元格&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/%E9%9C%80%E9%87%8D%E5%A4%8D%E5%AD%A6%E4%B9%A0/">需重复学习</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/14/%E8%B7%9D%E7%A6%BB%E9%A1%BA%E5%BA%8F%E6%8E%92%E5%88%97%E7%9F%A9%E9%98%B5%E5%8D%95%E5%85%83%E6%A0%BC/#disqus_thread</comments>
       
     </item>
     
@@ -437,52 +489,6 @@
       
       
       <comments>https://tskfok.github.io/2025/08/08/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%94%AF%E4%B8%80%E5%AD%97%E7%AC%A6/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>找不同</title>
-      <link>https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/</link>
-      <guid>https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/</guid>
-      <pubDate>Fri, 08 Aug 2025 07:26:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;找不同&quot;&gt;&lt;a href=&quot;#找不同&quot; class=&quot;headerlink&quot; title=&quot;找不同&quot;&gt;&lt;/a&gt;找不同&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/08/%E6%89%BE%E4%B8%8D%E5%90%8C/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>有效的完全平方数</title>
-      <link>https://tskfok.github.io/2025/08/08/%E6%9C%89%E6%95%88%E7%9A%84%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0/</link>
-      <guid>https://tskfok.github.io/2025/08/08/%E6%9C%89%E6%95%88%E7%9A%84%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0/</guid>
-      <pubDate>Fri, 08 Aug 2025 06:36:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;有效的完全平方数&quot;&gt;&lt;a href=&quot;#有效的完全平方数&quot; class=&quot;headerlink&quot; title=&quot;有效的完全平方数&quot;&gt;&lt;/a&gt;有效的完全平方数&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/08/%E6%9C%89%E6%95%88%E7%9A%84%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0/#disqus_thread</comments>
       
     </item>
     
