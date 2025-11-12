@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2025-11-12T07:34:30.404Z</updated>
+  <updated>2025-11-12T08:20:49.434Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>本地环境获取https证书</title>
+    <link href="https://tskfok.github.io/2025/11/12/local-https/"/>
+    <id>https://tskfok.github.io/2025/11/12/local-https/</id>
+    <published>2025-11-12T07:39:40.000Z</published>
+    <updated>2025-11-12T08:20:49.434Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;本地环境获取https证书&quot;&gt;&lt;a href=&quot;#本地环境获取https证书&quot; class=&quot;headerlink&quot; title=&quot;本地环境获取https证书&quot;&gt;&lt;/a&gt;本地环境获取https证书&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="openvpn" scheme="https://tskfok.github.io/categories/openvpn/"/>
+    
+    <category term="nginx" scheme="https://tskfok.github.io/categories/openvpn/nginx/"/>
+    
+    <category term="cloudflare" scheme="https://tskfok.github.io/categories/openvpn/nginx/cloudflare/"/>
+    
+    
+    <category term="nginx" scheme="https://tskfok.github.io/tags/nginx/"/>
+    
+  </entry>
   
   <entry>
     <title>另一棵树的子树</title>
@@ -417,27 +440,6 @@
     
     
     <summary type="html">&lt;h3 id=&quot;判断子序列&quot;&gt;&lt;a href=&quot;#判断子序列&quot; class=&quot;headerlink&quot; title=&quot;判断子序列&quot;&gt;&lt;/a&gt;判断子序列&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
-    
-    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>字符串中第一个唯一字符</title>
-    <link href="https://tskfok.github.io/2025/08/08/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%94%AF%E4%B8%80%E5%AD%97%E7%AC%A6/"/>
-    <id>https://tskfok.github.io/2025/08/08/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%94%AF%E4%B8%80%E5%AD%97%E7%AC%A6/</id>
-    <published>2025-08-08T07:26:19.000Z</published>
-    <updated>2025-11-12T07:34:30.403Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;字符串中第一个唯一字符&quot;&gt;&lt;a href=&quot;#字符串中第一个唯一字符&quot; class=&quot;headerlink&quot; title=&quot;字符串中第一个唯一字符&quot;&gt;&lt;/a&gt;字符串中第一个唯一字符&lt;/h3&gt;</summary>
     
     
     
