@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="">
+  <title>go学习记录 | 每天进步一点点🤏</title>
+  <meta name="author" content="Y Y" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="" />
+  
+  <meta name="description" content="疑问">
+<meta property="og:type" content="article">
+<meta property="og:title" content="go学习记录">
+<meta property="og:url" content="https://tskfok.github.io/2025/04/09/go-study-250324/index.html">
+<meta property="og:site_name" content="每天进步一点点🤏">
+<meta property="og:description" content="疑问">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tskfok.github.io/2025/04/09/go-study-250324/https:/img.adiosat.com/go-slice/go.png">
+<meta property="article:published_time" content="2025-04-09T07:19:42.000Z">
+<meta property="article:modified_time" content="2025-11-12T07:34:30.399Z">
+<meta property="article:author" content="Y Y">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tskfok.github.io/2025/04/09/go-study-250324/https:/img.adiosat.com/go-slice/go.png">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" type="text/css" media="(prefers-color-scheme: dark)">
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/light.min.css" type="text/css" media="all">
+  
+  
+  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+  
+  
+  
+  
+    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/1.jpg');
+      }
+    
+    
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('/images/2.jpg');
+        }
+      }
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="每天进步一点点🤏" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="每天进步一点点🤏" type="application/rss+xml">
+</head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                        <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                    
+                                
+                                    
+                                        <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">每天进步一点点🤏</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>每天进步一点点🤏</h2> <br />
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+                        
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/3.gif" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                145
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                57
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                66
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/composer/">composer</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/elasticsearch/">elasticsearch</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/frp/">frp</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/">go</a><span class="category-list-count">10</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/go/build/">build</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/excel/">excel</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/for/">for</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/gin/">gin</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/go/gin/static/">static</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/https/">https</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/process/">process</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/string/">string</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/switch/">switch</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/viper/">viper</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/rune%E7%B1%BB%E5%9E%8B/">rune类型</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E4%B8%8B%E5%88%92%E7%BA%BF/">下划线</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/">实用技巧</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D-0/">按位取反(^0)</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%B5%AE%E7%82%B9%E6%95%B0%E8%AE%A1%E7%AE%97/">浮点数计算</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%96%91%E9%97%AE/">疑问</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%A7%BB%E4%BD%8D-1-64/">移位(1<<64)</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%AE%97%E6%B3%95/">算法</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/">进制</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/https/">https</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/kafka/">kafka</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/kafka/%E8%85%BE%E8%AE%AF%E4%BA%91/">腾讯云</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/kafka/%E8%85%BE%E8%AE%AF%E4%BA%91/go/">go</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/collection/">collection</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/select/">select</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/nas/">nas</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/nginx/">nginx</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/nginx/docker/">docker</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/openvpn/">openvpn</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/openvpn/frp/">frp</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/">php</a><span class="category-list-count">67</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/php/doctrine/">doctrine</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/excel/">excel</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/log/">log</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/oss/">oss</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/pdf/">pdf</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/php-fpm/">php-fpm</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/swoole/">swoole</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/word/">word</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/%E7%AE%97%E6%B3%95/">算法</a><span class="category-list-count">58</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/php/%E7%AE%97%E6%B3%95/%E9%9C%80%E9%87%8D%E5%A4%8D%E5%AD%A6%E4%B9%A0/">需重复学习</a><span class="category-list-count">7</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/proxy/">proxy</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/proxy/wary/">wary</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/">tool</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/tool/msoffice/">msoffice</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/vue/">vue</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a><span class="category-list-count">13</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/rss/">rss</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E8%AF%B4%E9%98%85%E8%AF%BB%E5%99%A8/">小说阅读器</a><span class="category-list-count">1</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/apt/" style="font-size: 0.6em;">apt</a> <a href="/tags/calibre/" style="font-size: 0.6em;">calibre</a> <a href="/tags/cert/" style="font-size: 0.6em;">cert</a> <a href="/tags/chat/" style="font-size: 0.6em;">chat</a> <a href="/tags/chat-admin/" style="font-size: 0.6em;">chat-admin</a> <a href="/tags/cloudflare/" style="font-size: 0.6em;">cloudflare</a> <a href="/tags/composer/" style="font-size: 0.6em;">composer</a> <a href="/tags/ddnsto/" style="font-size: 0.6em;">ddnsto</a> <a href="/tags/debian/" style="font-size: 0.6em;">debian</a> <a href="/tags/dhparam/" style="font-size: 0.6em;">dhparam</a> <a href="/tags/dns/" style="font-size: 0.6em;">dns</a> <a href="/tags/docker/" style="font-size: 0.8em;">docker</a> <a href="/tags/doctrine/" style="font-size: 0.6em;">doctrine</a> <a href="/tags/dsm/" style="font-size: 0.6em;">dsm</a> <a href="/tags/elasticsearch/" style="font-size: 0.6em;">elasticsearch</a> <a href="/tags/excel%E5%8A%A0%E5%AF%86/" style="font-size: 0.6em;">excel加密</a> <a href="/tags/fail2ban/" style="font-size: 0.6em;">fail2ban</a> <a href="/tags/filebrowser/" style="font-size: 0.6em;">filebrowser</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2025/08/27/%E5%8F%A6%E4%B8%80%E6%A3%B5%E6%A0%91%E7%9A%84%E5%AD%90%E6%A0%91/"><i class="fa  fa-book"></i> 另一棵树的子树</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2025/08/27/%E8%8E%B7%E5%8F%96%E8%B4%A8%E6%95%B0%E6%95%B0%E7%BB%84/"><i class="fa  fa-book"></i> 获取质数数组</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2025/08/27/%E4%BD%BF%E7%94%A8%E6%9C%80%E5%B0%8F%E8%8A%B1%E8%B4%B9%E7%88%AC%E6%A5%BC%E6%A2%AF/"><i class="fa  fa-book"></i> 使用最小花费爬楼梯</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2025/08/27/%E8%8E%B7%E5%8F%96%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E6%95%B0%E9%87%8F/"><i class="fa  fa-book"></i> 获取二进制中1的数量</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2025/08/19/%E9%87%8D%E5%A1%91%E7%9F%A9%E9%98%B5/"><i class="fa  fa-book"></i> 重塑矩阵</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2025/04/09/go-study-250324/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">go学习记录</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2025-04-09T07:19:42.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-04-09</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">Y Y</span>
+                </li>
+                <li>
+                    <i class="fa fa-edit"></i> 
+                    
+                    
+                        ~13.80K
+                    
+                    字
+                </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1762932870399"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            <hr />
+            <div itemprop="articleBody"><h3 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h3><span id="more"></span>
+
+<h1>sync.Mutex避免复制</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">避免结构体中存在sync.Mutex,使用值方法</span><br><span class="line"></span><br><span class="line">type Counter struct &#123;</span><br><span class="line">	sync.Mutex</span><br><span class="line">	n int64</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 此方法实现是没问题的。</span><br><span class="line">func (c *Counter) Increase(d int64) (r int64) &#123;</span><br><span class="line">	c.Lock()</span><br><span class="line">	c.n += d</span><br><span class="line">	r = c.n</span><br><span class="line">	c.Unlock()</span><br><span class="line">	return</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// Counter值将被复制,不会起到保护的作用,没有意义</span><br><span class="line">func (c Counter) Value() (r int64) &#123;</span><br><span class="line">	c.Lock()</span><br><span class="line">	r = c.n</span><br><span class="line">	c.Unlock()</span><br><span class="line">	return c.n</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1>数据竞争</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">如何查看数据竞争</span><br><span class="line">go run -race xxx.go </span><br><span class="line"></span><br><span class="line">如何判断数据竞争</span><br><span class="line">一个变量在协程中有写操作,并且在其他协程中存在读或写操作,并且没用到Mutex等同步手段,就会引起数据竞争</span><br><span class="line"></span><br><span class="line">数据竞争例子</span><br><span class="line">a := 1</span><br><span class="line">wg := sync.WaitGroup&#123;&#125;</span><br><span class="line">wg.Add(2)</span><br><span class="line">go func() &#123;</span><br><span class="line">    defer wg.Done()</span><br><span class="line">    a = 2</span><br><span class="line">&#125;()</span><br><span class="line"></span><br><span class="line">go func() &#123;</span><br><span class="line">    defer wg.Done()</span><br><span class="line">    a = 3</span><br><span class="line">&#125;()</span><br><span class="line"></span><br><span class="line">wg.Wait()</span><br><span class="line">fmt.Println(a)</span><br><span class="line"></span><br><span class="line">使用Mutex避免数据竞争</span><br><span class="line">a := 1</span><br><span class="line">wg := sync.WaitGroup&#123;&#125;</span><br><span class="line">wg.Add(2)</span><br><span class="line">sm := sync.Mutex&#123;&#125;</span><br><span class="line">go func() &#123;</span><br><span class="line">    defer wg.Done()</span><br><span class="line">    defer sm.Unlock()</span><br><span class="line">    sm.Lock() // 加锁直到unlock之前,其他协程无法获取到锁,确保了数据不会被其他协程操作</span><br><span class="line">    a = 2 // 这边只是简单的例子,实际情况可能做更多的操作</span><br><span class="line">&#125;()</span><br><span class="line"></span><br><span class="line">go func() &#123;</span><br><span class="line">    defer wg.Done()</span><br><span class="line">    defer sm.Unlock()</span><br><span class="line">    sm.Lock()</span><br><span class="line">    a = 3</span><br><span class="line">&#125;()</span><br><span class="line"></span><br><span class="line">wg.Wait()</span><br><span class="line">fmt.Println(a)</span><br></pre></td></tr></table></figure>
+
+<h1>指针安全</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var pT atomic.Pointer[T]</span><br><span class="line">var ta, tb = T&#123;1&#125;, T&#123;2&#125;</span><br><span class="line"></span><br><span class="line">pT.Store(&amp;ta)           // 设置pT为ta的指针</span><br><span class="line">fmt.Println(pT.Load())  // 读取pT的值</span><br><span class="line">pa1 := pT.Load()        // 将pT的值赋值给pa1</span><br><span class="line">fmt.Println(pa1 == &amp;ta) // pa1是ta的指针 结果为true</span><br><span class="line">pa2 := pT.Swap(&amp;tb)     // 设置pT的值为tb的指针,并把旧的指针赋值给pa2</span><br><span class="line">fmt.Println(pa2 == &amp;ta) // pa2是旧指针,所以结果为true</span><br><span class="line">fmt.Println(pT.Load())  // tb的指针</span><br><span class="line"></span><br><span class="line">b := pT.CompareAndSwap(&amp;ta, &amp;tb) // pT存储tb的指针,不是ta的指针,所以结果是false</span><br><span class="line">fmt.Println(b)                   // false</span><br><span class="line">b = pT.CompareAndSwap(&amp;tb, &amp;ta)  // pt存储tb的指针,与第一个变量一直,替换pt存储为ta的指针,所以结果是true</span><br><span class="line">fmt.Println(b)                   // true</span><br></pre></td></tr></table></figure>
+
+<h1>sync.Cond协程之间的通知</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">cond := sync.NewCond(&amp;sync.Mutex&#123;&#125;)</span><br><span class="line">queue := []int&#123;&#125;</span><br><span class="line"></span><br><span class="line">go func() &#123;</span><br><span class="line">    for &#123;</span><br><span class="line">        cond.L.Lock() // 加锁</span><br><span class="line">        for len(queue) == 0 &#123; // 直到queue的长度为0时,等待,不适用if是为了防止叫醒之后queue是被清空的状态,引起panic</span><br><span class="line">            cond.Wait() // 暂停等待唤醒</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        fmt.Println(queue[0])</span><br><span class="line">        queue = queue[1:]</span><br><span class="line"></span><br><span class="line">        cond.Signal() // 唤醒其他协程</span><br><span class="line">        cond.L.Unlock() // 解锁</span><br><span class="line">    &#125;</span><br><span class="line">&#125;()</span><br><span class="line"></span><br><span class="line">for i := 0; ; i++ &#123;</span><br><span class="line">    cond.L.Lock()</span><br><span class="line">    queue = append(queue, i)</span><br><span class="line"></span><br><span class="line">    for len(queue) == 2 &#123; // queue长度到达2就会进入等待,等待协程消化完成后queue&lt;2,进入下一个循环</span><br><span class="line">        cond.Wait()</span><br><span class="line">    &#125;</span><br><span class="line">    cond.Signal()</span><br><span class="line">    cond.L.Unlock()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1>读写锁的顺序</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">读锁可以在其他读锁获取的时候同时获取,存在其他读锁则会阻塞</span><br><span class="line">写锁不能在存在读锁或者写锁的时候获取,会阻塞</span><br><span class="line">读锁可已在写锁阻塞的时候,优先获取读锁,哪怕已经有一个写锁阻塞,写锁会继续阻塞</span><br><span class="line">读锁可已在读锁阻塞的时候,如果已经有写锁阻塞,写锁获取锁</span><br><span class="line"></span><br><span class="line">var m sync.RWMutex // 这段代码的结果可能为 a b d e c或者a b e d c,其中c因为阻塞被d和e优先获取了写锁</span><br><span class="line">go func() &#123;</span><br><span class="line">    m.RLock()</span><br><span class="line">    fmt.Println(&quot;a&quot;, time.Now())</span><br><span class="line">    time.Sleep(time.Second)</span><br><span class="line">    m.RUnlock()</span><br><span class="line">&#125;() // 0 秒获取锁a 睡1秒 1秒的时候释放锁</span><br><span class="line">go func() &#123;</span><br><span class="line">    time.Sleep(time.Second * 1 / 4)</span><br><span class="line">    m.Lock()</span><br><span class="line">    fmt.Println(&quot;b&quot;, time.Now())</span><br><span class="line">    time.Sleep(time.Second)</span><br><span class="line">    m.Unlock()</span><br><span class="line">&#125;() // 0.25 秒想要获锁b 阻塞 1 秒获取到锁b, 2秒释放锁</span><br><span class="line">go func() &#123;</span><br><span class="line">    time.Sleep(time.Second * 2 / 4)</span><br><span class="line">    m.Lock()</span><br><span class="line">    fmt.Println(&quot;c&quot;, time.Now())</span><br><span class="line">    m.Unlock()</span><br><span class="line">&#125;() // 0.5秒 想要获取锁c 阻塞,在读锁解锁完成后才获取到写锁</span><br><span class="line">go func() &#123;</span><br><span class="line">    time.Sleep(time.Second * 3 / 4)</span><br><span class="line">    m.RLock()</span><br><span class="line">    fmt.Println(&quot;d&quot;, time.Now())</span><br><span class="line">    m.RUnlock()</span><br><span class="line">&#125;() // 0.75秒想要获得读锁d 读锁优先级比写锁高,2秒的时候获取到读锁</span><br><span class="line">go func() &#123;</span><br><span class="line">    time.Sleep(time.Second)</span><br><span class="line">    m.RLock()</span><br><span class="line">    fmt.Println(&quot;e&quot;, time.Now())</span><br><span class="line">    m.RUnlock()</span><br><span class="line">&#125;() // 1秒想要获得读锁d 读锁优先级比写锁高,2秒的时候获取到读锁</span><br><span class="line">time.Sleep(time.Second * 3)</span><br></pre></td></tr></table></figure>
+
+<h1>恐慌恢复</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">defer func() &#123;</span><br><span class="line">    if v := recover(); v != nil &#123;</span><br><span class="line">        fmt.Println(v)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;()</span><br><span class="line"></span><br><span class="line">多个恐慌一起发生将执行最后一个恐慌</span><br></pre></td></tr></table></figure>
+
+<h1>延迟调用</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">defer t.M(1).M(2).M(5).M(6) 会先调用M(1),M(2),M(5),再调用defer M(6)</span><br><span class="line"></span><br><span class="line">循环内的延迟调用想在每个循环里提前执行可以放入func里</span><br><span class="line">files := []string&#123;&quot;/xxxx/s.log&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;&#125;</span><br><span class="line">for _, file := range files &#123;</span><br><span class="line">    err := func() error &#123;</span><br><span class="line">        f, err := os.Open(file)</span><br><span class="line"></span><br><span class="line">        if nil != err &#123;</span><br><span class="line">            return err</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        defer f.Close() //在func里会关闭文件,防止过多临时内存泄露</span><br><span class="line">        </span><br><span class="line">        ...各种文件操作</span><br><span class="line">        </span><br><span class="line">        return nil</span><br><span class="line">    &#125;()</span><br><span class="line"></span><br><span class="line">    if nil != err &#123;</span><br><span class="line">        fmt.Println(err.Error())</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1>反射</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line">获取指针的基类型</span><br><span class="line">a := 123</span><br><span class="line">b := reflect.ValueOf(&amp;a)</span><br><span class="line">fmt.Println(b.Type(), b.Elem().Type()) // *int int b.Elem()获取指针的基累型</span><br><span class="line">fmt.Println(b.Elem().CanSet()) // true 是否能被赋值修改</span><br><span class="line">b.Elem().Set(reflect.ValueOf(456)) // 赋值,CanSet返回true可以赋值</span><br><span class="line">fmt.Println(a) // 456</span><br><span class="line"></span><br><span class="line">结构体中非导出字段不能赋值修改</span><br><span class="line">type T struct &#123;</span><br><span class="line">	X    int  `max:&quot;99&quot; min:&quot;0&quot; default:&quot;0&quot;`</span><br><span class="line">	Y, z bool `optional:&quot; yes&quot; Sans:&quot;1&quot;`</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	a := T&#123;&#125;</span><br><span class="line">	b := reflect.ValueOf(&amp;a)</span><br><span class="line">	el := b.Elem() //a和el值相同类型不同</span><br><span class="line">	</span><br><span class="line">	for i := 0; i &lt; el.NumField(); i++ &#123;</span><br><span class="line">		fmt.Println(reflect.TypeOf(a).Field(i).Name, el.Field(i).CanSet()) //X true Y true z false</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">获取方法和字段</span><br><span class="line">type T struct &#123;</span><br><span class="line">	X    int  `max:&quot;99&quot; min:&quot;0&quot; default:&quot;0&quot;`</span><br><span class="line">	Y, Z bool `optional:&quot; yes&quot; Sans:&quot;1&quot;`</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func (t T) Save() &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	a := T&#123;&#125;</span><br><span class="line">	re := reflect.TypeOf(a)</span><br><span class="line">	fmt.Println(re.NumMethod(), re.NumField()) //1 3 1个方法,3个字段</span><br><span class="line">	</span><br><span class="line">	//获取所有显式方法名(大写开头的方法)</span><br><span class="line">	for i := 0; i &lt; re.NumMethod(); i++ &#123;</span><br><span class="line">		fmt.Println(re.Method(i).Name) // Save</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	//获取所有变量名</span><br><span class="line">	for i := 0; i &lt; re.NumField(); i++ &#123;</span><br><span class="line">		fmt.Println(re.Field(i).Name) // X Y Z</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">获取类型</span><br><span class="line">a := 123</span><br><span class="line">fmt.Println(reflect.TypeOf(a)) // int</span><br><span class="line"></span><br><span class="line">获取tag值</span><br><span class="line">type T struct &#123;</span><br><span class="line">	X    int  `max:&quot;99&quot; min:&quot;0&quot; default:&quot;0&quot;` //:前后不能有空格,值必须使用双引号,键不能包含冒号和空格</span><br><span class="line">	Y, Z bool `optional:&quot; yes&quot; Sans:&quot;1&quot;`</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">a := T&#123;&#125;</span><br><span class="line">re := reflect.TypeOf(a)</span><br><span class="line">fmt.Println(re.Field(0).Tag) // max:&quot;99&quot; min:&quot;0&quot; default:&quot;0&quot;</span><br><span class="line">fmt.Println(re.Field(0).Tag.Get(&quot;max&quot;)) // 99</span><br><span class="line">fmt.Println(re.Field(0).Tag.Lookup(&quot;max&quot;)) // 99 true</span><br><span class="line"></span><br><span class="line">判断是否实现了接口</span><br><span class="line">type in interface &#123;</span><br><span class="line">	Save()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">type T struct &#123;</span><br><span class="line">	X    int  `max:&quot;99&quot; min:&quot;0&quot; default:&quot;0&quot;`</span><br><span class="line">	Y, Z bool `optional:&quot; yes&quot; Sans:&quot;1&quot;`</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func (t T) Save() &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	a := T&#123;&#125;</span><br><span class="line">	re := reflect.TypeOf(a)</span><br><span class="line">	fmt.Println(re.Implements(reflect.TypeOf(new(in)).Elem())) //true</span><br><span class="line">	//new(in)创建接口指针</span><br><span class="line">	//reflect.TypeOf(new(in))获取接口指针的类型</span><br><span class="line">	//reflect.TypeOf(new(in)).Elem()获取接口指针类型对应的接口,相当于*new(in)</span><br><span class="line">	//re.Implements()判断是否实现了接口in</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3>指针重新赋值</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">指针重新赋值会导致指针指向的内存地址发生变化</span><br><span class="line">a := 1</span><br><span class="line">b := &amp;a</span><br><span class="line">fmt.Println(*b, b) // 1 指向a</span><br><span class="line">c := 2</span><br><span class="line">b = &amp;c</span><br><span class="line">fmt.Println(*b, b) // 2 指向c</span><br><span class="line">a = 3</span><br><span class="line">fmt.Println(*b, b) // 2 修改了a,但指针指向c,所以没有发生变化</span><br><span class="line"></span><br><span class="line">// 例子</span><br><span class="line">type X int</span><br><span class="line"></span><br><span class="line">func (x X) M1() &#123;</span><br><span class="line">	fmt.Println(x)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func (x *X) M2() &#123;</span><br><span class="line">	fmt.Println(*x)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">type T struct&#123; X &#125;</span><br><span class="line"></span><br><span class="line">type S struct&#123; *T &#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	var t = &amp;T&#123;X: 1&#125;</span><br><span class="line">	var s = S&#123;T: t&#125;</span><br><span class="line">	var f = s.M1</span><br><span class="line">	var g = s.M2</span><br><span class="line">	fmt.Printf(&quot;%p&quot;, s.T)</span><br><span class="line">	fmt.Println()</span><br><span class="line">	s.X = 2</span><br><span class="line">	f()    // 1  M1方法是传值,X的值是副本,不会随着外部修改X而变化</span><br><span class="line">	g()    // 2  M2方法是传引用,X的值是指针,会根据内存修改而发生变化</span><br><span class="line">	s.M1() // 2</span><br><span class="line">	s.M2() // 2</span><br><span class="line">	fmt.Printf(&quot;%p&quot;, s.T)</span><br><span class="line">	fmt.Println()</span><br><span class="line">	s.T = &amp;T&#123;X: 3&#125; // s.T的内存地址发生变化,指向了新的T指针</span><br><span class="line">	f()            // 1  M1传值不会变化</span><br><span class="line">	g()            // 2  M2还是旧指针的引用</span><br><span class="line">	s.M1()         // 3</span><br><span class="line">	s.M2()         // 3</span><br><span class="line">	fmt.Printf(&quot;%p&quot;, s.T)</span><br><span class="line">	fmt.Println()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3>看不懂的语法糖</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">遍历函数特性 go 1.23版本</span><br><span class="line">func SquareLessThan50(onKeyValue func(int, int) bool) &#123;</span><br><span class="line">    //遍历啊&gt;=0 | &lt;8</span><br><span class="line">	for i := range 8 &#123;</span><br><span class="line">		if !onKeyValue(i, i*i) &#123;</span><br><span class="line">			return</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">for i, ii := range SquareLessThan50 &#123;</span><br><span class="line">    fmt.Printf(&quot;%v:%v &quot;, i, ii) //输出0,0 1,1 2,4 .... 7,49</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3>动态类型接口值比较</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">接口包含动态类型和动态变量,必须两者都相等才相等</span><br><span class="line">var a *string = nil</span><br><span class="line">var b *int = nil</span><br><span class="line">var c, d interface&#123;&#125; = a, b</span><br><span class="line">var i interface&#123;&#125; = nil</span><br><span class="line"></span><br><span class="line">c!=d!=i // 动态类型不同,c的动态类型是*string,b的动态类型是*int,i的动态类型是nil</span><br><span class="line">i == nil</span><br></pre></td></tr></table></figure>
+
+<h3>断言</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">接口类型才有断言,可以用来判断值的类型</span><br><span class="line">var a interface&#123;&#125; = 1</span><br><span class="line">	</span><br><span class="line">//EmptyInterface是个空的接口</span><br><span class="line">//如果没有ok,断言成功正常赋值,失败会照成恐慌panic</span><br><span class="line">if c, ok := a.(EmptyInterface); ok &#123; // 如果断言成功 ok返回true,失败返回false</span><br><span class="line">    fmt.Println(c) // c = 1,接口a被断言成空接口</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    fmt.Println(c, ok)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">if c, ok := a.(int); ok &#123; // 如果断言成功 ok返回true,失败返回false</span><br><span class="line">    fmt.Println(c) // c = 1,接口a被断言成空接口</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    fmt.Println(c, ok)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3>接口类型</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">一个接口的方法完全包含另一个接口,接可以转化成另一个接口</span><br><span class="line">空的接口类型可以起到any的作用,定义空接口类型可以转成任何类型的数据</span><br><span class="line"></span><br><span class="line">type EmptyInterface interface &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var a EmptyInterface</span><br><span class="line">a = 1</span><br><span class="line">fmt.Println(a, reflect.TypeOf(a)) // 1, int </span><br><span class="line">a = &quot;b&quot;</span><br><span class="line">fmt.Println(a, reflect.TypeOf(a)) // b, string</span><br><span class="line"></span><br><span class="line">接口的继承</span><br><span class="line">type S interface &#123;</span><br><span class="line">    Abort() string</span><br><span class="line">	xx() string</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">方法实现了接口中的所有函数就是继承了接口,少一个函数都不行</span><br><span class="line">type AA struct &#123; // AA 继承了接口 S</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func (aa AA) Abort() string &#123;</span><br><span class="line">	return &quot;aa&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func (aa AA) xx() string &#123;</span><br><span class="line">	return &quot;xx&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">type BB struct &#123; // BB 没有继承接口 S</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func (bb BB) Abort() string &#123;</span><br><span class="line">	return &quot;bb&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	var a S</span><br><span class="line">	a = AA&#123;&#125; // 可以直接定义成接口类型,AA 必须有 Abort和xx两个方法,否则报错</span><br><span class="line">	fmt.Println(a.Abort(), reflect.TypeOf(a)) // aa main.AA</span><br><span class="line">	b := BB&#123;&#125;</span><br><span class="line">	fmt.Println(b.Abort(), reflect.TypeOf(b)) // bb main.BB</span><br><span class="line">	a = b // 报错,如果BB存在xx方法就是正确的</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">多态,可以将接口作为方法的变量使用</span><br><span class="line">func test(s S) string &#123;</span><br><span class="line">	return s.xx()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	var a S = AA&#123;&#125;</span><br><span class="line">	fmt.Println(test(a)) // xx</span><br><span class="line">	a = BB&#123;&#125;</span><br><span class="line">	fmt.Println(test(a)) // bb</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3>运算分析</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const s = &quot;Go101.org&quot;</span><br><span class="line"></span><br><span class="line">var a byte = 1 &lt;&lt; len(s) / 128 // a=4,len(s)为常量,1 &lt;&lt; len(s) / 128会在编译时被计算</span><br><span class="line">var b byte = 1 &lt;&lt; len(s[:]) / 128 // b=0,len(s[:])不为常量, 所以先计算1 &lt;&lt; len(s[:]) = 512,512超出byte范围,结果为0</span><br></pre></td></tr></table></figure>
+
+<h3>循环</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">循环中直接修改value不会影响到映射的数据</span><br><span class="line">a := map[string]int&#123;&quot;1&quot;: 1, &quot;2&quot;: 2, &quot;3&quot;: 3&#125;</span><br><span class="line">for key, value := range a &#123;</span><br><span class="line">    value++</span><br><span class="line">    fmt.Println(value, a[key]) // value!=a[key]</span><br><span class="line">    a[key] = value</span><br><span class="line">    fmt.Println(value, a[key])</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">大数组可以使用指针或者切片遍历,开销小,或者抛弃value,使用arr[key]的形式</span><br><span class="line"></span><br><span class="line">var a = [10000000]int&#123;&#125; </span><br><span class="line">for x, y := range &amp;a &#123; // 或者range a[:]</span><br><span class="line">    y++</span><br><span class="line">    fmt.Println(y, a[x]) // y!=a[x]</span><br><span class="line">    a[x] = y</span><br><span class="line">    fmt.Println(y, a[x])</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var memStats runtime.MemStats</span><br><span class="line">runtime.ReadMemStats(&amp;memStats)</span><br><span class="line">fmt.Printf(&quot;Sys = %v MiB\n&quot;, memStats.Sys/1024/1024) //查看内存开销</span><br></pre></td></tr></table></figure>
+
+<h3>不可寻址</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">可以使用&amp;获取内存地址</span><br><span class="line">结构体struct可寻址,但map中但struct不可寻址,map的值是通过函数调用返回的,地址不稳定,</span><br><span class="line">可直接使用指针,map[string]*[3]int&#123;&#125;</span><br><span class="line">数组array可寻址,&amp;[...]int&#123;1, 2, 3&#125;[1]是临时值,不可寻址,需要现将[...]int&#123;1, 2, 3&#125;赋值才能寻址</span><br><span class="line">切片slice可寻址,&amp;[]int&#123;1, 2, 3&#125;[1]和数组一样是错误的,append扩展切片后地址会发生变化</span><br><span class="line">映射可寻址,但映射的key和value不可寻址 &amp;a[&quot;b&quot;]会报错,因为map的值是通过函数调用返回的,地址不稳定,value的值如果是切片无法寻址但可以修改,因为切片是引用类型</span><br></pre></td></tr></table></figure>
+
+<h3>切片数组映射</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">结构体struct可以作为映射map的下标key,可以用来表示多对一的查询</span><br><span class="line"></span><br><span class="line">切片slice或者数组array不存在下标的情况下,下标=前一个元素的下标+1</span><br><span class="line">第一个元素下标缺失,下标=0</span><br><span class="line">下标必须为非负数整形常量 int&gt;0,uint</span><br><span class="line"></span><br><span class="line">映射map和切片slice赋值给另一个映射或切片,内存是共用的</span><br><span class="line">数组array赋值给另一个数组,内存是不共用的</span><br><span class="line"></span><br><span class="line">映射map的第二个返回值,第二个返回值为bool,用来表示键在map中是否存在</span><br><span class="line">m := map[string]int&#123;&quot;abc&quot;: 123, &quot;xyz&quot;: 789&#125;</span><br><span class="line">n, present := m[&quot;hello&quot;] //present用来表示hello在m中是否存在,返回true or false,n在hello不存在的是否返回默认值0</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3>类型转换</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">指针类型的转换要把指针类型用()括起来,例如(*int64)()</span><br><span class="line">type MyInt int64</span><br><span class="line">type Ta *int64</span><br><span class="line">type Tb *MyInt</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	var ta Ta</span><br><span class="line">	z := Tb((*MyInt)((*int64)(ta))) // 现将ta的类型从Ta转成*int64,在转成*MyInt,在转成Tb</span><br><span class="line">	fmt.Println(z)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3>计算</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">不同的数据类型变量不能运算操作</span><br><span class="line">var c int32 = 20</span><br><span class="line">var d int8 = 4</span><br><span class="line">c + d //错误</span><br><span class="line">没有类型的常量能与变量(有类型且类型不同的不行)</span><br><span class="line">const d = 4</span><br><span class="line">c + d //正确,d会隐式转换成int32的类型</span><br><span class="line"></span><br><span class="line">(位)异或a ^ b,ab对位相同为0,不同为1</span><br><span class="line">1001 ^ 1100 = 0101</span><br><span class="line"></span><br><span class="line">位清a &amp;^ b,等价于 a &amp; (^b)</span><br><span class="line">b位为1,a位清零,b位为0,a位不变</span><br><span class="line">1001 &amp;^ 1100 = 1001 &amp; 0011 = 0001</span><br><span class="line"></span><br><span class="line">取模</span><br><span class="line">a % b = 余数,正负值取决于a的正负值,需要ab均为整数</span><br><span class="line">-20 % 6 = -2 // -3 * 6 + -2</span><br><span class="line">-20 % -6 = -2 // 3 * -6 + -2</span><br><span class="line">20 % -6 = 2 // -3 * -6 + 2</span><br><span class="line">20 % 6 = 2 // 3 * 6 + 2</span><br><span class="line"></span><br><span class="line">除以0</span><br><span class="line">var a = 1.0</span><br><span class="line">var b = 0.0</span><br><span class="line">fmt.Println(a/b, b/b) // +Inf NaN</span><br><span class="line">fmt.Println(1.0 / 0.0) // 错误</span><br><span class="line"></span><br><span class="line">常量计算</span><br><span class="line">1.2 + 3/2 = 2.2</span><br><span class="line">因为3/2是int计算 = 1,加上1.2 = 2.2</span><br><span class="line">1.2 + 3.0/2 = 2.7</span><br><span class="line">1.2 + 3/2.0 = 2.7</span><br><span class="line"></span><br><span class="line">计算有先后顺序</span><br><span class="line">3/2*0.1 = 0.1 // 3 / 2 = int 1 * 0.1 = 0.1</span><br><span class="line">0.1*3/2 = 0.15 // 0.1 * 3 = float 0.3 / 2 = 0.15</span><br></pre></td></tr></table></figure>
+
+<h3>变量作用域</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">内部声明的同名变量会在内部起作用,不会影响到外部同名的变量的值</span><br><span class="line">var y = 3</span><br><span class="line">var z int</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	x := 1</span><br><span class="line">	if true &#123;</span><br><span class="line">		x, y := 10, y+1</span><br><span class="line">		z = y * 10</span><br><span class="line">		fmt.Println(x, y, z) //x=10,y=4,z=40</span><br><span class="line">	&#125;</span><br><span class="line">	fmt.Println(x, y, z) //x=1,y=3,z=40</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3>类型转换</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">常量转换溢出报错</span><br><span class="line">例子:</span><br><span class="line">const c = 254</span><br><span class="line">var x uint8 = c + 1 //正确</span><br><span class="line">var x uint8 = c + 2 //错误,溢出</span><br><span class="line"></span><br><span class="line">变量转换溢出转为二进制截断高位重新计算值</span><br><span class="line">int类型包含负数 开头的数字1代表负数,0代表正数,</span><br><span class="line">如果是负数剩下的位数取反(0000001变成1111110)加一,</span><br><span class="line">正式可以直接计算</span><br><span class="line">uint类型不包含负数可以直接计算</span><br><span class="line">例子:</span><br><span class="line">var c int32 = 255</span><br><span class="line">255的二进制是 00000000 00000000 00000000 11111111</span><br><span class="line">var x = int8(c)</span><br><span class="line">int8是2^8,包含正负数,范围-128~127,溢出</span><br><span class="line">转为int8后只保留8位 11111111</span><br><span class="line">int8的计算方法 1开头的数字代表负数,取反加一,0开头的代表正数,直接计算</span><br><span class="line">取反 00000000 = 0,+1=1,1开头的数字代表负数所以结果为-1</span><br><span class="line"></span><br><span class="line">常量不设置自身的类型能够隐式转换</span><br><span class="line">例子:</span><br><span class="line">const c = 254</span><br><span class="line">var x uint8 = c + 1 //正确</span><br><span class="line">const c2 int32 = 254</span><br><span class="line">var x uint8 = c2 + 1 //错误</span><br><span class="line"></span><br><span class="line">常量设置了自身的类型需要显式转换</span><br><span class="line">例子:</span><br><span class="line">const c int16 = 255</span><br><span class="line">var x uint8 = c //错误</span><br><span class="line">var x uint8 = uint8(c) //正确</span><br><span class="line"></span><br><span class="line">变量无法隐式转换</span><br><span class="line">例子:</span><br><span class="line">var c = 255</span><br><span class="line">var x int8 = c //错误</span><br><span class="line"></span><br><span class="line">无类型浮点数常量无法直接转换为int类型</span><br><span class="line">例子:</span><br><span class="line">var x int = int(1.1) //错误</span><br><span class="line">var y = 1.1</span><br><span class="line">var x = int(y) //正确</span><br><span class="line"></span><br><span class="line">例子2:</span><br><span class="line">const a = 1.1</span><br><span class="line">var x = int(a) //错误</span><br><span class="line">var y = a</span><br><span class="line">var x = int(y) //正确</span><br></pre></td></tr></table></figure>
+
+<h3>赋值</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">:=的规则是至少有一个新的变量,_不是新的变量</span><br><span class="line">x, z := 1, 2</span><br><span class="line">z:=2 //错误的,z已经声明过的变量</span><br><span class="line">z, y := 3, 3 //是正确的,声明变量y并且给z赋值</span><br><span class="line">z, x := 2, 1//错误的,没有新声明的变量</span><br><span class="line"></span><br><span class="line">_, _ = x, z //正确的</span><br><span class="line">_, _ := x, y //错误的</span><br><span class="line"></span><br><span class="line">//在包级变量里是正确的,在局部变量里会报错</span><br><span class="line">var x, y = a + 1, 5</span><br><span class="line">var a, b, c = b + 1, c + 1, y</span><br><span class="line">包级变量,会根据依赖顺序自动排序 y=5,c=y,b=c+1,a=b+1,x=a+1的顺序执行</span><br><span class="line">局部变量是顺序执行,会用到没有初始化的a,b,c变量而报错</span><br></pre></td></tr></table></figure>
+
+<h3>一个死循环</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">type I interface &#123;</span><br><span class="line">	m()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">type T struct &#123;</span><br><span class="line">	I</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	var t T</span><br><span class="line">	var i = &amp;t</span><br><span class="line">	t.I = i</span><br><span class="line">	i.m() // -&gt;i是t的指针所以调用t.m()-&gt;t.I.m(),t,I = i-&gt;i.m() 死循环</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+        </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    
+                </div>
+                <div class="pull-date">
+                    <time datetime="2025-11-12T07:34:30.399Z" itemprop="dateModified">最后编辑：2025-11-12</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" go学习记录" href="/2025/04/02/go-study/">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" doctrine如何关闭entity后重新创建" href="/2025/04/14/new-entity/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2025 每天进步一点点🤏 版权所有.</li>
+                            <li>站长已跑路<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by Y Y.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+
+    <script defer src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>

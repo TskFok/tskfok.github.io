@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="">
+  <title>go学习记录 | 每天进步一点点🤏</title>
+  <meta name="author" content="Y Y" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="" />
+  
+  <meta name="description" content="实用技巧">
+<meta property="og:type" content="article">
+<meta property="og:title" content="go学习记录">
+<meta property="og:url" content="https://tskfok.github.io/2025/04/02/go-study/index.html">
+<meta property="og:site_name" content="每天进步一点点🤏">
+<meta property="og:description" content="实用技巧">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tskfok.github.io/2025/04/02/go-study/https:/img.adiosat.com/go-slice/go.png">
+<meta property="article:published_time" content="2025-04-02T07:07:50.000Z">
+<meta property="article:modified_time" content="2025-11-12T07:34:30.399Z">
+<meta property="article:author" content="Y Y">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tskfok.github.io/2025/04/02/go-study/https:/img.adiosat.com/go-slice/go.png">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" type="text/css" media="(prefers-color-scheme: dark)">
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/light.min.css" type="text/css" media="all">
+  
+  
+  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+  
+  
+  
+  
+    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/1.jpg');
+      }
+    
+    
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('/images/2.jpg');
+        }
+      }
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="每天进步一点点🤏" type="application/atom+xml">
+<link rel="alternate" href="/rss2.xml" title="每天进步一点点🤏" type="application/rss+xml">
+</head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                        <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                    
+                                
+                                    
+                                        <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">每天进步一点点🤏</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>每天进步一点点🤏</h2> <br />
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+                        
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/3.gif" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                145
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                57
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                66
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/composer/">composer</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/elasticsearch/">elasticsearch</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/frp/">frp</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/">go</a><span class="category-list-count">10</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/go/build/">build</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/excel/">excel</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/for/">for</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/gin/">gin</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/go/gin/static/">static</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/https/">https</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/process/">process</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/string/">string</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/switch/">switch</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go/viper/">viper</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">go学习记录</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/rune%E7%B1%BB%E5%9E%8B/">rune类型</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E4%B8%8B%E5%88%92%E7%BA%BF/">下划线</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/">实用技巧</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%8C%89%E4%BD%8D%E5%8F%96%E5%8F%8D-0/">按位取反(^0)</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E6%B5%AE%E7%82%B9%E6%95%B0%E8%AE%A1%E7%AE%97/">浮点数计算</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%96%91%E9%97%AE/">疑问</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%A7%BB%E4%BD%8D-1-64/">移位(1<<64)</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E7%AE%97%E6%B3%95/">算法</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/go%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/%E8%BF%9B%E5%88%B6/">进制</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/https/">https</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/kafka/">kafka</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/kafka/%E8%85%BE%E8%AE%AF%E4%BA%91/">腾讯云</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/kafka/%E8%85%BE%E8%AE%AF%E4%BA%91/go/">go</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/collection/">collection</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/select/">select</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/nas/">nas</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/nginx/">nginx</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/nginx/docker/">docker</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/openvpn/">openvpn</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/openvpn/frp/">frp</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/">php</a><span class="category-list-count">67</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/php/doctrine/">doctrine</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/excel/">excel</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/log/">log</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/oss/">oss</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/pdf/">pdf</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/php-fpm/">php-fpm</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/swoole/">swoole</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/word/">word</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/%E7%AE%97%E6%B3%95/">算法</a><span class="category-list-count">58</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/php/%E7%AE%97%E6%B3%95/%E9%9C%80%E9%87%8D%E5%A4%8D%E5%AD%A6%E4%B9%A0/">需重复学习</a><span class="category-list-count">7</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/proxy/">proxy</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/proxy/wary/">wary</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/tool/">tool</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/tool/msoffice/">msoffice</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/vue/">vue</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a><span class="category-list-count">13</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/rss/">rss</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E8%AF%B4%E9%98%85%E8%AF%BB%E5%99%A8/">小说阅读器</a><span class="category-list-count">1</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/apt/" style="font-size: 0.6em;">apt</a> <a href="/tags/calibre/" style="font-size: 0.6em;">calibre</a> <a href="/tags/cert/" style="font-size: 0.6em;">cert</a> <a href="/tags/chat/" style="font-size: 0.6em;">chat</a> <a href="/tags/chat-admin/" style="font-size: 0.6em;">chat-admin</a> <a href="/tags/cloudflare/" style="font-size: 0.6em;">cloudflare</a> <a href="/tags/composer/" style="font-size: 0.6em;">composer</a> <a href="/tags/ddnsto/" style="font-size: 0.6em;">ddnsto</a> <a href="/tags/debian/" style="font-size: 0.6em;">debian</a> <a href="/tags/dhparam/" style="font-size: 0.6em;">dhparam</a> <a href="/tags/dns/" style="font-size: 0.6em;">dns</a> <a href="/tags/docker/" style="font-size: 0.8em;">docker</a> <a href="/tags/doctrine/" style="font-size: 0.6em;">doctrine</a> <a href="/tags/dsm/" style="font-size: 0.6em;">dsm</a> <a href="/tags/elasticsearch/" style="font-size: 0.6em;">elasticsearch</a> <a href="/tags/excel%E5%8A%A0%E5%AF%86/" style="font-size: 0.6em;">excel加密</a> <a href="/tags/fail2ban/" style="font-size: 0.6em;">fail2ban</a> <a href="/tags/filebrowser/" style="font-size: 0.6em;">filebrowser</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2025/08/27/%E5%8F%A6%E4%B8%80%E6%A3%B5%E6%A0%91%E7%9A%84%E5%AD%90%E6%A0%91/"><i class="fa  fa-book"></i> 另一棵树的子树</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2025/08/27/%E8%8E%B7%E5%8F%96%E8%B4%A8%E6%95%B0%E6%95%B0%E7%BB%84/"><i class="fa  fa-book"></i> 获取质数数组</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2025/08/27/%E4%BD%BF%E7%94%A8%E6%9C%80%E5%B0%8F%E8%8A%B1%E8%B4%B9%E7%88%AC%E6%A5%BC%E6%A2%AF/"><i class="fa  fa-book"></i> 使用最小花费爬楼梯</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2025/08/27/%E8%8E%B7%E5%8F%96%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E6%95%B0%E9%87%8F/"><i class="fa  fa-book"></i> 获取二进制中1的数量</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2025/08/19/%E9%87%8D%E5%A1%91%E7%9F%A9%E9%98%B5/"><i class="fa  fa-book"></i> 重塑矩阵</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://tskfok.github.io/2025/04/02/go-study/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">go学习记录</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2025-04-02T07:07:50.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-04-02</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">Y Y</span>
+                </li>
+                <li>
+                    <i class="fa fa-edit"></i> 
+                    
+                    
+                        ~8.53K
+                    
+                    字
+                </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1762932870399"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            <hr />
+            <div itemprop="articleBody"><h3 id="实用技巧"><a href="#实用技巧" class="headerlink" title="实用技巧"></a>实用技巧</h3><span id="more"></span>
+
+<h1>重复克隆字符串</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d := &quot;a&quot;</span><br><span class="line">s := strings.Repeat(d, 10)</span><br><span class="line">fmt.Println(s) // aaaaaaaaaa</span><br></pre></td></tr></table></figure>
+
+<h1>通道超时</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">table := make(chan int)</span><br><span class="line"></span><br><span class="line">select &#123;</span><br><span class="line">case d := &lt;-table:</span><br><span class="line">    fmt.Println(d) // 能否从table通道中取得数据</span><br><span class="line">case &lt;-time.After(time.Second): // 1秒钟的超时时间</span><br><span class="line">    fmt.Println(&quot;time out&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1>定时器</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tick := time.NewTicker(time.Second / 2) // 每秒两次执行循环内的动作</span><br><span class="line">for t := range tick.C &#123;</span><br><span class="line">    // todo</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1>阻塞</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for &#123;&#125; // 无限循环,占用cpu高</span><br><span class="line">for &#123; time.Sleep(time.Second) &#125; // 占用cpu低</span><br><span class="line">select &#123;&#125; // 阻塞到死,不占用cpu</span><br></pre></td></tr></table></figure>
+
+<h1>容量为1的通道可以当作互斥锁</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">mutex := make(chan struct&#123;&#125;, 1) // 作为互斥锁,容量必须为1,当通道里有一个值就阻塞,如果大于1,可能会因为并发产生结果小于预期值</span><br><span class="line">done := make(chan struct&#123;&#125;)</span><br><span class="line">counter := 0</span><br><span class="line"></span><br><span class="line">num := 1000</span><br><span class="line"></span><br><span class="line">for range num &#123;</span><br><span class="line">    go func() &#123;</span><br><span class="line">        for range 100 &#123;</span><br><span class="line">            mutex &lt;- struct&#123;&#125;&#123;&#125; // 加锁,由于通道容量为1,必须要解锁后才能进行下一步操作</span><br><span class="line">            counter++</span><br><span class="line">            &lt;-mutex // 解锁</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        done &lt;- struct&#123;&#125;&#123;&#125;</span><br><span class="line">    &#125;()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">for range num &#123;</span><br><span class="line">    &lt;-done</span><br><span class="line">&#125;</span><br><span class="line">fmt.Println(counter) // 100000</span><br></pre></td></tr></table></figure>
+
+<h1>查看时间差</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">startTime := time.Now()</span><br><span class="line">fmt.Println(time.Since(startTime))</span><br></pre></td></tr></table></figure>
+
+<h1>switch case</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">s := []interface&#123;&#125;&#123;&quot;a&quot;, 1, 2, []interface&#123;&#125;&#123;&#125;, []int&#123;1, 2, 3&#125;, nil, map[string]int&#123;&#125;, [...]string&#123;&quot;1&quot;, &quot;a&quot;, &quot;cc&quot;&#125;&#125;</span><br><span class="line"></span><br><span class="line">for _, v := range s &#123;</span><br><span class="line">    switch d := v.(type) &#123;</span><br><span class="line">    case int, int32:</span><br><span class="line">        fmt.Println(&quot;int&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    case string:</span><br><span class="line">        fmt.Println(&quot;string&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    case []int:</span><br><span class="line">        fmt.Println(&quot;[]int&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    case []interface&#123;&#125;:</span><br><span class="line">        fmt.Println(&quot;[]intreface&#123;&#125;&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    case []string:</span><br><span class="line">        fmt.Println(&quot;[]string&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    case map[string]int:</span><br><span class="line">        fmt.Println(&quot;map&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    case nil:</span><br><span class="line">        fmt.Println(&quot;nil&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    default:</span><br><span class="line">        fmt.Println(&quot;default&quot;, d, reflect.TypeOf(d))</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1>方法隐式声明</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">每一个值类型的方法都对应一个隐式声明的指针方法</span><br><span class="line">每一个方法会隐式申明一个函数</span><br><span class="line">所以一个值类型的方法会隐式声明一个指针方法,一个函数,一个指针函数</span><br><span class="line">type Page struct &#123;</span><br><span class="line">	limit int</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func (p *Page) SetPage(limit int) *Page &#123;</span><br><span class="line">    // 会隐式声明 (*Page).SetPage()函数</span><br><span class="line">	p.limit = limit</span><br><span class="line"></span><br><span class="line">	return p</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func (p Page) Page() int &#123;</span><br><span class="line">    // 会隐式声明 Page.Page() 函数</span><br><span class="line">	return p.limit</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// Page方法隐式声明的方法</span><br><span class="line">//func (p *Page) Page() int &#123;</span><br><span class="line">//	return p.limit</span><br><span class="line">//&#125;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	c := Page&#123;&#125;</span><br><span class="line">	(*Page).SetPage(&amp;c, 2) // 调用隐式申明的方法</span><br><span class="line">	fmt.Println(c, Page.Page(c)) // &#123;2&#125;,2</span><br><span class="line">	c.SetPage(1) // 普通调用</span><br><span class="line">	fmt.Println(c, Page.Page(c)) // &#123;1&#125;,1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1>金额计算</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">使用github.com/shopspring/decimal库</span><br><span class="line">d1 := decimal.NewFromFloat(1.1)</span><br><span class="line">d2 := decimal.NewFromFloat(1.111211212)</span><br><span class="line">res := decimal.Sum(d1, d2)</span><br></pre></td></tr></table></figure>
+
+<h1>遍历通道</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">c:=make(chan int)</span><br><span class="line">for v := range c &#123;</span><br><span class="line">    fmt.Println(v)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">等同于</span><br><span class="line">for &#123;</span><br><span class="line">    d, ok := &lt;-c</span><br><span class="line"></span><br><span class="line">    if !ok &#123;</span><br><span class="line">        break</span><br><span class="line">    &#125;</span><br><span class="line">    fmt.Println(d)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1>变长参数</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">func test(a ...int) &#123;</span><br><span class="line">	fmt.Println(a) // a是[]int类型</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">调用</span><br><span class="line"></span><br><span class="line">test(1,2,3,4)</span><br><span class="line">输出 []int&#123;1,2,3,4&#125;</span><br></pre></td></tr></table></figure>
+
+<h1>拼接字符串</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a := &quot;aslfnl林肯afn&quot;</span><br><span class="line">b := &quot;aaaa&quot;</span><br><span class="line"></span><br><span class="line">string(append([]byte(a), b...)) //语法糖,允许将字符串作为byte切片使用</span><br></pre></td></tr></table></figure>
+
+<h1>byte,rune转换</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[]byte(string(c)) rune-&gt;byte</span><br><span class="line">[]rune(string(c)) byte-&gt;rune</span><br></pre></td></tr></table></figure>
+
+<h1>获取首个中文字符索引</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">s := &quot;AL兰SKFfAF阿是富兰克林快疯了&quot;</span><br><span class="line">// 一个中文占3个字节,使用字符索引,不能使用下标,需要先转成rune切片</span><br><span class="line">b := []rune(s)</span><br><span class="line"></span><br><span class="line">for i, v := range b &#123;</span><br><span class="line">    // 判断是否为中文</span><br><span class="line">    if unicode.Is(unicode.Han, v) &#123;</span><br><span class="line">        fmt.Println(i, string(v))</span><br><span class="line">        break</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 如果要使用字节索引,获取的字节是字符开始的下标,直接使用会是乱码</span><br><span class="line">for i, v := range s &#123;</span><br><span class="line">    // 判断是否为中文</span><br><span class="line">    if unicode.Is(unicode.Han, v) &#123;</span><br><span class="line">        fmt.Println(i, string(v))</span><br><span class="line">        break</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//使用s[2:5]显示完整的中文</span><br></pre></td></tr></table></figure>
+
+<h1>删除切片中的一段</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">小切片可用</span><br><span class="line">append(s[:from], s[to:]...)</span><br><span class="line"></span><br><span class="line">大切片,避免使用append可能产生内存分配</span><br><span class="line">var s = []int&#123;1, 2, 3, 4, 5, 6&#125;</span><br><span class="line">to := 3</span><br><span class="line">from := 1</span><br><span class="line">copy(s[from:], s[to:])</span><br><span class="line">s[:len(s)-(to-from)]</span><br><span class="line"></span><br><span class="line">优化大切片</span><br><span class="line">var s = []int&#123;1, 2, 3, 4, 5, 6&#125;</span><br><span class="line">to := 3</span><br><span class="line">from := 1</span><br><span class="line"></span><br><span class="line">if n := to - from; len(s)-to &gt; n &#123;</span><br><span class="line">    //如果切片尾部的数据足够填充from到to之间的数据,就把切片尾部的数据移动到填充的地方</span><br><span class="line">    copy(s[from:to], s[len(s)-n:])</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    //如果切片数据不足,直接copy</span><br><span class="line">    copy(s[from:to], s[to:])</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 清理尾部已删除的槽位，避免内存泄露</span><br><span class="line">for i := len(s) - (to-from); i &lt; len(s); i++ &#123;</span><br><span class="line">    s[i] = 0 // 零值赋值，释放原来的引用</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">s = s[:len(s)-(to-from)]</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1>修改切片长度容量</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var a = make([]int, 1, 4)</span><br><span class="line"></span><br><span class="line">elem := reflect.ValueOf(&amp;a).Elem()</span><br><span class="line">elem.SetLen(2) //修改长度,长度只能修改为小于等于容量的值</span><br><span class="line">elem.SetCap(2) //修改容量,容量只能修改为小于等于原始容量的值</span><br></pre></td></tr></table></figure>
+
+<h1>clear函数</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">清空map,或者把切片中的字段转成0,不能对数组使用</span><br></pre></td></tr></table></figure>
+
+<h1>查看内存消耗</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var memStats runtime.MemStats</span><br><span class="line">runtime.ReadMemStats(&amp;memStats)</span><br><span class="line">fmt.Printf(&quot;Alloc = %v MiB\n&quot;, memStats.Alloc/1024/1024)</span><br><span class="line">fmt.Printf(&quot;TotalAlloc = %v MiB\n&quot;, memStats.TotalAlloc/1024/1024)</span><br><span class="line">fmt.Printf(&quot;Sys = %v MiB\n&quot;, memStats.Sys/1024/1024)</span><br><span class="line">fmt.Printf(&quot;NumGC = %v\n&quot;, memStats.NumGC)</span><br><span class="line">	</span><br><span class="line">或者</span><br><span class="line">var stat syscall.Rusage</span><br><span class="line">syscall.Getrusage(syscall.RUSAGE_SELF, &amp;stat)</span><br><span class="line">fmt.Printf(&quot;Max RSS (KB): %v\n&quot;, stat.Maxrss)</span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line">GODEBUG=gctrace=1 go run main.go</span><br><span class="line">GODEBUG=gctrace=1 ./main</span><br></pre></td></tr></table></figure>
+
+<h1>切片转数组</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a := []int&#123;1, 2, 3, 4&#125;</span><br><span class="line">d := [3]int(a[1:]) //d是新的数组,与a不共享内存数据,新数组大小不能大于切片大小</span><br></pre></td></tr></table></figure>
+
+<h1>子切片</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">a:=[]int&#123;1,2,3,4,5,6&#125;</span><br><span class="line">a[l1:l2]//技巧,从0开始从前往后数,留头去尾</span><br><span class="line">cap计算 = 长度 6 - l1 = 3</span><br><span class="line">len计算 = l2 - l1</span><br><span class="line"></span><br><span class="line">//例子</span><br><span class="line">a := [...]int&#123;0, 1, 2, 3, 4, 5, 6&#125;</span><br><span class="line">s0 := a[:]           // 7,7 | 0, 1, 2, 3, 4, 5, 6</span><br><span class="line">s1 := s0[:]          // 7,7 | 0, 1, 2, 3, 4, 5, 6</span><br><span class="line">s2 := s1[1:3]        // 2,6 | 1, 2</span><br><span class="line">s3 := s1[3:]         // 4,4 | 3, 4, 5, 6</span><br><span class="line">s4 := s0[3:5]        // 2,4 | 3, 4</span><br><span class="line">s5 := s4[:2:2]       // 2,2 | 3, 4</span><br><span class="line">s6 := append(s4, 77) //3,4 | 3,4,77 同时s6容量充足,依然使用s0作为底层,append s6会影响到 s0 s0 = 0,1,2,3,4,77,6</span><br><span class="line">s7 := append(s5, 88) //3,4 | 3,4,88 cap=4是因为s5的容量达到上线,append扩容,原容量&lt;1024,容量*2,扩容之后分配新的数组,所以不会对s0产生影响</span><br><span class="line">s8 := append(s7, 66) // 4,4 | 3,4,88,66</span><br><span class="line">s3[1] = 99           // 4,4 | 3,99,77,6, s0 = 0,1,2,3,99,77,6</span><br></pre></td></tr></table></figure>
+
+<h1>goto</h1>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">func main() &#123;</span><br><span class="line">	i := 1</span><br><span class="line">Lbam:</span><br><span class="line">	fmt.Println(i)</span><br><span class="line">	</span><br><span class="line">	k := i * i //正确</span><br><span class="line">	fmt.Println(k)</span><br><span class="line">	</span><br><span class="line">	if i &gt; 5 &#123;</span><br><span class="line">		goto Cc</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	k := i * i //错误,k的声明有可能被跳过</span><br><span class="line">	fmt.Println(k)</span><br><span class="line">	&#123;</span><br><span class="line">        k := i * i //正确,减少了k的作用域</span><br><span class="line">        fmt.Println(k)</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	i++</span><br><span class="line"></span><br><span class="line">	goto Lbam</span><br><span class="line">Cc:</span><br><span class="line">	fmt.Println(i)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3>switch-case</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">switch case,不需要break就能跳出分支,需要进入下一个分支可使用fallthrough</span><br><span class="line">最后一个分支不能使用fallthrough,最后一个分支不一定是default分支,default分支有可能在中间</span><br><span class="line">n := rand.IntN(10000)</span><br><span class="line">switch n % 9 &#123;</span><br><span class="line">case 0, 1:</span><br><span class="line">    fmt.Println(1)</span><br><span class="line">    fallthrough //进入下一个分支</span><br><span class="line">case 2, 3, 4, 5:</span><br><span class="line">    fmt.Println(2345)</span><br><span class="line">    </span><br><span class="line">    if true &#123;</span><br><span class="line">        fallthrough //错误,fallthrough必须是最后一条语句</span><br><span class="line">    &#125;</span><br><span class="line">default:</span><br><span class="line">    fmt.Println(&quot;default&quot;)</span><br><span class="line">case 6, 7, 8:</span><br><span class="line">    fmt.Println(346)</span><br><span class="line">    fallthrough //错误,最后一个分支不能使用fallthrough</span><br><span class="line">&#125;</span><br><span class="line">	</span><br></pre></td></tr></table></figure>
+
+<h3>句点引入包</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">import (</span><br><span class="line">	. &quot;fmt&quot;</span><br><span class="line">	. &quot;math/rand/v2&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">	Print(IntN(9000)+1000, &quot; &quot;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">fmt.Print省略成Print</span><br><span class="line">rand.IntN省略成IntN</span><br></pre></td></tr></table></figure>
+
+<h3>匿名引入</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import (</span><br><span class="line">	_ &quot;math/rand&quot;</span><br><span class="line">)</span><br><span class="line">为了执行引入包中的init一遍,可以不使用这个包</span><br></pre></td></tr></table></figure>
+
+<h3>随机数</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">获取1000到9999的随机数,1.22及以上的版本,使用math/rand/v2</span><br><span class="line">rand.IntN(9000) + 1000 // rand.IntN(9000)获取0到8999的随机数,+1000就是1000到9999的随机数</span><br></pre></td></tr></table></figure>
+
+<h3>初始化</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">包级变量的初始化顺序取决于依赖顺序,不一定是顺序执行的,不能循环依赖</span><br><span class="line">局部变量初始化顺序是顺序执行的</span><br></pre></td></tr></table></figure>
+
+<h3>获取数据类型</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var y int</span><br><span class="line">reflect.TypeOf(y) //int</span><br><span class="line">fmt.Sprintf(&quot;%T&quot;, y) //int</span><br><span class="line"></span><br><span class="line">%v：将被替换为对应实参字符串表示形式</span><br><span class="line">%T：将替换为对应实参的类型的字符串表示形式。</span><br><span class="line">%x：将替换为对应实参的十六进制表示。实参的类型可以为字符串、整数、整数数组（array）或者整数切片（slice）等。 （数组和切片将在以后的文章中讲解。）</span><br><span class="line">%s：将被替换为对应实参的字符串表示形式。实参的类型必须为字符串或者字节切片（byte slice）类型。</span><br><span class="line">%%：将被替换为一个百分号</span><br></pre></td></tr></table></figure>
+
+<h3>int最大值</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">获取uint最大值</span><br><span class="line">在64位操作系统下可用,在32位操作系统下非法 </span><br><span class="line">const MaxUint uint = (1 &lt;&lt; 64) - 1</span><br><span class="line">通用方法</span><br><span class="line">^uint(0)</span><br><span class="line"></span><br><span class="line">获取int最大值</span><br><span class="line">int(^uint(0) &gt;&gt; 1)</span><br></pre></td></tr></table></figure>
+
+<h3>rune</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">rune中的特殊字符</span><br><span class="line">\a   (rune值：0x07) 铃声字符</span><br><span class="line">\b   (rune值：0x08) 退格字符（backspace）</span><br><span class="line">\f   (rune值：0x0C) 换页符（form feed）</span><br><span class="line">\n   (rune值：0x0A) 换行符（line feed or newline）</span><br><span class="line">\r   (rune值：0x0D) 回车符（carriage return）</span><br><span class="line">\t   (rune值：0x09) 水平制表符（horizontal tab）</span><br><span class="line">\v   (rune值：0x0b) 竖直制表符（vertical tab）</span><br><span class="line">\\   (rune值：0x5c) 一个反斜杠（backslash）</span><br><span class="line">\&#x27;   (rune值：0x27) 一个单引号（single quote）</span><br></pre></td></tr></table></figure>
+
+<h3>获取操作系统的位数</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">获取操作系统位数 32 &lt;&lt; (^uint(0) &gt;&gt; 63) 32或64</span><br><span class="line">^uint(0) &gt;&gt; 63 64位操作系统向右移动63位还剩一个1,32位操作系统为0</span><br><span class="line">32&lt;&lt;1|0,相当于100000向左移动一位或者不移动,移动一位=1000000,相当于*2=64</span><br><span class="line"></span><br><span class="line">是不是64位的操作系统</span><br><span class="line">^uint(0)&gt;&gt;63 &gt; 0</span><br><span class="line"></span><br><span class="line">是不是32位的操作系统</span><br><span class="line">^uint(0)&gt;&gt;32 == 0</span><br></pre></td></tr></table></figure>
+
+<h3>常量补全</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const (</span><br><span class="line">	x float64 = 1.1</span><br><span class="line">	y</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">y自动补全为1.1</span><br></pre></td></tr></table></figure>
+
+<h3>iota</h3>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">const (</span><br><span class="line">	x = iota</span><br><span class="line">	y</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">x=0,y=1</span><br><span class="line"></span><br><span class="line">const (</span><br><span class="line">	x = iota + 1.5</span><br><span class="line">	y</span><br><span class="line">	z = iota</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">x=1.5,y=2.5,z=2</span><br><span class="line"></span><br><span class="line">const (</span><br><span class="line">	x = 1 &lt;&lt; iota</span><br><span class="line">	y</span><br><span class="line">	z</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">x=1,y=2,z=4</span><br><span class="line"></span><br><span class="line">const (</span><br><span class="line">	x = iota - 1</span><br><span class="line">	y</span><br><span class="line">	z</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">x=-1,y=0,z=1</span><br></pre></td></tr></table></figure></div>
+        </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    
+                </div>
+                <div class="pull-date">
+                    <time datetime="2025-11-12T07:34:30.399Z" itemprop="dateModified">最后编辑：2025-11-12</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" go学习记录" href="/2025/03/27/go-study-algorithm/">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" go学习记录" href="/2025/04/09/go-study-250324/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2025 每天进步一点点🤏 版权所有.</li>
+                            <li>站长已跑路<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by Y Y.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+
+    <script defer src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>
