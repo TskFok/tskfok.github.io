@@ -15,8 +15,27 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 21 Nov 2025 08:50:35 GMT</pubDate>
+    <pubDate>Wed, 11 Feb 2026 03:23:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>openclaw安装与配置</title>
+      <link>https://tskfok.github.io/2026/02/06/openclaw/</link>
+      <guid>https://tskfok.github.io/2026/02/06/openclaw/</guid>
+      <pubDate>Fri, 06 Feb 2026 02:44:44 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;openclaw安装与配置&quot;&gt;&lt;a href=&quot;#openclaw安装与配置&quot; class=&quot;headerlink&quot; title=&quot;openclaw安装与配置&quot;&gt;&lt;/a&gt;openclaw安装与配置&lt;/h3&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/tags/openclaw/">openclaw</category>
+      
+      
+      <comments>https://tskfok.github.io/2026/02/06/openclaw/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>搭建frp内网穿透</title>
@@ -380,6 +399,29 @@
     </item>
     
     <item>
+      <title>数字的补数</title>
+      <link>https://tskfok.github.io/2025/08/13/%E6%95%B0%E5%AD%97%E7%9A%84%E8%A1%A5%E6%95%B0/</link>
+      <guid>https://tskfok.github.io/2025/08/13/%E6%95%B0%E5%AD%97%E7%9A%84%E8%A1%A5%E6%95%B0/</guid>
+      <pubDate>Wed, 13 Aug 2025 06:57:19 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;数字的补数&quot;&gt;&lt;a href=&quot;#数字的补数&quot; class=&quot;headerlink&quot; title=&quot;数字的补数&quot;&gt;&lt;/a&gt;数字的补数&lt;/h3&gt;</description>
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/categories/php/">php</category>
+      
+      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
+      
+      
+      <comments>https://tskfok.github.io/2025/08/13/%E6%95%B0%E5%AD%97%E7%9A%84%E8%A1%A5%E6%95%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>重复的子字符串</title>
       <link>https://tskfok.github.io/2025/08/13/%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
       <guid>https://tskfok.github.io/2025/08/13/%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
@@ -401,29 +443,6 @@
       
       
       <comments>https://tskfok.github.io/2025/08/13/%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>数字的补数</title>
-      <link>https://tskfok.github.io/2025/08/13/%E6%95%B0%E5%AD%97%E7%9A%84%E8%A1%A5%E6%95%B0/</link>
-      <guid>https://tskfok.github.io/2025/08/13/%E6%95%B0%E5%AD%97%E7%9A%84%E8%A1%A5%E6%95%B0/</guid>
-      <pubDate>Wed, 13 Aug 2025 06:57:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;数字的补数&quot;&gt;&lt;a href=&quot;#数字的补数&quot; class=&quot;headerlink&quot; title=&quot;数字的补数&quot;&gt;&lt;/a&gt;数字的补数&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/13/%E6%95%B0%E5%AD%97%E7%9A%84%E8%A1%A5%E6%95%B0/#disqus_thread</comments>
       
     </item>
     
@@ -470,29 +489,6 @@
       
       
       <comments>https://tskfok.github.io/2025/08/11/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E4%B8%B2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>数字转换为十六进制数</title>
-      <link>https://tskfok.github.io/2025/08/08/%E6%95%B0%E5%AD%97%E8%BD%AC%E6%8D%A2%E4%B8%BA%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E6%95%B0/</link>
-      <guid>https://tskfok.github.io/2025/08/08/%E6%95%B0%E5%AD%97%E8%BD%AC%E6%8D%A2%E4%B8%BA%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E6%95%B0/</guid>
-      <pubDate>Fri, 08 Aug 2025 10:33:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;数字转换为十六进制数&quot;&gt;&lt;a href=&quot;#数字转换为十六进制数&quot; class=&quot;headerlink&quot; title=&quot;数字转换为十六进制数&quot;&gt;&lt;/a&gt;数字转换为十六进制数&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/08/%E6%95%B0%E5%AD%97%E8%BD%AC%E6%8D%A2%E4%B8%BA%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E6%95%B0/#disqus_thread</comments>
       
     </item>
     
