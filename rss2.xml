@@ -15,8 +15,27 @@
     <atom:link href="https://tskfok.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 11 Feb 2026 03:26:21 GMT</pubDate>
+    <pubDate>Wed, 11 Feb 2026 10:42:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>ai工具</title>
+      <link>https://tskfok.github.io/2026/02/11/ai-tools/</link>
+      <guid>https://tskfok.github.io/2026/02/11/ai-tools/</guid>
+      <pubDate>Wed, 11 Feb 2026 10:41:31 GMT</pubDate>
+      
+      <description>&lt;h3 id=&quot;ai工具&quot;&gt;&lt;a href=&quot;#ai工具&quot; class=&quot;headerlink&quot; title=&quot;ai工具&quot;&gt;&lt;/a&gt;ai工具&lt;/h3&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://tskfok.github.io/tags/ai-tools/">ai-tools</category>
+      
+      
+      <comments>https://tskfok.github.io/2026/02/11/ai-tools/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>openclaw安装与配置</title>
@@ -466,29 +485,6 @@
       
       
       <comments>https://tskfok.github.io/2025/08/11/%E6%89%BE%E5%88%B0%E6%89%80%E6%9C%89%E6%95%B0%E7%BB%84%E4%B8%AD%E6%B6%88%E5%A4%B1%E7%9A%84%E6%95%B0%E5%AD%97/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>最长回文串</title>
-      <link>https://tskfok.github.io/2025/08/11/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E4%B8%B2/</link>
-      <guid>https://tskfok.github.io/2025/08/11/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E4%B8%B2/</guid>
-      <pubDate>Mon, 11 Aug 2025 03:54:19 GMT</pubDate>
-      
-      <description>&lt;h3 id=&quot;最长回文串&quot;&gt;&lt;a href=&quot;#最长回文串&quot; class=&quot;headerlink&quot; title=&quot;最长回文串&quot;&gt;&lt;/a&gt;最长回文串&lt;/h3&gt;</description>
-      
-      
-      
-      
-      <category domain="https://tskfok.github.io/categories/php/">php</category>
-      
-      <category domain="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <category domain="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/">算法</category>
-      
-      
-      <comments>https://tskfok.github.io/2025/08/11/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E4%B8%B2/#disqus_thread</comments>
       
     </item>
     

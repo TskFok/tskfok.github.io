@@ -6,7 +6,7 @@
   <link href="https://tskfok.github.io/atom.xml" rel="self"/>
   
   <link href="https://tskfok.github.io/"/>
-  <updated>2026-02-11T03:26:21.906Z</updated>
+  <updated>2026-02-11T10:42:44.383Z</updated>
   <id>https://tskfok.github.io/</id>
   
   <author>
@@ -17,11 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ai工具</title>
+    <link href="https://tskfok.github.io/2026/02/11/ai-tools/"/>
+    <id>https://tskfok.github.io/2026/02/11/ai-tools/</id>
+    <published>2026-02-11T10:41:31.000Z</published>
+    <updated>2026-02-11T10:42:44.383Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;ai工具&quot;&gt;&lt;a href=&quot;#ai工具&quot; class=&quot;headerlink&quot; title=&quot;ai工具&quot;&gt;&lt;/a&gt;ai工具&lt;/h3&gt;</summary>
+    
+    
+    
+    
+    <category term="ai-tools" scheme="https://tskfok.github.io/tags/ai-tools/"/>
+    
+  </entry>
+  
+  <entry>
     <title>openclaw安装与配置</title>
     <link href="https://tskfok.github.io/2026/02/06/openclaw/"/>
     <id>https://tskfok.github.io/2026/02/06/openclaw/</id>
     <published>2026-02-06T02:44:44.000Z</published>
-    <updated>2026-02-11T03:26:21.906Z</updated>
+    <updated>2026-02-11T10:41:38.885Z</updated>
     
     
     <summary type="html">&lt;h3 id=&quot;openclaw安装与配置&quot;&gt;&lt;a href=&quot;#openclaw安装与配置&quot; class=&quot;headerlink&quot; title=&quot;openclaw安装与配置&quot;&gt;&lt;/a&gt;openclaw安装与配置&lt;/h3&gt;</summary>
@@ -417,27 +434,6 @@
     
     
     <summary type="html">&lt;h3 id=&quot;找到所有数组中消失的数字&quot;&gt;&lt;a href=&quot;#找到所有数组中消失的数字&quot; class=&quot;headerlink&quot; title=&quot;找到所有数组中消失的数字&quot;&gt;&lt;/a&gt;找到所有数组中消失的数字&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="php" scheme="https://tskfok.github.io/categories/php/"/>
-    
-    <category term="算法" scheme="https://tskfok.github.io/categories/php/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="算法" scheme="https://tskfok.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>最长回文串</title>
-    <link href="https://tskfok.github.io/2025/08/11/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E4%B8%B2/"/>
-    <id>https://tskfok.github.io/2025/08/11/%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E4%B8%B2/</id>
-    <published>2025-08-11T03:54:19.000Z</published>
-    <updated>2025-11-12T07:34:30.403Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;最长回文串&quot;&gt;&lt;a href=&quot;#最长回文串&quot; class=&quot;headerlink&quot; title=&quot;最长回文串&quot;&gt;&lt;/a&gt;最长回文串&lt;/h3&gt;</summary>
     
     
     
